@@ -1,0 +1,66 @@
+<input type="hidden" value="loadFanDiningtable.do"  name="action"> 
+  <script type="text/javascript">
+  function initAllTable(){
+		jQuery.ajax({
+              type:'GET',
+			  dataType:'string',
+              url:'initAllTable.do',			
+              cache:false,   			  
+			  error:function(data){						  
+			  $("#msg").html("登录失败!");
+			  },			  
+			  success:function(data){			  
+			   window.alert(data);
+			  }
+			  })
+		}
+   $(function() {  
+   $("#btn-save").click(function() {      
+     if (!validForm()){return("");}
+   $("#f1j-form").submit();
+	});
+	
+	$("#btn-copy").click(function() {      
+     if (!validForm()){return("");}
+	 $("#id").val("");
+   $("#f1j-form").submit();
+	});
+	$("#btn-init").click(function() {      
+     initAllTable();
+	});
+	});
+  </script>
+  
+<div class="panel" title="基本">
+<div class="forum-container" >
+<table border="0" cellspacing="2" cellpadding="0" width="100%">
+	<tr>
+		<td ><label>类别</label></td>
+		<td class="detail">${workItem.type} </td>
+	</tr>	
+	<tr>
+		<td ><label>编号</label></td>
+		<td class="detail">${workItem.tablenu} </td>
+	</tr>	
+	<tr>
+		<td ><label>座位数</label></td>
+		<td class="detail">${workItem.seatnu} </td>
+	</tr>	
+	<tr>
+		<td ><label>状态</label></td>
+		<td class="detail">${workItem.status}</td>
+	</tr>	        	
+	<tr>
+		<td ><label>内容</label></td>
+		<td class="detail">${workItem.content}</td>
+	</tr>	        	
+</table>
+</div>
+</div>
+  <div class="f1j-ui-toolbar">##
+  <center>
+  <input type="button" id="btn-save" value="保存" style="width:60px;height:40px">   ##  
+  <input type="button" id="btn-copy" value="copy" style="width:60px;height:40px">   ##  
+  <input type="button" id="btn-init" value="InitAllTable" style="width:60px;height:40px">   ##  
+  </center>
+  </div> 

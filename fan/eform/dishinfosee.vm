@@ -1,0 +1,38 @@
+<input type="hidden" value="loadInfo.do"  name="action"> 
+  <script type="text/javascript">
+   $(function() {  
+   $("#btn-save").click(function() {      
+     if (!validForm()){return("");}
+   $("#f1j-form").submit();
+	});
+	$("#btn-copy").click(function() {      
+     if (!validForm()){return("");}
+	$("#id").val(""); 
+   $("#f1j-form").submit();
+	});
+	});
+  </script>     
+<div class="panel" title="基本">
+<table class="f1-ui-table-1" border="0" cellspacing="2" cellpadding="0" width="100%">	
+	<tr>
+		<th style="width:100px"><label>项目</label></th>
+		<th class="detail">属性</th>
+	</tr>	
+	<tr>
+		<td ><label>类别</label></td>
+		<td class="detail">${workItem.catForValue} </td>
+	</tr>	
+	<tr>
+		<td ><label>标题</label></td>
+		<td class="detail">${workItem.titleValue} </td>
+	</tr>	
+   <tr>
+		<td ><label>时间</label></td>
+		<td class="detail">${workItem.infodateValue} </td>
+	</tr>	
+</table>
+${workItem.contentValue}
+</div>
+
+
+

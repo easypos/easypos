@@ -1,0 +1,96 @@
+ <script type="text/javascript">
+   $(function() {  
+   $("#btn-save").click(function() {      
+     if (!validForm()){return("");}
+   //$("#f1j-form").submit();
+	});
+	});
+  </script>
+  <SCRIPT LANGUAGE="JavaScript">
+var colmuns=  
+  [{title:'菜品',id:'dishid',type:'dlgValue',view:'dish_by_all',viewIndex:"3",copy:'products',format:'1',css:""},
+  {title:'数量',id:'dishcount',type:'label',format:'1',css:{width:"50px"},value:"1"},
+  {title:'金额',id:'price',type:'label',format:'1',css:{width:"50px"}},
+  {title:'合计',id:'sumrow',type:'label',format:'1',css:{width:"50px"}},
+  {title:'备注',id:'content',type:'label',format:'1'}];
+  
+ var colmuns2=  
+  [{title:'类别',id:'buytypeid',type:'dlgValue',view:'dish_by_all',viewIndex:"3",copy:'products',format:'1',css:""},
+  {title:'数量',id:'count',type:'label',format:'1',css:{width:"50px"},value:"1"},
+  {title:'金额',id:'money',type:'label',format:'1',css:{width:"50px"}}]
+ var colmuns1=
+  [{title:'项目',id:'name',type:'label',copy:'label',format:'1',css:{width:"100px"}},
+  {title:'数量',id:'dishcount',type:'label',format:'1',css:{width:"50px"},value:"1"},
+  {title:'金额',id:'price',type:'label',format:'1',css:{width:"50px"}},
+  {title:'合计',id:'sumrow',type:'label',format:'1',css:{width:"50px"}},
+  {title:'备注',id:'content',type:'label',format:'1'}]; 
+$(document).ready(function(){
+ $("#tableData").addRow(
+  {colmuns:colmuns,data:$details0,count:'Count',msgRender:"#msg",showDelBtn:false}); 
+   $("#tableData2").addRow(
+  {colmuns:colmuns2,data:$details1,count:'Count1',msgRender:"#msg",showDelBtn:false});   
+  //$("#tableData1").addRow(
+  //{colmuns:colmuns1,data:${FANORDERitemstatus1},count:'Count1',msgRender:"#msg",showDelBtn:false});      
+  //$("#tableData").sum({colmuns:[{index:5,type:"value"},{index:4,type:"count"},{index:6,type:"percent"}],
+  //render: "#sumprice2",edit:true});
+  $("#tableData").sumRow({colmuns:[{index:3,type:"count"},{index:4,type:"value"}],index:5,edit:false});   
+  $("#tableData").sum({colmuns:[{index:3,type:"count"},{index:4,type:"value"}],render: "#sumprice1",edit:false});   
+  $("#tableData").sum({colmuns:[{index:3,type:"value"}],render: "#sumtest1",edit:false}); 
+  //$("#tableData1").sumRow({colmuns:[{index:3,type:"count"},{index:4,type:"value"}],index:5,edit:false});   
+  //$("#tableData1").sum({colmuns:[{index:3,type:"count"},{index:4,type:"value"}],render: "#sumprice2",edit:false});   
+  //$("#tableData1").sum({colmuns:[{index:3,type:"value"}],render: "#sumtest2",edit:false});   
+}); 
+</SCRIPT>
+<input type="hidden" value="0"  name="Count"  id="Count">  
+<input type="hidden" value="0"  name="Count1"  id="Count1">  
+<div class="pane" title="定单信息">
+<table class="f1-ui-table-1" border="0" cellspacing="2" cellpadding="0" width="100%">	
+   <tr>
+		<th style="width:100px"><label>项目</label></th>
+		<th class="detail">属性</th>
+	</tr>
+	<tr>
+		<td><label>定单</label></td>
+		<td class="detail">${workItem.ordernuValue} </td>	
+	</tr>	 	
+	<tr>	
+		<td><label>工号</label></td>
+		<td class="detail">${workItem.operatorValue} </td>
+	</tr>	
+	<tr>
+		<td ><label>时间</label></td>
+		<td class="detail">${workItem.createddateValue} </td>	
+	</tr>	 	
+	<tr>	
+		<td ><label>餐桌</label></td>
+		<td class="detail">${workItem.diningtableidValue}</td>
+	</tr>
+    <tr>
+		<td ><label>电话</label></td>
+		<td class="detail">${workItem.telValue} </td>	
+	</tr>	 	
+	<tr>
+		<td ><label>送餐地址</label></td>
+		<td class="detail">${workItem.addressValue}</td>
+	</tr>	
+</table>
+</div>
+<div class="forum-container">
+<!-- <div id="msg">请稍侯,正在生成...</div> -->
+<table  border="0" id="tableData" cellspacing="1" cellpadding="0" width="100%"></table>
+<div style="clear:both;border:0px solid #000;float:right;padding-right:20px;">数量:<span id="sumtest1">load...</span>,价格:￥<span id="sumprice1">Load...</span></div>
+</div>
+<div class="panel" title="交易类别">
+  <div class="forum-container">
+  <table  border="0" id="tableData2" cellspacing="1" cellpadding="0" width="100%">  </table>  
+  </div>
+</div>
+<div class="panel" title="更多...">
+  <div class="forum-container">
+  <table  border="0" id="tableData1" cellspacing="1" cellpadding="0" width="100%">  </table>  
+  </div>
+</div>
+
+
+
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+#set($formFile=${htmlFile})
+<head> 
+<title>loading...</title>
+<style type="text/css">
+td{height:24px;}
+</style>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">		
+        <link rel="stylesheet" href="/shares/easyrestaurant+/m/css/m_esse.css" />				
+		<link rel="stylesheet" type="text/css" href="/shares/resources/css/f1ui/default/table.css">  		
+        <script src="/shares/jquery-mobile/jquery-1.10.2.min.js"></script>        
+</head>
+<body>
+ <div data-role="page" data-theme="-"> 
+ <link rel="stylesheet" href="/shares/jquery-mobile/Swiper-master/Swiper-master/dist/idangerous.swiper.css">
+ <link rel="stylesheet" href="/shares/easyrestaurant+/m/css/swiper.css" />
+ <input type="hidden" name="id" value="${id}" id="id">
+ #parse($formFile)    
+ </div>
+</body>
+</html>

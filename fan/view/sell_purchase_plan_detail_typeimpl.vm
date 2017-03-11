@@ -1,0 +1,28 @@
+<div class="type-menu">
+<dl class="choose">
+  <dt>类别</dt>
+   <dd>
+   <span id="purchaseordernumber-info">CG20130406000001</span><input type="hidden" name="purchaseordernumber" id="purchaseordernumber" value="1365217362538"><input type="button" onclick="dListForId('sellpurchaseplan','1','purchaseordernumber')" value="." class="eform-btn-select">
+   </dd>   
+</dl>
+</div>
+
+<!--
+<div id="type-menu">
+<dl class=choose>
+  <dt>类别</dt>
+   <dd>${type_}</dd>
+   </dt>
+</dl>
+</div> 
+-->
+<script type="text/javascript"> 
+  function listSelectImpl($a,index,param){
+    purchaseordernumber=$("#purchaseordernumber").val();
+    cmd="liSellPurchasePlanDetail.do?v=sellpurchaseplandDetail&purchaseordernumber="+purchaseordernumber;	
+	//alert(cmd);
+	window.document.location.href=cmd;	
+   }
+  </script>
+  
+  <a href="liSellPurchasePlanDetail.do?v=sellpurchaseplandDetail&purchaseordernumber=1">aaa<a/> 

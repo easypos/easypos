@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<html>
+<head>
+<!-- <meta charset="utf-8"> -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=0">
+<title>云尚客微点餐</title>
+<link rel="stylesheet" href="/o2o/m/css/html5.css" />
+<link rel="stylesheet" href="/o2o/m/css/index.css" />
+<link rel="stylesheet" href="/shares/jquery-mobile/Swiper-master/Swiper-master/dist/idangerous.swiper.css">
+ <link rel="stylesheet" href="/o2o/m/css/swiper_index.css" />
+<style>
+</style>
+</head>
+<body>
+<div data-role="page" data-theme="-"  data-dom-cache="true" id="page_" >     
+<!--
+<div class="index-search-container">  
+ <input type="search" name="search" id="search" value="" placeholder="搜索商品..." data-theme="f">				
+</div>
+-->
+<!-- 
+<div  class="index-search-container" style="position: absolute;left: 0;top:0px;z-index:999;width:100%;opacity: 0.5;">  
+ <input type="search" name="search" id="search" value="" placeholder="搜索商品..." data-theme="a">				
+</div>
+  -->
+    <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide red-slide">
+        <img width="100%" height="200px" src="/shares/o2o/m/images/banner1.jpg"> 
+      </div>
+	  <div class="swiper-slide blue-slide">
+        <img width="100%" height="200px" src="/shares/o2o/m/images/banner2.jpg"> 
+      </div>	  
+	  <div class="swiper-slide red-slide">
+        <img width="100%" height="200px" src="/shares/o2o/m/images/banner3.jpg"> 
+      </div>	  	  	  
+    </div>
+    <div class="pagination"></div>
+  </div>
+  <div id="page1" style="margin-top:10px;width:100%;">
+    <div class="ui-grid-c">
+      <div class="ui-block-a">
+        <center>
+          <a href="/o2o/li-company-buy-online-m.f1j?v=fancompany" target="_self"> <img src="/shares/ysk/m/images/shop.png" width="40px;" height="40px;"></img> </a>
+          <div>餐厅</div>
+        </center>        
+      </div>
+      <div class="ui-block-b">
+        <center>
+          <a href="/ysk/product/type.html" target="_self"> <img src="/shares/ysk/m/images/order.png" width="40px;" height="40px;"></img> </a>
+          <div>活动</div>
+        </center>        
+      </div>      
+      <div class="ui-block-c">
+        <center>
+          <a href="/o2o/m/login/" target="_self"> <img src="/shares/ysk/m/images/community.png" width="40px;" height="40px;"></img> </a>
+          <div>个人中心</div>
+        </center>        
+      </div>
+	  <div class="ui-block-d">
+        <center>
+          <a href="/index_init.html" target="_self"> <img src="/shares/ysk/m/images/sell.png" width="40px;" height="40px;"></img> </a>
+          <div>招商</div>
+        </center>    
+      </div>      
+    </div>    	
+	<!--
+	<div class="cls"></div> 
+	<div  class="index-catalog">限时抢购</div>
+	  <ul class="list_" style="background:#d8d8d8;padding:0px;"  data-theme="c" id="list_">      
+	    <li class="lileft" id="ui-block-miaosha" data-theme="c">	    
+		<div class="lidiv">
+        <a href="/o2o/list-product-limited.f1j">        
+        <img style="width:100%;height:100px" class="miaosha-img" src="/ysk/attachfiles/product/1844/1364787616687" style="margin:2px;"  alt="玩命加载中...">
+       	<p style="color:#c80000;">抢购价:￥418</p>
+        <p class="miaosha_grid" id="miaosha1" value="2015-11-21 12:00:00.0">
+         <span id="miaosha1_dd">0</span>:<span id="miaosha1_hh">0</span>:<span id="miaosha1_mm">0</span>:<span id="miaosha1_ss">0</span>
+         </p> 		
+		</a>           
+		</div>
+        </li> 		
+	   <li class="liright"  data-theme="c">	    
+	   <div class="lidiv">
+       <a href="/o2o/list-product-limited.f1j" >                
+		<img style="width:100%;height:100px" class="miaosha-img" src="/ysk/attachfiles/product/1845/1364788072114" style="margin:2px;"  alt="玩命加载中...">
+       	<p style="color:#c80000;">抢购价:￥268</p>
+        <p class="miaosha_grid" id="miaosha2" value="2015-12-20 11:00:00.0">
+         <span id="miaosha2_dd">0</span>:<span id="miaosha2_hh">0</span>:<span id="miaosha2_mm">0</span>:<span id="miaosha2_ss">0</span>
+         </p> 				
+		</a>  
+         </div>		
+		</li> 		
+	</ul>
+	-->
+    <div class="cls"></div> 	
+	<!-- 推荐微店  beigin-->
+	<div  class="index-catalog">推荐餐厅</div>
+	  <ul class="list_"> 
+        ${shop}
+      </ul>
+	  <!-- 推荐商品  end-->	   
+	  <div class="cls"></div> 	
+	  <div  class="index-catalog">推荐菜品</div>
+	  <ul class="list_" style="padding:0px;"  data-theme="c" >      
+        ${recommend}
+	  </ul>		
+      <!-- 买一送一  end-->	   
+	  <!--
+	  <div class="cls"></div>
+	  <div  class="index-catalog">买一送一</div>
+	  <ul class="list_" style="padding:0px;"  data-theme="c" >      
+        ${buy1reward1}
+	  </ul>			  
+	  <div class="cls"></div> 
+	  -->
+	  
+	 
+
+	<div  class="index-catalog">最新活动</div>
+    <ul class="activity">
+      <li ><a  href="http://x.eqxiu.com/s/qFva04Fy" target="_self">
+        <h2>云尚客智慧餐</h2>
+        <p>云尚客，让天下没有难开的餐厅</p>
+        </a>
+	  </li>	  
+      <li ><a  href="http://e.eqxiu.com/s/0ajdCU9L" target="_self">
+        <h2>云尚客智慧餐</h2>
+        <p>云尚客智慧餐厅运营配置系统简介</p>
+        </a>
+	  </li>	                
+    </ul>	
+ <div class="index-catalog" >
+   <center><p style="font-size:80%">Copyright ? 2012-2015 云尚客</p></center>   
+ </div>  
+<div data-role="footer" data-position="fixed"  style="border:0px;" class="menu">
+    <ul class="menu_">
+      <li class="ui-block-a tab-new-bj">
+        <div class="tab-new-content"> <a href="/o2o" target="_self" class="tab_home_a">
+          <div class="tab_cls"></div>
+          <div>首页</div>
+          </a> </div>
+      </li>
+      <li class="ui-block-b tab-new-bj">
+        <div class="tab-new-content"> <a href="/o2o/li_sell_type_all.f1j" target="_self" class="tab_type_d">
+          <div class="tab_cls"></div>
+          <div>所有餐厅</div>
+          </a> </div>
+      </li>
+      <li class="ui-block-c tab-new-bj">
+        <div class="tab-new-content" > <a href="/o2o/m/order_m.jsp" target="_self" class="tab_order_d">
+          <div class="tab_cls"></div>
+          <div>点菜单</div>
+          </a> </div>
+      </li>
+      <li class="ui-block-d tab-new-bj">
+        <div class="tab-new-content"> <a href="/o2o/m/login/list-my-center.jsp" target="_self" class="tab_user_d">
+          <div class="tab_cls"></div>
+          <div>我</div>
+          </a> </div>
+      </li>
+    </ul>
+  </div>
+
+</div>
+<script src="/shares/jquery-mobile/jquery-1.10.2.min.js"></script>
+<script src="/shares/jquery-mobile/Swiper-master/Swiper-master/dist/idangerous.swiper.min.js"></script>
+<script src="/o2o/view/js/list_miaosha.js">	</script>
+ <script>
+ if (isPC){
+ //alert("pc"); 
+ //$(".swiper-container").hide();
+ }
+ else
+ {
+ 
+ }
+ function isPC()  
+{  
+           var userAgentInfo = navigator.userAgent;  
+           var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");  
+           var flag = true;  
+           for (var v = 0; v < Agents.length; v++) {  
+               if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; }  
+           }  
+           return flag;  
+} 
+ $(function(){ 
+  var mySwiper = new Swiper('.swiper-container',{
+    pagination: '.pagination',
+    paginationClickable: true,
+	autoplayDisableOnInteraction:false,
+	autoplay:2000,
+	loop:true,
+	freeMode:false,
+	freeModeFluid:false,
+	paginationClickable:true	
+  })
+  mySwiper.startAutoplay();
+   width_=$(".prd-img").width();
+   //alert(width_);
+   //$(".prd-img").css("width",width_);
+   $(".prd-img").css("height",width_);
+   //width_=$("#ui-block-miaosha").width()-40;
+   $(".miaosha-img").css("width",width_);
+   $(".miaosha-img").css("height",width_);
+   //width_=$(".swiper-container").width()-100;
+   //$(".swiper-container").css("height",width_);
+   //$(".swiper-slide img").css("height",width_);
+  //$('#test').css({height: $("#footer-navbar").height()})    
+  })  
+  //$("#footer-navbar").show();
+  //$(document).on("pageinit","#page_",function(){
+  // $("#page_").show();
+  // 此处是 jQuery 事件...
+  //});
+  </script>
+</body>
+</html>

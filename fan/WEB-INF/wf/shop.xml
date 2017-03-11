@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="gb2312"?>
+<process name="a" item="a" dataFile="a" role="修改活动信息-52" author="a" date="a" ver="a">
+  <task id="1290074345625" name="区域经理" class="commonWfBOService" handleClass="commonWfBOService" handleClassParam="t_shop" decissionType="2" decissionClass="" decissionOperator="&gt;" decissionValue="" jsp="shop.vm" dt="0" dttype="d" left="185" top="76" width="32" height="32">
+    <forward id="1290074345640" name="总公司渠道组" user="1" role="" roleOwner="" group="" decissionResult="" x="276" y="139" />
+  </task>
+  <task id="1290074345640" name="总公司渠道组" class="commonWfBOService" handleClass="" handleClassParam="t_shop" decissionType="1" decissionClass="" decissionOperator="&gt;" decissionValue="" jsp="shop.vm" dt="0" dttype="d" left="335" top="170" width="32" height="32">
+    <forward id="1290074345656" name="总公司市场部" user="1" role="" roleOwner="" group="" decissionResult="" x="408" y="188" />
+  </task>
+  <task id="1290074345656" name="总公司市场部" class="commonWfBOService" handleClass="commonWfBOService" handleClassParam="t_shop" decissionType="1" decissionClass="" decissionOperator="&gt;" decissionValue="" jsp="shop.vm" dt="0" dttype="d" left="450" top="174" width="32" height="32">
+    <forward id="1290074345703" name="结束" user="1" role="" roleOwner="" group="" decissionResult="" x="511" y="189" />
+  </task>
+  <task id="1290074345671" name="分公司总经理" class="commonWfBOService" handleClass="commonWfBOService" handleClassParam="t_shop" decissionType="1" decissionClass="" decissionOperator="&gt;" decissionValue="" jsp="shop.vm" dt="0" dttype="d" left="192" top="169" width="32" height="32">
+    <forward id="1290074345640" name="总公司渠道组" user="1" role="" roleOwner="" group="" decissionResult="" x="279" y="185" />
+  </task>
+  <task id="1290074345687" name="分公司副总" class="commonWfBOService" handleClass="commonWfBOService" handleClassParam="t_shop" decissionType="1" decissionClass="" decissionOperator="&gt;" decissionValue="" jsp="shop.vm" dt="0" dttype="d" left="193" top="231" width="32" height="32">
+    <forward id="1290074345640" name="总公司渠道组" user="1" role="" roleOwner="" group="" decissionResult="" x="280" y="216" />
+  </task>
+  <task id="1290074345703" name="结束" class="commonWfBOService" handleClass="commonWfBOService" handleClassParam="t_shop" decissionType="1" decissionClass="" decissionOperator="" decissionValue="" jsp="shop.vm" dt="0" dttype="d" left="541" top="173" width="32" height="32" />
+  <task id="1290074345718" name="填写开店申请表" class="commonWfBOService" handleClass="commonWfBOService" handleClassParam="t_shop" decissionType="1" decissionClass="" decissionOperator="&gt;" decissionValue="" jsp="shop.vm" dt="0" dttype="d" left="26" top="162" width="32" height="32">
+    <forward id="1290074345687" name="分公司副总" user="1" role="" roleOwner="" group="" decissionResult="" x="125" y="212" />
+    <forward id="1290074345625" name="区域经理" user="1" role="" roleOwner="" group="" decissionResult="" x="121" y="135" />
+    <forward id="1290074345671" name="分公司总经理" user="1" role="" roleOwner="" group="" decissionResult="" x="125" y="181" />
+  </task>
+</process>
+

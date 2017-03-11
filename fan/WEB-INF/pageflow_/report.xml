@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="gb2312"?>
+<pageflow>
+   <action path="/ClientChartAction"  class="f1jee.crm.chart.ClientChartAction" forward="" />   
+   <action path="/ClientTrend"  class="f1jee.crm.chart.ClientTrend" forward="" />   
+   <action path="/ClientContact"  class="f1jee.crm.chart.ClientContact" forward="" />
+   <action path="/ClientService"  class="f1jee.crm.chart.ClientService" forward="" />     
+   <action path="/ClientContribution"  class="f1jee.crm.chart.ClientContribution" forward="" />     
+</pageflow>
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+#set($formFile=${htmlFile})
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK" />
+<title>"表单"</title>
+<style type="text/css">
+td{height:24px;}
+input{height:24px;};
+</style>
+  <link rel="stylesheet" href="/shares/jquery-ui-1.9.0/themes/ysk-restaurant/jquery.ui.all.css">
+  <link rel="stylesheet" type="text/css" href="/shares/resources/css/f1ui/default/panel-crm.css">
+  <link rel="stylesheet" type="text/css" href="/shares/resources/css/f1ui/default/table.css">    
+    <script src="/shares/jquery-ui-1.9.0/jquery-1.8.2.js"></script>
+    <script src="/shares/jquery-ui-1.9.0/external/jquery.bgiframe-2.1.2.js"></script>
+    <script src="/shares/jquery-ui-1.9.0/ui/jquery.ui.core.js"></script>
+    <script src="/shares/jquery-ui-1.9.0/ui/jquery.ui.widget.js"></script>
+ 	<script src="/shares/jquery-ui-1.9.0/ui/jquery.ui.mouse.js"></script>
+	<script src="/shares/jquery-ui-1.9.0/ui/jquery.ui.button.js"></script>
+	<script src="/shares/jquery-ui-1.9.0/ui/jquery.ui.draggable.js"></script>
+	<script src="/shares/jquery-ui-1.9.0/ui/jquery.ui.position.js"></script>
+	<script src="/shares/jquery-ui-1.9.0/ui/jquery.ui.resizable.js"></script>
+	<script src="/shares/jquery-ui-1.9.0/ui/jquery.ui.dialog.js"></script>	   
+  <script type="text/javascript" src="/shares/js/ui/ui.datepicker.js"></script>
+  <script type="text/javascript" src="/shares/js/ui/i18n/ui.datepicker-zh-TW.js"></script>
+  <SCRIPT LANGUAGE="JavaScript"  SRC="/shares/js/form.js"></SCRIPT>  
+  <SCRIPT LANGUAGE="JavaScript"  SRC="/shares/js/form-zh-CN.js"></SCRIPT>     
+  <SCRIPT LANGUAGE="JavaScript" SRC="/shares/js/plug-in/jquery.table.js"></SCRIPT>  
+  <SCRIPT LANGUAGE="JavaScript" SRC="/shares/js/util.js"></SCRIPT>
+  <SCRIPT LANGUAGE="JavaScript" SRC="/shares/js/strUtil.js"></SCRIPT>
+  <SCRIPT LANGUAGE="JavaScript" SRC="/shares/js/chkutil.js"></SCRIPT>    
+  <link rel="stylesheet" type="text/css" href="/shares/resources/css/f1ui/default/menu.css">      
+</head>
+<body>
+ <form name="eform" id="eform">
+ <input type="hidden" name="id" value="${id}" id="id">
+ <input type="hidden" name="fid" value="${fid}" id="fid">
+ <div id="f1formmsg"></div>
+ <div id="effect" class="ui-widget-content ui-corner-all" style="padding: 0.4em;">
+ #parse($formFile)
+ </div>
+ </form>  
+</body>
+</html>

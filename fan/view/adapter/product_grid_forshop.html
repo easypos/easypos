@@ -1,0 +1,21 @@
+#set($a=($rowCount+1) % 2)  
+#if  ($a==0)
+<li class="li-left">
+#else
+<li class="li-right">
+#end
+<div class="li-div" style="text-align:center;">
+        <!--<a href="/ysk/shop/${rowData.get("shopid")}/${rowData.get("universalid")}.html" target="_self">-->        
+        <a href="#">        		
+        <img class="prd-img" style="width:100%;height:100px" src="/ysk/attachfiles/dish/$rowData.get("universalid")/$rowData.get("a1universalid")" style="margin:2px;"  alt="ÍæÃü¼ÓÔØÖÐ...">        
+		<p><span style="color:#c80000">£¤$rowData.get("price")</span>&nbsp;<span span style="text-decoration:line-through;">£¤$rowData.get("price")</span></p>		  	
+        <p style="white-space:normal;font-size:9pt;">${rowData.get("name")}</p> 
+		</a>           
+</div>   
+</li>
+#if  ($a==0)
+
+#else
+<div class="cls"></div>
+#end
+  

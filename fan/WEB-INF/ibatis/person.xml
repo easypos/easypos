@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE sqlMap      PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN"      "http://www.ibatis.com/dtd/sql-map-2.dtd"> 
+<sqlMap namespace="Person"> 
+     <select id="getPerson" parameterClass="int" resultClass="test.Person"> 
+         SELECT PER_ID as id, 
+         PER_FIRST_NAME as firstName,          
+         FROM PERSON 
+         WHERE PER_ID = #value# 
+     </select> 
+     
+     <insert id="insertPerson" parameterClass="test.Person"> 
+         INSERT INTO 
+         PERSON (PER_ID, PER_FIRST_NAME) 
+         VALUES (#id#, #firstName#) 
+     </insert> 
+     
+     <update id="updatePerson" parameterClass="test.Person"> 
+          UPDATE PERSON 
+          SET PER_FIRST_NAME = #firstName#,           
+          WHERE PER_ID = #id# 
+     </update> 
+     
+     <delete id="deletePerson" parameterClass="test.Person"> 
+          DELETE PERSON 
+          WHERE PER_ID = #id# 
+     </delete> 
+</sqlMap> 

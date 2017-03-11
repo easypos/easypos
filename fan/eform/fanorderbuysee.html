@@ -1,0 +1,49 @@
+ <script type="text/javascript">
+   $(function() {  
+	});
+  </script>
+<div style="display:none"></div>
+<script type="text/javascript">
+   $(function() {     
+   id=$("#pid").val();
+   id=id.substr(5,id.length);   
+   location.href="seeFanOrder.do?id="+id;
+   $("#btn-detail").click(function() {location.href="seeFanOrder.do?id="+id});   
+	});
+  </script> 
+<input type="hidden" value="${workItem.pidforValue}"  name="pid" id="pid"> 
+loading...   
+<div  style="display:none;">
+<input class="btn-default" type="button" id="btn-detail" value="详细">
+<table class="f1-ui-table-1" border="0" cellspacing="2" cellpadding="0" width="100%">	    
+	<tr>
+		<th style="width:100px"><label>项目</label></th>
+		<th class="detail">属性</th>
+	</tr>	    	
+	<tr>
+		<td ><label> 定单号</label></td>
+		<td class="detail">${workItem.pidforValue}</td>	
+	</tr>	
+	<tr>
+		<td ><label>收</label></td>
+		<td class="detail">${workItem.moneyValue}</td>	
+	</tr>	
+	<tr>	
+		<td ><label>找</label></td>
+		<td class="detail">${workItem.changeValue}</td>
+	</tr>	
+	<tr>
+		<td ><label>时间</label></td>
+		<td class="detail">${workItem.createdateValue}</td>	
+	</tr>	
+	<tr>	
+		<td ><label>工号</label></td>
+		<td class="detail">${workItem.operatorValue}</td>		
+	</tr>	
+	<tr>	
+		<td ><label>交易类别</label></td>
+		<td class="detail">${workItem.buytypeForValue}</td>		
+	</tr>	
+</table>
+</div>
+

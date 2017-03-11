@@ -1,0 +1,68 @@
+<input type="hidden" value="loadFanConfig.do"  name="action"> 
+  <script type="text/javascript">   
+   $(function() {  
+   $("#btn-save").click(function() {      
+     if (!validForm()){return("");}
+   $("#f1j-form").submit();
+	});
+	$("#btn-copy").click(function() {      
+     if (!validForm()){return("");}
+	$("#id").val(""); 
+   $("#f1j-form").submit();
+	});
+	});
+  </script>
+
+<div class="panel" title="基本">
+<table class="f1-ui-table-1" border="0" cellspacing="2" cellpadding="0" width="100%">	
+	<tr>
+		<th style="width:100px"><label>项目</label></th>
+		<th class="detail">属性</th>
+	</tr>	
+	<tr>
+		<td ><label>餐厅代码</label></td>
+		<td class="detail">${workItem.companyId} </td>
+	</tr>		
+	<tr>
+		<td ><label>欢迎</label></td>
+		<td class="detail">${workItem.hiInfo} </td>
+	</tr>
+		<tr>
+      <td><label>厨打IP</label></td>
+	  <td>${workItem.printipforcook}</td>    
+    </tr>
+		<tr>
+      <td><label>收银打印IP</label></td>
+	  <td>${workItem.printipforbuy}</td>    
+    </tr>
+		<tr>
+      <td><label>厨打名称</label></td>
+	  <td>${workItem.printtitleforcook}</td>    
+    </tr>
+		<tr>
+      <td><label>收银打印名称</label></td>
+	  <td>${workItem.printtitleforbuy}</td>    
+    </tr>
+	 <tr>
+      <td><label>厨打标题</label></td>
+	  <td>${workItem.printheadforcook}</td>    
+    </tr>
+	<tr>
+      <td><label>收银打印标题</label></td> 
+	  <td>${workItem.printheadforbuy}</td>    
+    </tr>
+	<tr>
+      <td><label>打印附加信息</label></td> 
+	  <td>${workItem.printmore}</td>    
+    </tr>
+</table>
+</div>
+  </div>   
+  <div class="toolbar">##
+  <center>
+  <input type="button" id="btn-save" value="保存" style="width:60px;height:40px">   ## 
+  <input type="button" id="btn-copy" value="复制" style="width:60px;height:40px">   ## 
+  </center>
+  
+
+

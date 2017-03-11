@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<pageflow>
+   <!--  工作流  -->    
+  <action path="/DisableWfDef" class="com.sid.workflow.action.def.DisableWfDef" forward="" />
+  <action path="/EnableWfDef" class="com.sid.workflow.action.def.EnableWfDef" forward="" />
+  <action path="/StopWf" class="com.sid.workflow.action.trace.StopWfInstance" forward="" />
+  <action path="/EndWf" class="com.sid.workflow.action.trace.EndWfInstance" forward="" />
+  <action path="/EndUserWf" class="com.sid.workflow.action.EndUserWfInstance" forward="" />
+  <action path="/ActivateWf" class="com.sid.workflow.action.trace.ActivateWfInstance" forward="" />
+  <action path="/StopTaskInstance" class="com.sid.workflow.action.trace.StopTaskInstance" forward="" />
+  <action path="/EndTaskInstance" class="com.sid.workflow.action.trace.EndTaskInstance" forward="" />  
+  <action path="/ActivateTaskInstance" class="com.sid.workflow.action.trace.ActivateTaskInstance" forward="" />  
+
+  <action path="/WfTraceList" class="com.sid.workflow.action.WfTraceList" forward="" />
+  <action path="/WfTraceList" class="com.sid.workflow.action.WfTraceList" forward="" />
+  <action path="/getUsers" class="com.sid.select.FindUser"  forward=""/>  
+  <action path="/findGroup" class="com.sid.select.FindGroup"  forward=""/>  
+  <action path="/findGroupUser" class="com.sid.select.FindGroupUser"  forward=""/>  
+  <action path="/WorkTraceList" class="com.sid.workflow.action.WorkTraceList" forward="" />
+  <action path="/ReadProcessView" class="com.sid.workflow.action.ReadProcessView" forward="" />
+  <action path="/RemoveProcessDefinition" class="com.sid.workflow.action.RemoveProcessDefinition" forward="" />
+  <action path="/SubmitTask" class="com.sid.workflow.action.SubmitTask"  forward=""/>  
+  <action path="/SubmitWorkflow" class="com.sid.workflow.action.SubmitWorkflow"  forward=""/>  
+  <action path="/StartWfList" class="com.sid.workflow.view.StartWfList"  forward=""/>    
+  <action path="/StartFirstRunTask" class="com.sid.workflow.action.StartFirstRunTask"  forward=""/>  
+  <action path="/StartSecondRunTask" class="com.sid.workflow.action.StartSecondRunTask"  forward=""/>  
+  <action path="/SaveRunTask" class="com.sid.workflow.action.SaveRunTask"  forward=""/>    
+  <action path="/DelRunTask" class="com.sid.workflow.action.DelRunTask1"  forward=""/>    
+  <action path="/ChangeRunTask" class="com.sid.workflow.action.ChangeRunTask"  forward=""/>    
+  <action path="/BackRunTask" class="com.sid.workflow.action.BackRunTask"  forward=""/>    
+  <action path="/SelectJumpTask" class="com.sid.workflow.action.SelectJumpTask"  forward=""/>    
+  <action path="/JumpRunTask" class="com.sid.workflow.action.JumpRunTask"  forward=""/>    
+  <action path="/ReadProcessView" class="com.sid.workflow.action.ReadProcessView"  forward=""/>  
+  <action path="/OpenRunTask" class="com.sid.workflow.action.OpenRunTask"  forward=""/>
+  <action path="/NewRunTask" class="com.sid.workflow.action.NewRunTaskDefault"  forward=""/>  
+  <action path="/NewReturnRunTask" class="com.aisino.action.StartReturnRunTask"  forward="/wftest/NewReturn.jsp"/>  
+  <action path="/FwToSw" class="com.sid.workflow.action.FwToSw"  forward=""/>  
+
+  <action path="/PickUserDlgAction" class="com.sid.app.user.action.PickUserDlgAction"  forward=""/>  
+  <action path="/PickCycleUser" class="com.sid.app.user.action.PickCycleUser"  forward=""/>  
+
+  <action path="/PickDlgView" class="oa.app.action.PickDlgView"  forward=""/>   
+  <action path="/StartServerAction" class="com.sid.workflow.action.StartServerAction"  forward=""/> 
+  <action path="/EndServerAction" class="com.sid.workflow.action.EndServerAction"  forward=""/>  
+  <action path="/userview" class="com.sid.workflow.view.action.WorkList"  forward="/include/list.jsp"/>
+
+  <action path="/TraceProcess" class="com.sid.workflow.action.applet.TraceProcess"  forward=""/>
+  <action path="/ListProcess" class="com.sid.workflow.action.applet.ListProcess"  forward=""/>
+  <action path="/DelTaskMsgDIct" class="com.sid.workflow.action.DelTaskMsgDIct" forward="" />
+  <action path="/DelTaskAction" class="com.sid.workflow.action.DelTaskAction1" forward="" />
+
+  <action path="/EditTask" class="com.sid.workflow.action.EditTask" forward="" />  
+  <action path="/NewWorkflow" class="com.sid.workflow.action.NewWorkflow" forward="" />  
+  <action path="/EditWorkflow" class="com.sid.workflow.action.EditWorkflow" forward="" />  
+  <action path="/NewTask" class="com.sid.workflow.action.NewTask" forward="" />
+  <action path="/StartSwTask" class="com.sid.oa.app.action.StartSwTask" forward="" />
+  <action path="/StartFwTask" class="com.sid.oa.app.action.StartFwTask" forward="" />
+  <action path="/StartReimburseTask" class="oa.app.action.StartReimburseTask" forward="" />
+
+  <action path="/GetWfListAction" class="com.sid.workflow.action.applet.GetWfListAction" forward="" /> 
+  <action path="/SaveWfAction" class="com.sid.workflow.action.applet.SaveWfAction" forward="" /> 
+  <action path="/ListRoles" class="com.sid.workflow.action.applet.ListRoles" forward="" /> 
+  <action path="/RemotePostTest" class="com.sid.workflow.action.applet.RemotePostTest" forward=""  needLogin="false"/> 
+  <action path="/GetFile" class="com.sid.workflow.action.applet.GetFile" forward=""  needLogin="false"/> 
+  <action path="/NewWfForm" class="com.sid.workflow.action.NewWfForm" forward="" />
+  <action path="/EditWfForm" class="com.sid.workflow.action.EditWfForm" forward="" />
+  <action path="/SubmitWfForm" class="com.sid.workflow.action.SubmitWfForm" forward="" />
+  <action path="/SeeWfForm" class="com.sid.workflow.action.SeeWfForm" forward="" />
+  <action path="/NewWfFormItem" class="com.sid.workflow.action.NewWfFormItem" forward="" />
+  <action path="/EditWfFormItem" class="com.sid.workflow.action.EditWfFormItem" forward="" />
+  <action path="/SubmitWfFormItem" class="com.sid.workflow.action.SubmitWfFormItem" forward="" />
+  <action path="/SeeWfFormItem" class="com.sid.workflow.action.SeeWfFormItem" forward="" />
+  <action path="/FindReimburseDlg" class="oa.app.action.FindReimburseDlg"  foward=""/>    
+  <action path="/FindReimburse" class="com.sid.view.action.List"  forward="/include/list.jsp"/>  
+  <action path="/NewWfNotify" class="com.sid.mail.action.NewWfNotify"  forward=""/>  
+  
+</pageflow>

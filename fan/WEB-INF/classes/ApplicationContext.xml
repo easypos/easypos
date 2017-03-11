@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-2.5.xsd
+	http://www.springframework.org/schema/aop 
+	http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+	http://www.springframework.org/schema/tx 
+	http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+	<context:annotation-config />	
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+		abstract="false" lazy-init="default" autowire="default"
+		dependency-check="default">
+		<property name="driverClassName">
+			<value>com.microsoft.jdbc.sqlserver.SQLServerDriver</value>
+		</property>
+		<property name="url">
+			<value>jdbc:microsoft:sqlserver://localhost:1433;DatabaseName=easyrestaurant+;SelectMethod=cursor</value>
+		</property>
+		<property name="username">
+			<value>sa</value>
+		</property>
+		<property name="password">
+			<value>sa</value>
+		</property>
+		<!-- sqlserver 2008  -->
+		<!--
+		<property name="driverClassName">
+			<value>com.microsoft.sqlserver.jdbc.SQLServerDriver</value>
+		</property>
+		<property name="url">
+			<value>jdbc:sqlserver://localhost:1433;DatabaseName=easyrestaurant+;SelectMethod=cursor</value>
+
+		</property>
+		<property name="username">
+			<value>sa</value>
+		</property>
+		<property name="password">
+			<value>sa</value>
+		</property>
+		-->
+	</bean>
+		
+	<!-- 注册一个JDBC数据源事务管理器 -->
+	<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<constructor-arg ref="dataSource" />
+	</bean>
+	<tx:annotation-driven transaction-manager="transactionManager" />
+	<bean id="commonService" class="com.f1jeeframework.http.tag.service.CommonService" />
+	<bean id="pageFlowConfig" class="com.f1jeeframework.http.PageFlowConfig" />
+	<bean id="reportService" class="com.f1jeeframework.view.service.ReportService" />
+	<bean id="eformService" class="com.f1jframework.eform.service.EformService" />
+	<bean id="eformEngine" class="com.f1jframework.eform.service.EformEngine" />
+	<bean id="springJdbcPagerImpl" class="com.f1jeeframework.jdbc.SpringJdbcPagerImpl"
+		scope="prototype" />
+	<bean id="pagerService" class="com.f1jeeframework.view.service.PagerService"
+		scope="prototype" />
+	<bean id="viewDao" class="com.f1jeeframework.model.ViewDao" />
+	<bean id="viewService" class="com.f1jeeframework.model.ViewService"
+		scope="prototype" />
+	<bean id="userDao" class="com.f1jeeframework.model.UserDao" />
+	<bean id="roleDao" class="com.f1jeeframework.model.RoleDao" />
+	<bean id="formDao" class="com.f1jeeframework.model.FormDao" />
+	
+    <!-- Business Object -->
+    <!-- 工作流  -->
+	<bean id="wfDefinitionImpl" class="com.f1jeeframework.workflow.impl.WfDefinitionImpl" />
+	<bean id="wfTaskDefinition" class="com.f1jeeframework.workflow.impl.WfTaskDefinition" />
+	<bean id="wfSessionsService" class="com.f1jeeframework.workflow.impl.WfSessionsService" />
+	<bean id="taskCycleUserDao" class="com.f1jeeframework.workflow.model.TaskInstanceCycleUser" />
+	<bean id="taskCycleOwnerDao"
+		class="com.f1jeeframework.workflow.model.TaskInstanceCycleOwner" />
+	<bean id="wfTaskInstanceDao" class="com.f1jeeframework.workflow.model.WfTaskInstanceDao" />
+	<bean id="wfInstanceDao" class="com.f1jeeframework.workflow.model.WfInstanceDao" />
+	<bean id="wfSessionsDao" class="com.f1jeeframework.workflow.model.WfSessionsDao" />
+	<bean id="processEngine" class="com.f1jeeframework.workflow.impl.WfService">
+		<property name="pdf" ref="wfDefinitionImpl" />
+		<property name="taskDf" ref="wfTaskDefinition" />
+		<property name="wfSessionsService" ref="wfSessionsService" />
+	</bean>
+	<bean id="wfandtaskInstanceStatusService"
+		class="com.f1jeeframework.workflow.service.WfandtaskInstanceStatusService"
+		scope="prototype" />
+	<bean id="wfUserDao" class="com.f1jeeframework.workflow.model.WfUserDao" />
+	<bean id="wfUserService" class="com.f1jeeframework.workflow.service.WfUserService"
+		scope="prototype" />
+	<bean id="cycleService"
+		class="com.f1jeeframework.workflow.service.CycleService"
+		scope="prototype" />
+	<bean id="commandService" class="com.f1jeeframework.workflow.impl.CommandService"
+		scope="prototype" />		
+	<bean id="excutionService" class="com.f1jeeframework.workflow.impl.ExcutionServiceImpl"
+		scope="prototype" />
+	<bean id="wfViewService" class="com.f1jeeframework.workflow.view.service.WfViewService"
+		scope="prototype" />
+	<bean id="taskApprovalDao" class="com.f1jeeframework.workflow.model.TaskApprovalDao" />
+	<bean id="wfHandleService" class="com.f1jeeframework.http.tag.service.WfHandleService" />	
+	<bean id="commonDao" class="com.f1jframework.eform.CommonDao" />
+	<bean id="commonWfBOService" class="com.f1jframework.eform.CommonWfBOService"
+		scope="prototype" />
+	<bean id="boService" class="com.f1jframework.eform.CommonboService"
+		scope="prototype" />	
+	<bean id="fileDao" class="com.f1jframework.eform.dao.FileDao" />		
+	<bean id="fileService" class="com.f1jframework.eform.FileService"
+		scope="prototype" />		
+	<bean id="dictionaryDao" class="com.f1jframework.eform.dao.DictionaryDao" />		
+	<bean id="dictionaryService" class="com.f1jframework.eform.DictionaryService"
+		scope="prototype" />
+	<bean id="provinceDao" class="com.f1jframework.eform.dao.ProvinceDao" />		
+	<bean id="provinceService" class="com.f1jframework.eform.ProvinceService"
+		scope="prototype" />	
+</beans>

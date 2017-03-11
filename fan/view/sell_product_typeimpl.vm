@@ -1,0 +1,23 @@
+<div id="type-menu">
+<dl class=choose>
+  <dt>Àà±ð</dt>
+   <dd>
+<span id="type-info">CG20130406000001</span><input type="hidden" name="type" id="type" value="1365217362538"><input type="button" onclick="dListForId('sellproducttype','2','type')" value="." class="eform-btn-select">
+  
+    
+  </dd>
+   
+</dl>
+</div>
+
+
+
+<script type="text/javascript"> 
+  function listSelectImpl($a,index,param){
+    type=$("#type").val();
+    cmd="liProduct.do?v=T_Product&type="+type;	
+	//alert(cmd);
+	window.document.location.href=cmd;	
+   }
+  </script>
+  

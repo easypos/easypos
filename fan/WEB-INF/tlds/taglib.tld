@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE taglib
+        PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN"
+	"http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+
+<!-- a tab library descriptor -->
+
+<taglib>
+  <tlibversion>1.0</tlibversion>
+  <jspversion>1.1</jspversion>
+  <shortname>j2ee</shortname>
+  <info>
+	Java Pet Store Demo custom tags
+  </info>
+
+<!-- insert tag -->
+  <tag>
+    <name>code</name>
+    <tagclass>com.sid.oa.tag.CodeTag</tagclass>
+
+    <bodycontent>JSP</bodycontent>
+    <info>
+	An code tag
+    </info>
+   <attribute>
+      <name>code</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>displayStyle</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>codeColName</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+      <attribute>
+      <name>descColName</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+      <attribute>
+      <name>codeTableName</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+      <attribute>
+      <name>condition</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+      <attribute>
+      <name>multiple</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+
+
+</taglib>
+

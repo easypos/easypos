@@ -1,0 +1,43 @@
+<input type="hidden" value="loadFanDiningtable.do"  name="action"> 
+  <script type="text/javascript">
+   $(function() {  
+   $("#btn-save").click(function() {      
+     if (!validForm()){return("");}
+   $("#f1j-form").submit();
+	});
+	$("#btn-copy").click(function() {      
+     if (!validForm()){return("");}
+	 $("#id").val("");
+   $("#f1j-form").submit();
+	});
+	});
+  </script>
+  <div class="f1j-ui-toolbar">##
+  </div>   
+<div class="panel" title="基本">
+<div class="forum-container" >
+<table border="0" cellspacing="2" cellpadding="0" width="100%">
+	<tr>
+		<td ><label>类别</label></td>
+		<td class="detail">${workItem.typeForValue} </td>
+	</tr>	
+	<tr>
+		<td ><label>编号</label></td>
+		<td class="detail">${workItem.tablenuValue} </td>
+	</tr>	
+	<tr>
+		<td ><label>座位数</label></td>
+		<td class="detail">${workItem.seatnuValue} </td>
+	</tr>	
+	<tr>
+		<td ><label>状态</label></td>
+		<td class="detail">${workItem.statusForValue}</td>
+	</tr>	        	
+	<tr>
+		<td ><label>内容</label></td>
+		<td class="detail">${workItem.contentValue}</td>
+	</tr>	        	
+</table>
+</div>
+</div>
+

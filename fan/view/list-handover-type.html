@@ -1,0 +1,56 @@
+<script>
+	$(function() {
+ 	jQuery.datepicker.setDefaults(jQuery.extend({dateFormat:"yy-mm-dd",showButtonPanel: true,showOn: 'button',buttonImage: '/shares/resources/images/calendar.gif',buttonImageOnly: true}));
+ 	$("#begin_").datepicker();
+	$("#end_").datepicker();	
+    crt=$("#crt").text();	
+	if  (crt!=""){
+    $("#begin_").val(crt.substr(0,crt.indexOf("___")));
+	$("#end_").val(crt.substr(crt.indexOf("___")+3,crt.length));
+	}
+	$("#btn-find").click(function() {	
+	begin_=$("#begin_").val();
+	end_=$("#end_").val();
+	cid=$("#companyId").val();	
+	if ((begin_=="") || (end_==""))
+	{
+	alert("请选择时间");
+	return;
+	}		
+	if (cid=="") {	
+	location.href="li-handover.do?&crt="+begin_+"___"+end_;	
+	}
+	else
+	{	
+	location.href="li-handover.do?&crt="+begin_+"___"+end_+"&cid="+cid;	
+	}	
+	});  
+	});
+	</script>	
+<div class="panel" title="输入">
+<fieldset>
+<legend>输入查询条件</legend>
+<div style="display:none;" id="crt">
+#if (!$req.getParameter("crt"))
+#else
+$req.getParameter("crt")
+#end
+</div>
+<table border="0" cellspacing="1" cellpadding="0" width="100%">
+	<tr>		
+	<td ><label>开始</label></td>
+		<td class="detail"><input name="begin_" id="begin_" value=""></td>	
+		<td ><label>范围</label></td>
+		<td class="detail"><input name="end_" id="end_" value=""></td>	
+	</tr>	    
+	<tr>
+		<td ><label>分店</label></td>
+		<td class="detail" >
+		<div id="companyId-info">请选择</div><input type="hidden" name="companyId" id="companyId" value=""><input type="button" onclick="dListForId('fancompany','2','companyId')" value="." class="eform-btn-select">			
+		</td>		
+		<td ><label>...</label></td>
+		<td class="detail"><input class="btn-default" type="button" id="btn-find" value="查询"></td>	
+	</tr>	    
+</table>
+</fieldset>
+</div>

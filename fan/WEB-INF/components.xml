@@ -1,0 +1,15 @@
+<components>
+
+    <component>
+        <scope>request</scope>
+        <class>org.hibernate.admin.component.HibernateSession</class>
+        <enabler>org.hibernate.admin.component.HibernateSessionAware</enabler>
+    </component>
+
+    <component>
+        <scope>application</scope>
+        <class>org.hibernate.admin.component.HibernateSessionFactory</class>
+        <enabler>org.hibernate.admin.component.HibernateSessionFactoryAware</enabler>
+    </component>
+
+</components>

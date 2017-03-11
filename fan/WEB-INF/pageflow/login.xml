@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="gb2312"?>
+<pageflow>  
+  <action>
+    <forward id="/modifyPassByAdmin" path="" type="" />
+    <class name="com.ysk.login.ModifyPassByAdmin" needLogin="false" />
+    <param list="" />
+  </action>    
+</pageflow>
+

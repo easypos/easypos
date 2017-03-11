@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="gb2312"?>
+<pageflow>  
+   <action path="/DelMenu" class="com.sid.content.action.DelAction"  forward="/content/dlgsucess.jsp"/>  
+</pageflow>
+

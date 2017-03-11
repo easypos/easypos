@@ -1,0 +1,47 @@
+<input type="hidden" value="loadFanHandOver.do"  name="action">
+<script type="text/javascript">
+   $(function() {       
+   $("#btn-save").click(function() {      
+     if (!validForm()){return("");}
+   $("#f1j-form").submit();
+	});
+	$("#btn-copy").click(function() {      
+     if (!validForm()){return("");}
+	$("#id").val(""); 
+   $("#f1j-form").submit();
+	});
+	})
+  </script>
+ <div class=panel title="基本" action="-">
+ <table border="0" cellspacing="1" cellpadding="0">    	
+	<tr>
+      <td><label>开始</label>
+	  <td><label>${workItem.begin_}</label></td>    
+    </tr>
+		<tr>
+      <td><label>结束</label>
+	  <td><label>${workItem.end_}</label></td>    
+    </tr>
+		<tr>
+      <td><label>员工</label>
+	  <td><label>${workItem.operater}</label></td>    
+    </tr>
+		<tr>
+      <td><label>收入</label>
+	  <td><label>${workItem.income}</label></td>    
+    </tr>
+    <tr>
+      <td><label>实际收入</label>
+	  <td><label>${workItem.realincome}</label></td>    
+    </tr>
+	<tr>
+      <td><label>审核</label>
+	  <td><label>${workItem.checker}</label></td>    
+    </tr>
+	 </table>
+	 </div>
+ <div class="toolbar">  <center>
+         <input type="button" id="btn-save" value="保存" style="width:60px;height:40px">
+        <input type="button" id="btn-copy" value="复制" style="width:60px;height:40px">
+      </center>
+ </div>

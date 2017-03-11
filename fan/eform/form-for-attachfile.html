@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+#set($formFile=${htmlFile})
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK" />
+<title>loading...</title>
+<style type="text/css">
+td{height:26px;padding:2px}
+input[type="text"]{height:26px;width:260px;}
+#btnforupload{width:60px;}
+</style>
+<link rel="stylesheet" type="text/css" href="/shares/resources/css/f1ui/default/table.css">  
+<link rel="stylesheet" href="/shares/jquery-ui-1.9.0/themes/ysk-restaurant/jquery.ui.all.css">
+<link rel="stylesheet" type="text/css" href="/shares/resources/css/f1ui/default/panel-u-village.css">
+<script src="/shares/jquery-ui-1.9.0/jquery-1.8.2.js"></script>    
+<SCRIPT LANGUAGE="JavaScript" SRC="/shares/js/util.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="/shares/js/plug-in/jquery.form.3.18.js"></SCRIPT>  
+<SCRIPT LANGUAGE="JavaScript"  SRC="/shares/js/upload.js"></SCRIPT>  
+<link rel="stylesheet" type="text/css" href="/shares/resources/css/f1ui/default/menu.css">
+<link rel="stylesheet" type="text/css" href="/shares/resources/css/table.css">    
+</head>
+<body>
+ <form name="f1j-form" id="f1j-form" method="POST" action="modifyForCommbo.do">
+ <input type="hidden" name="id" value="${id}" id="id">
+ <input type="hidden" name="id_" value="${id}" id="id_">
+ <input type="hidden" name="fid" value="${fid}" id="fid">
+ <div id="f1formmsg"></div> 
+ #parse($formFile) 
+ </form>
+ <div class="panel" title="附件">
+  $req.getAttribute('fileForModify')
+ </div>
+</body>
+</html>

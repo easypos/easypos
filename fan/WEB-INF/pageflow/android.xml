@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="gb2312"?>
+<pageflow>  
+  <action>
+    <forward id="/loginAndroid" path="" type="" />
+    <class name="com.ysk.login.LoginAndroid" needLogin="false" />
+    <param list="" />
+  </action>
+  <action>
+    <forward id="/ListInfoType" path="" type="" />
+    <class name="com.f1j.app.ysk.android.ListInfoType" needLogin="false" />
+    <param list=""  param1=""/>
+  </action> 
+  <action>
+    <forward id="/ListInfo" path="" type="" />
+    <class name="com.f1j.app.ysk.android.ListInfo" needLogin="false" />
+    <param list=""  param1=""/>
+  </action> 
+  <action>
+    <forward id="/ListInfoDetail" path="" type="" />
+    <class name="com.f1j.app.ysk.android.ListInfoDetail" needLogin="false" />
+    <param list=""  param1=""/>
+  </action>
+  <action>
+    <forward id="/ListInfoDetail1" path="" type="" />
+    <class name="com.f1j.app.ysk.android.ListInfoDetail1" needLogin="false" />
+    <param list=""  param1=""/>
+  </action> 
+  <action>
+    <forward id="/ListInfoType1" path="" type="" />
+    <class name="com.f1j.app.ysk.android.ListInfoType1" needLogin="false" />
+    <param list=""  param1=""/>
+  </action> 
+  <action>
+    <forward id="/ListInfo1" path="" type="" />
+    <class name="com.f1j.app.ysk.android.ListInfo1" needLogin="false" />
+    <param list=""  param1=""/>
+  </action>
+  <action>
+    <forward id="/listFanCompany" path="" type="" />
+    <class name="com.f1j.app.ysk.android.ListFanCompany" needLogin="false" />
+    <param list="" />
+  </action>    
+  <action>
+    <forward id="/listFanPartner" path="" type="" />
+    <class name="com.f1j.app.ysk.android.ListFanPartner" needLogin="false" />
+    <param list="" />
+  </action>    
+  <action>
+    <forward id="/LoadInfo" path="" type="" />
+    <class name="com.f1j.app.ysk.android.LoadInfo" needLogin="false" />
+    <param list="" />
+  </action>    
+  <action>
+    <forward id="/listSuit" path="" type="" />
+    <class name="com.f1j.app.ysk.android.ListDishSuit" needLogin="false" />
+    <param list="" />
+  </action>    
+  <action>
+    <forward id="/listDishTop" path="" type="" />
+    <class name="com.f1j.app.ysk.android.ListDishTop" needLogin="false" />
+    <param list="" />
+  </action>    
+  <action>
+    <forward id="/LoadDishForAndroid" path="" type="" />
+    <class name="com.f1j.app.ysk.android.LoadDishForAndroid" needLogin="false" />
+    <param list="" />
+  </action>    
+  <action>
+    <forward id="/loadCompanyForAndroid" path="" type="" />
+    <class name="com.f1j.app.ysk.android.LoadCompanyForAndroid" needLogin="false" />
+    <param list="" />
+  </action>  
+  <action>
+    <forward id="/LoadLineForAndroid" path="" type="" />
+    <class name="com.f1j.app.ysk.android.LoadImgsForAndroid" needLogin="false" />
+    <param list="" />
+  </action>    
+  <action>
+    <forward id="/LoadDishVideoForAndroid" path="" type="" />
+    <class name="com.f1j.app.ysk.android.LoadDishVideoForAndroid" needLogin="false" />
+    <param list="" />
+  </action>    
+  <action>
+    <forward id="/LoadDishMakeForAndroid" path="" type="" />
+    <class name="com.f1j.app.ysk.android.LoadDishMakeForAndroid" needLogin="false" />
+    <param list="" />
+  </action>      
+   <action>
+    <forward id="/listDishTable" path="" type="" />
+    <class name="com.f1j.app.ysk.android.ListDishTable" needLogin="true" />
+    <param list="" />
+  </action>    
+  <action>
+    <forward id="/ListOrder" path="" type="" />
+    <class name="com.f1j.app.ysk.android.ListOrder" needLogin="true" />
+    <param list="" />
+  </action>    
+  <action>
+    <forward id="/LoadOrder" path="" type="" />
+    <class name="com.f1j.app.ysk.android.ListOrderItem" needLogin="true" />
+    <param list="" />
+  </action>  
+  <action>
+    <forward id="/listOrderBuyTypeSet" path="" type="" />
+    <class name="com.f1j.app.ysk.android.ListOrderBuyTypeSet" needLogin="true" />
+    <param list="" />
+  </action>  
+<action>
+    <forward id="/ListRestaurantType" path="" type="" />
+    <class name="com.f1j.app.ysk.android.ListRestaurantType" needLogin="false" />
+    <param list=""  param1=""/>
+  </action>   
+ <action>
+    <forward id="/listOrderItemForCook" path="" type="" />
+    <class name="com.f1j.app.ysk.android.ListOrderItemForCook" needLogin="false" />
+    <param list=""  param1=""/>
+  </action>  
+   <action>
+    <forward id="/LoadDishDianPing" path="" type="" />
+    <class name="com.f1j.app.ysk.android.LoadDishDianPing" needLogin="false" />
+    <param list=""  param1="" />
+  </action>  
+    <action>
+    <forward id="/loadHiByAndroid" path="" type="" />
+    <class name="com.f1j.app.ysk.android.ListHi" needLogin="false" />
+    <param list=""  param1="" />
+  </action>
+   <action>
+    <forward id="/createOrderByAndroid" path="" type="" />
+    <class name="com.fanerp.action.CreateOrderByAndroid" needLogin="false" />
+    <param list="" param1="" />
+  </action>
+   <action>
+    <forward id="/appendOrderByAndroid" path="" type="" />
+    <class name="com.fanerp.action.AppendOrderByAndroid" needLogin="false" />
+    <param list="" param1="" />
+  </action>
+  <action>
+    <forward id="/saveOrderByAndroid" path="" type="" />
+    <class name="com.fanerp.action.SaveOrderByAndroid" needLogin="false" />
+    <param list="" param1="" />
+  </action>
+  <action>
+    <forward id="/listRecommend" path="" type="" />
+    <class name="com.kuaichuan.meishi.ListRecommend" needLogin="false" />
+    <param list="" param1="" />
+  </action>  
+  <action>
+    <forward id="/loadRestaurantForShake" path="" type="" />
+    <class name="com.kuaichuan.meishi.LoadRestaurantForShake" needLogin="false" />
+    <param list="" param1="" />
+  </action>  
+  <action>
+    <forward id="/weiXin" path="" type="" />
+    <class name="com.fanerp.action.WeiXin" needLogin="false" />
+    <param list="" param1="" />
+  </action>   
+</pageflow>
+

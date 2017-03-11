@@ -1,0 +1,96 @@
+  <input type="hidden" value="loadMember.do"  name="action"> 
+  <script type="text/javascript">
+   $(function() {
+   $("#btn-save").click(function() {      
+     if (!validForm()){return("");}
+   $("#f1j-form").submit();
+	});
+	$("#btn-copy").click(function() {      
+     if (!validForm()){return("");}
+	$("#id").val(""); 
+   $("#f1j-form").submit();
+	});
+	$(".typemenu").menu();	
+	});
+  </script>
+ 
+<div class="panel" title="基本" action="-">
+<table class="f1-ui-table-1" border="0" cellspacing="2" cellpadding="0" width="100%">
+	
+	<tr>
+		<td style="width:100px;"><label>姓名</label></td>
+		<td class="detail">${workItem.name} </td>
+    </tr>			
+	<tr>	
+	<td ><label>生日</label></td>
+		<td class="detail">${workItem.birthday} </td>
+	</tr>			
+	<tr>
+		<td ><label>性别</label></td>
+		<td class="detail">${workItem.sex} </td>
+	</tr>			
+	<tr>	
+		<td ><label>教育</label></td>
+		<td class="detail">${workItem.education} </td>
+	</tr>	
+	<tr>
+		<td ><label>婚姻</label></td>
+		<td class="detail">${workItem.marriage} </td>	
+	</tr>			
+	<tr>	
+		<td ><label>爱好</label></td>
+		<td class="detail">${workItem.hobby} </td>
+	</tr>	
+	<tr>
+		<td ><label>会员类别</label></td>
+		<td class="detail">${workItem.type}</td>	
+	</tr>			
+	<tr>	
+		<td ><label>电话</label></td>
+		<td class="detail">${workItem.tel} </td>
+	</tr>	
+	<tr>
+		<td ><label>传真</label></td>
+		<td class="detail">${workItem.fax} </td>
+	</tr>			
+	<tr>	
+		<td ><label>邮件</label></td>
+		<td class="detail">${workItem.mail} </td>
+	</tr>	
+	<tr>
+		<td ><label>QQ</label></td>
+		<td class="detail">${workItem.qq} </td>	
+	</tr>			
+	<tr>	
+		<td ><label>MSN</label></td>
+		<td class="detail">${workItem.msn} </td>
+	</tr>	
+	<tr>
+		<td ><label>地址(送餐)</label></td>
+		<td class="detail">${workItem.address} </td>	
+	</tr>			
+	<tr>	
+		<td ><label>工作描述</label></td>
+		<td class="detail">${workItem.company} </td>
+	</tr>	
+		<tr>
+		<td ><label>兴趣</label></td>
+		<td class="detail">$req.getAttribute('interest') </td>
+	</tr>	
+</table>
+</div>
+<div class=f1js-ui-tab-panel>
+<div class=f1js-ui-tab title="消费记录">
+${fanOrder}
+</div>
+<div class=f1js-ui-tab title="联系记录"></div>
+<div class=f1js-ui-tab title="更多..."></div>
+</div>
+
+  <div class="toolbar">##
+  <center>
+  <input type="button" id="btn-save" value="保存" style="width:60px;height:40px">   ##  
+  <input type="button" id="btn-copy" value="复制" style="width:60px;height:40px">   ##  
+  </center>
+  </div>  
+

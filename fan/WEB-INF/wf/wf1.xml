@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="gb2312"?>
+<process>
+  <start id="baoxiaokaishi" name="kaishi" class="commonWfBOService" handleClass="commonWfBOService" handleClassParam="T_Reimburse"  decissionType="变量分支" decissionClass="" decissionOperator="&gt;" decissionValue="" jsp="reimburse.vm" dt="0" dttype=" " left="223" top="15" width="32" height="32">
+    <forward id="1275724275078" name="填写报销单" user="1" role="1" roleOwner="1" group="" decissionResult="" x="20" y="55" />
+  </start>
+  <task id="1275724275078" name="填写报销单" class="commonWfBOService" handleClass="commonWfBOService" handleClassParam="T_Reimburse"  decissionType="变量分支" decissionClass="" decissionOperator="&gt;" decissionValue="" jsp="reimburse.vm" dt="0" dttype=" " left="300" top="15" width="32" height="32">
+    <forward id="mishuhandle" name="秘书接收处理1" user="1" role="1" roleOwner="1" group="" decissionResult="" x="239" y="55" />
+  </task>
+  <task id="mishuhandle" name="秘书接收处理1" class="commonWfBOService" handleClass="commonWfBOService" handleClassParam="T_Reimburse"  decissionType="变量分支" decissionClass="" decissionOperator="&gt;" decissionValue="" jsp="reimburse.vm" dt="0" dttype=" " left="400" top="15" width="32" height="32">
+    <forward id="mishuddecide" name="秘书接收处理decide" user="1" role="1" roleOwner="1" group="" decissionResult="" x="239" y="55" />
+  </task>  
+  <task id="1275724275093" name="财务经理审核" class="commonWfBOService" handleClass="commonWfBOService" handleClassParam="T_Reimburse" decissionType="变量决策" decissionClass="" decissionOperator="&gt;" decissionValue="" jsp="reimburse.vm" dt="0" dttype="m" left="223" top="321" width="32" height="32">
+    <forward id="1275724275203" name="结束" user="1" role="1" roleOwner="1" group="" decissionResult="" x="241" y="377" />
+  </task>
+  <task id="1275724275109" name="部门经理审核" class="commonWfBOService" handleClass="commonWfBOService" handleClassParam="T_Reimburse" decissionType="变量分支" decissionClass="test" decissionOperator="&gt;" decissionValue="" jsp="reimburse.vm" dt="0" dttype="m" left="221" top="140" width="32" height="32">
+    <forward id="1275724275156" name="总经理审核" user="1" role="1" roleOwner="1" group="" decissionResult="" x="238" y="190" />
+  </task>
+  <decide id="mishuddecide" name="秘书接收处理decide" decissionType="变量决策" decissionClass="" decissionOperator="&gt;" decissionValue="" jsp="reimburse1.vm" dt="0" dttype=" " left="224" top="63" width="32" height="32">
+    <forward id="1275724275140" name="项目经理审核" user="1" role="1" roleOwner="1" group="" decissionResult="" x="144" y="92" />
+    <forward id="1275724275171" name="项目副经理审核" user="1" role="1" roleOwner="1" group="" decissionResult="" x="375" y="94" />
+  </decide>
+  <boservice id="1275724275140" name="项目经理审核" class="" handleClass=""  handleClassParam="T_Reimburse"  jsp="reimburse.vm" dt="0" dttype=" " left="33" top="89" width="32" height="32">
+    <forward id="1275724275109" name="部门经理审核" user="1" role="1" roleOwner="1" group="" decissionResult="" x="143" y="130" />
+  </boservice>
+  <task id="1275724275156" name="总经理审核" class="commonWfBOService" decissionType="java类决策" decissionClass="" decissionOperator="&gt;" decissionValue="" jsp="reimburse.vm" dt="0" dttype="d" left="224" top="209" width="32" height="32">
+    <forward id="1275724275187" name="秘书转发" user="1" role="1" roleOwner="1" group="" decissionResult="" x="241" y="250" />
+  </task>
+  <task id="1275724275171" name="项目副经理审核" class="commonWfBOService" decissionType="java类决策" decissionClass="" decissionOperator="&gt;" decissionValue="" jsp="reimburse.vm" dt="0" dttype=" " left="494" top="93" width="32" height="32">
+    <forward id="1275724275109" name="部门经理审核" user="1" role="1" roleOwner="1" group="" decissionResult="" x="373" y="132" />
+  </task>
+  <task id="1275724275187" name="秘书转发" class="commonWfBOService" decissionType="java类决策" decissionClass="" decissionOperator="&gt;" decissionValue="" jsp="reimburse.vm" dt="0" dttype="d" left="227" top="260" width="32" height="32">
+    <forward id="1275724275093" name="财务经理审核" user="1" role="1" roleOwner="1" group="" decissionResult="" x="242" y="306" />
+  </task>
+  <end id="1275724275203" name="结束" class="commonWfBOService" decissionType="java类决策" decissionClass="" decissionOperator="&gt;" decissionValue="" jsp="reimburse.vm" dt="0" dttype="d" left="226" top="402" width="32" height="32" />
+</process>

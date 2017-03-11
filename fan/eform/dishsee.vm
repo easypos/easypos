@@ -1,0 +1,175 @@
+<SCRIPT LANGUAGE="JavaScript" SRC="/shares/js/plug-in/jRating/jRating.jquery.js"></SCRIPT>      
+<SCRIPT LANGUAGE="JavaScript" SRC="/shares/js/plug-in/jquery.form.js"></SCRIPT>     
+<script type="text/javascript"> 
+$(document).ready(function(){	
+	    var options = {
+             		  //target:        '#output1',   
+					    beforeSubmit:  showRequest,  
+				        success:       showResponse,  
+				        resetForm: false       				       
+				    };				    
+    $('#eform').ajaxForm(options); 		 
+	function showRequest(formData, jqForm, options) { 			  
+				  return true;				  
+				  }                  				
+	function showResponse(responseText, statusText)  {               		      
+			  $("#msg").html(responseText);			  
+             } 
+				    
+});
+</SCRIPT> 
+  <script type="text/javascript"> 
+  var colmuns=
+  [{title:'菜品',id:'dishid',type:'dlg',view:'dish',viewIndex:"2",copy:'dishs',format:'1',css:"a"},
+  {title:'数量',id:'count1',type:'text',format:'1',css:{width:"50px"},value:"1"}  
+  ];  
+  var colmuns1=
+  [{title:'套餐类别',id:'suittypeid',type:'dlg',view:'fandishsuittype',viewIndex:"1",copy:'dishs',format:'1',css:"a"}  
+  ];
+ var colmuns2=
+  [{title:'做法',id:'dishstep',type:'label',format:'1',css:"width:400px;"}  
+  ];
+   
+  $(function(){
+   $("#tableData").addRow(
+   {colmuns:colmuns,data:$details0,count:'count',msgRender:"#msg",showDelBtn:false});      
+    $("#tableData1").addRow(
+   {colmuns:colmuns1,data:$details1,count:'count1',msgRender:"#msg",showDelBtn:false});    
+    $("#tableData2").addRow(
+   {colmuns:colmuns2,data:$details2,count:'count2',msgRender:"#msg",showDelBtn:false});    
+   $("#dian").click(function() {         	      
+	r=window.confirm("hi");
+	  if (r ==false){
+	  return;
+	  } 
+    if (!validForm()){return("");}   
+	$("#eform").attr("action","SaveFanDianPing.do");
+    $("#eform").submit();
+	});	
+	});	
+</SCRIPT> 
+<div class="panel" title="基本">
+<table class="f1-ui-table-1" border="0" cellspacing="2" cellpadding="0" width="100%">	
+	<tr>
+		<th style="width:100px"><label>项目</label></th>
+		<th class="detail">属性</th>
+	</tr>	
+	<tr>
+		<td ><label>类别</label></td>
+		<td class="detail">${workItem.typeForValue} </td>
+	</tr>	
+	<tr>
+		<td ><label>名称</label></td>
+		<td class="detail">${workItem.nameValue} </td>
+	</tr>	
+	<tr>
+		<td ><label>单位</label></td>
+		<td class="detail">${workItem.unitValue} </td>
+	</tr>		
+	<tr>
+		<td ><label>拼音码</label></td>
+		<td class="detail">${workItem.pinyValue} </td>
+	</tr>	
+	<tr>
+		<td ><label>编号</label></td>
+		<td class="detail">${workItem.dishNuValue} </td>
+	</tr>	
+	<tr>
+		<td ><label>部门</label></td>
+		<td class="detail">${workItem.groupNameValue} </td>
+	</tr>	
+	
+	<tr>
+		<td ><label>单价</label></td>
+		<td class="detail">${workItem.priceValue}</td>
+	</tr>	
+	<tr>
+		<td ><label>允许打折</label></td>
+		<td class="detail">${workItem.discountOKValue} </td>
+	</tr>	
+	<tr>
+		<td ><label>包房价</label></td>
+		<td class="detail">${workItem.compartmentPriceValue} </td>
+	</tr>		
+	<tr>
+		<td ><label>图片</label></td>
+		<td class="detail">${workItem.nameValue}</td>
+	</tr>	    
+    <tr>
+		<td ><label>做法</label></td>
+		<td class="detail">${workItem.howCookingValue}</td>
+	</tr>	        	
+ 	   <tr>
+		<td ><label>材料</label></td>
+		<td class="detail">${workItem.materialsValue}</td>
+	</tr>	        	
+	<tr>
+		<td ><label>内容</label></td>
+		<td class="detail">${workItem.contentValue}</td>
+	</tr>	        	
+	<tr>
+		<td ><label>启用</label></td>
+		<td class="detail">${workItem.statusValue} </td>
+	</tr>	
+</table>
+</div>
+<div class=panel title="图片" action="-">  
+ <ul class="thumb_view" id="list">
+#foreach( $file in $files )	
+<li>	
+<div class="content_block">
+			<a href="/fan/attachfiles/dish/$file.dataid/$file.universalid"><img width=80 height=60 src='/fan/attachfiles/dish/$file.dataid/$file.universalid'></img></a>
+			<h2>$file.filename</h2>
+            <p>$file.filename</p>			
+		</div>
+</li>	
+#end
+ </ul>
+ </div> 
+  <div class="panel" title="固定套餐定义">
+  <table border="0" id="tableData" cellspacing="1" cellpadding="0" width="100%">
+  </table>   
+  </div> 
+  <div class="panel" title="组合套餐定义">
+  <table border="0" id="tableData1" cellspacing="1" cellpadding="0" width="100%">
+  </table>   
+  </div> 
+  <div class="panel" title="做法">
+  <table border="0" id="tableData2" cellspacing="1" cellpadding="0" width="100%">
+  </table>   
+  </div> 
+ <div class=panel title="点评">   
+ 共$files.size()条点评 
+ <ul class="display" id="list">		
+ #foreach( $file in $fandishdianping )
+ <li>
+		<div class="content_block">
+			<a href="#"><img width=80 height=60 src='attachfiles/dish/1/1275622256093'></img></a>			
+           <div class="rating" data="${file.type}_0"></div>            		   
+			<p>$file.content</p>
+		</div>
+	</li>
+ #end
+ </ul>	
+ <div id="msg"></div>
+ <li>  
+  <input type="radio" name="type" value="1" /> 1分
+  <input type="radio" name="type" value="2" /> 2分
+  <input type="radio" name="type" value="3" /> 3分
+  <input type="radio" name="type" value="4" /> 4分   
+  <input type="radio" name="type" value="5" /> 5分
+  <input id="pid" name="pid" type="hidden" value=${id}>
+  </li>
+ <li>
+  <textarea name="content" id="content" cols="40" rows="2"  required="true"   validType="length[4,140]"></textarea>
+  </li>
+  <li>
+  <input type="button" name="dian" id="dian" value="我要点评"  style="width:100px;height:60px;"/>   
+  </li>
+ </div>   
+  <script type="text/javascript">
+		$(document).ready(function(){
+			$('.rating').jRating();									
+		});
+	</script>
+</script>

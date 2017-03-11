@@ -1,0 +1,49 @@
+ <script type="text/javascript">
+   $(function() {  
+   $("#btn-save").click(function() {      
+     //alert($(window.frames["iframe-order"].document).find("#sumprice1").html());	 
+     if (!validForm()){return("");}
+	 $("#f1j-form").attr("action","SaveFanOrderBuy.do");	 
+     $("#f1j-form").submit();
+	});
+	$("#money").change(function() {      
+	// alert("===");
+	 var sumprice1=$(window.frames["iframe-order"].document).find("#sumprice1").text();
+	 var money=$("#money").val();	 
+	 $("#change").val(money-sumprice1);
+	});
+	//$("#iframe-order").height("800");
+	});
+	$("#buype").val("0");
+  </script>
+  <style type="text/css"> 
+  #money ,#change{height:24px;}  
+  </style>
+<input type="hidden" value="${id}"  name="pid">   
+ <iframe frameborder="no" scrolling="yes"  border="0" marginwidth="0" id="iframe-order" name="iframe-order" src="seeFanOrder.do?id=${id}" style="border 0px; width:100%;height:400px;margin:auto;"></iframe>
+<div >
+<input name=status type="hidden" value="2">
+<input name=tabNu type="hidden" value=${workItem.diningtableidValue}>
+<table border="0" cellspacing="2" cellpadding="0" width="100%">
+	<tr>
+		<td width="40px"><label>收</label></td>
+		<td class="detail"><input name="money" id="money" size="0" value="" required="true"  validType="digit"  ></td>	
+		<td width="40px"><label>找</label></td>
+		<td class="detail"><input name="change" id="change" size="0" value="" required="true"  validType="digit">${details0.buytype}</td>		
+	</tr>	
+	<tr>
+		<td width="40px"><label>时间</label></td>
+		<td class="detail">${details0.createdateValue}</td>	
+		<td width="40px"><label>工号</label></td>
+		<td class="detail">${details0.operatorValue}</td>		
+	</tr>	
+</table>
+<center>
+<input style="height:40px;width:100px;font:12px;" type="button" id="btn-save" width="200px" value="立即买单">
+<input style="height:40px;width:100px;font:12px;" type="button" id="btn-save" width="200px" value="打印">
+</center>
+</div>
+
+
+
+

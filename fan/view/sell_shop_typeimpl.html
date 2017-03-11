@@ -1,0 +1,81 @@
+<div class="type-menu">
+<dl class="choose">
+  <dt>类别</dt>   
+  <dd class="type_dd">${type_}</dd>
+   <dd>
+   <a href="#" id="opener" class="type_more">更多>></a>
+   </dd>
+</dl>
+</div>
+<div class="type-menu">
+<dl class="choose">
+  <dt><input type=checkbox  class="checkbox" name="CheckedAll" id="CheckedAll"></dt>
+   <dd class="type_dd">  
+    <div class="list-btn-forselect" style="display:none;">	   
+		<a href="#" id="btn-check0" >取消发布<a><a href="#" id="btn-check1" >发布店铺<a><a href="#" id="btn-check2" >加入黑名单<a>
+		<a href="#" id="btn-sell-all" >代理全部产品<a>
+	</div>   
+   </dd>
+</dl>
+</div>
+<div id="loading" title="信息">
+	<p style="height:16px;line-height:16px;"><img src="/shares/images/loading.gif">loading...</p>
+</div>
+<div id="dialog">
+${type_}
+</div>
+<!-- 
+<ul id="jsddm1" class="type">
+<li><a href="#">更多</a>
+</li>
+</ul>
+-->
+<script>
+	// increase the default animation speed to exaggerate the effect
+//	$.fx.speeds._default = 1000;	
+	$(function() {	
+	    vid="${hashMap.get("viewId")}";
+		//alert(vid);
+		if (vid!="sellcompany0"){
+			$("#btn-check1").hide();
+			}        		
+		if (vid!="sellcompany"){
+			$("#btn-check0").hide();
+			}
+		if (vid="sellcompany2"){
+		    $("#btn-check1").show();
+			$("#btn-check2").hide();
+		}			
+		$( "#loading" ).dialog({
+			autoOpen: false,
+			show: "blind",			
+			hide: "explode"
+		});
+		$( "#dialog" ).dialog({
+			autoOpen: false,
+			show: "blind",
+			height: 100,
+			width: 600,
+			hide: "explode"
+		});
+
+		$( "#opener" ).click(function() {
+			$( "#dialog" ).dialog( "open" );
+			return false;
+		});
+		// dialog1
+		$( "#dialog1" ).dialog({
+			autoOpen: false,
+			show: "blind",
+			height: 100,
+			width: 600,
+			hide: "explode"
+		});
+
+		$( "#opener1" ).click(function() {
+			$( "#dialog1" ).dialog( "open" );
+			return false;
+		});
+	});
+	</script>
+	<SCRIPT LANGUAGE="JavaScript" SRC="/fan/view/js/shop.js"></SCRIPT> 

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<pageflow>
+  <action path="/Login" class="com.sid.app.login.LoginServlet" forward="" needLogin="false" />
+  <action path="/LoadOaPortal" class="oa.app.action.LoadOaPortal" forward="" />
+   <action path="/PickMailUserDlgAction" class="com.sid.app.user.action.PickUserDlgAction"  forward="/msg/DlgSelectUser.jsp"/> 
+  <action path="/SeeProjectContract" class="com.beitecsun.project.action.SeeProjectContract" forward="" />
+  <action path="/SumReport1" class="com.capinfo.community.oa.action.SumReport1" forward="" />
+  <action path="/NewCommunityBasicData" class="com.capinfo.community.oa.action.NewCommunityBasicData" forward="" />
+  <action path="/EditCommunityBasicData" class="com.capinfo.community.oa.action.EditCommunityBasicData" forward="" />
+  <action path="/SubmitCommunityBasicData" class="com.capinfo.community.oa.action.SubmitCommunityBasicData" forward="" />
+  <action path="/SeeCommunityBasicData" class="com.capinfo.community.oa.action.SeeCommunityBasicData" forward="" />
+ 
+ <!-- LogoutServlet  -->
+   <action path="/LogoutServlet" class="com.sid.app.login.LogoutServlet" forward="" />
+ <!-- 门户 -->
+  <action path="/UserInfoPortlet" class="com.sid.portal.UserInfoPortlet" forward="" />
+  <action path="/ShowOnlineList" class="com.sid.portal.ShowOnlineList" forward="" />
+  <action path="/NewPortalSet" class="com.sid.portal.action.NewPortalSet" forward="" />
+  <action path="/EditPortalSet" class="com.sid.portal.EditPortalSet" forward="" />
+  <action path="/SubmitPortalSet" class="com.sid.portal.SubmitPortalSet" forward="" />
+ <!-- 文件流转 -->
+  <action path="/NewFw" class="com.sid.oa.app.action.NewFw" forward="" />
+  <action path="/EditFw" class="com.sid.oa.app.action.EditFw" forward="" />
+  <action path="/SubmitFw" class="com.sid.oa.app.action.SubmitFw" forward="" />
+  <action path="/SeeFw" class="com.sid.oa.app.action.SeeFw" forward="" />
+
+  <action path="/NewSw" class="com.sid.oa.app.action.NewSw" forward="" />
+  <action path="/EditSw" class="com.sid.oa.app.action.EditSw" forward="" />
+  <action path="/SubmitSw" class="com.sid.oa.app.action.SubmitSw" forward="" />
+  <action path="/SeeSw" class="com.sid.oa.app.action.SeeSw" forward="" />
+
+  <action path="/NewDataCenterFw" class="com.sid.oa.app.action.NewDataCenterFw" forward="" />
+  <action path="/EditDataCenterFw" class="com.sid.oa.app.action.EditDataCenterFw" forward="" />
+  <action path="/SubmitDataCenterFw" class="com.sid.oa.app.action.SubmitDataCenterFw" forward="" />
+  <action path="/SeeDataCenterFw" class="com.sid.oa.app.action.SeeDataCenterFw" forward="" />
+    
+ <!--  个人事务和邮件管理  -->
+  <action path="/CalendarView" class="com.sid.view.action.CalendarView" forward="" />
+  <action path="/CalendarList" class="com.sid.view.action.CalendarList" forward="" />
+  <action path="/SelectDate" class="com.sid.view.action.CalendarView" forward="/css/SelectDate.jsp" />
+  <action path="/CalendarViewDay" class="com.sid.view.action.CalendarViewDay" forward="" />
+  <action path="/CalendarViewWeek" class="com.sid.view.action.CalendarViewWeek" forward="" />
+  <action path="/SubmitAppointment" class="com.sid.content.action.SubmitAppointment" forward="" />
+  <action path="/OpenDlgAddress" class="com.sid.mail.action.OpenDlgAddress" forward="" />
+  <action path="/NewMail" class="com.sid.mail.action.NewMail" forward="" />
+  <action path="/EditMail" class="com.sid.mail.action.EditMail" forward="" />
+  <action path="/SubmitMail" class="com.sid.mail.action.SubmitMail" forward="" />
+  <action path="/SendMail" class="com.sid.mail.action.SendMail" forward="" />
+  <action path="/DelMail" class="com.sid.mail.action.DelMail" forward="" /> 
+  <action path="/SeeMail" class="com.sid.mail.action.SeeMail" forward="" />
+  <action path="/MoveMail" class="com.sid.mail.action.MoveMail" forward="" /> 
+  <action path="/MailInboxView" class="com.sid.mail.action.MailList" forward="/include/list.jsp" />  
+  <action path="/SubmitMailFolderDict" class="com.sid.mail.action.SubmitMailFolderDict" forward="" />  
+  <action path="/EditMailFolderDict" class="com.sid.mail.action.EditMailFolderDict" forward="" />  
+  <action path="/RemoveMailFolderDict" class="com.sid.mail.action.RemoveMailFolderDict" forward="" /> 
+  <action path="/ListMailFolder" class="com.sid.mail.action.ListMailFolder" forward="" />   
+  <action path="/ListMail" class="com.sid.view.action.List" forward="/msg/list.jsp" /> 
+  <action path="/PickCCUser" class="com.sid.app.user.action.PickUserDlgAction"  forward="/msg/DlgSelectCCUser.jsp"/>
+
+  <action path="/NewAppointment" class="com.sid.content.action.NewAppointment" forward="" />
+  <action path="/EditAppointment" class="com.sid.content.action.EditAppointment" forward="" />   
+
+  <!--  业务操作 -->     
+  <action path="/EditInforPubDict" class="oa.app.action.EditInforPubDict" forward="" />   
+  <action path="/SubmitInforPubDict" class="oa.app.action.SubmitInforPubDict" forward="" />   
+
+  <action path="/NewBbs" class="com.sid.circle.bbs.action.NewBbs" forward="" />
+  <action path="/NewResponse" class="com.sid.circle.bbs.action.NewResponse" forward="" />
+  <action path="/SubmitBbs" class="com.sid.circle.bbs.action.SubmitBbs"  forward=""/>
+  <action path="/SubmitResponse" class="com.sid.circle.bbs.action.SubmitResponse"  forward="" needLogin="false"/>
+  <action path="/EditBbs" class="com.sid.circle.bbs.action.EditBbs"  forward=""/>
+  <action path="/SeeBbs" class="com.sid.circle.bbs.action.SeeBbs"  forward=""/>   
+
+  <action path="/UploadServlet" class="com.sid.upload.UploadServlet"  forward=""/>
+  <action path="/OpenUpload" class="com.sid.upload.OpenUpload"  forward=""/>
+  <action path="/ShowImage" class="com.sid.upload.ShowImage"  forward=""/>
+  <action path="/SeeFileServlet" class="com.sid.upload.SeeFileServlet"  forward=""/>
+  <action path="/DeleteFileServlet" class="com.sid.upload.DeleteFileServlet"  forward=""/>
+  <action path="/EditMySoftFace" class="com.sid.content.action.EditMySoftFace"  forward=""/>
+  <action path="/DelReceiveFileDict" class="oa.app.action.DelReceiveFileDict" forward="" />  
+  <action path="/DelBankCard" class="oa.app.action.DelBankCard" forward="" />
+  <action path="/EditTrain" class="oa.app.action.EditTrain" forward="" />
+  <action path="/SeeTrain" class="oa.app.action.EditTrain" forward="/resource/SeeTrain.jsp" />
+  <action path="/EditTaskMsgDIct" class="com.sid.workflow.action.EditTaskMsgDIct" forward="" />
+  <action path="/NewTrain" class="oa.app.action.NewTrain" forward="" />
+  <action path="/SeeTaskMsgDIct" class="com.sid.workflow.action.SeeTaskMsgDIct" forward="" />
+  <action path="/NewMaterials" class="oa.app.action.NewMaterials" forward="" />
+  <action path="/NewTaskMsgDIct" class="com.sid.workflow.action.NewTaskMsgDIct" forward="" />
+  <action path="/EditArchiveFiles" class="oa.archive.action.EditArchiveFiles" forward="" />
+
+  <action path="/EditReimburse" class="oa.app.action.EditReimburse" forward="" />
+  <action path="/DelMeetTaskExcuteWorkitem" class="oa.app.action.DelMeetTaskExcuteWorkitem" forward="" />
+  <action path="/DelRunTask" class="com.sid.workflow.action.DelRunTask1" forward="" />  
+  <action path="/NewReceiveFileDict" class="oa.app.action.NewReceiveFileDict" forward="" />
+  <action path="/SeeArchiveDict" class="oa.app.action.SeeArchiveDict" forward="" />
+  
+  
+  <!--  信息发布  -->  
+  <action path="/NewInfoPub" class="com.sid.content.action.NewInfoPub" forward="" />
+  <action path="/EditInfoPub" class="com.sid.content.action.EditInfoPub" forward="" />
+  <action path="/SeeInfoPub" class="com.sid.content.action.SeeInfoPub" forward="" />
+  <action path="/SubmitInfoPub" class="com.sid.content.action.SubmitInfoPub" forward="" />
+  <action path="/ApprovalInfoPub" class="com.sid.content.action.ApprovalInfoPub" forward="" />
+  <action path="/DelInfoPub" class="com.sid.content.action.DelInfoPub" forward="" />
+ <!-- blog       -->
+  <action path="/NewBlogLog" class="blog.action.NewBlogLog" forward="" />
+  <action path="/EditBlogLog" class="blog.action.EditBlogLog" forward="" />
+  <action path="/SeeBlogLog" class="blog.action.SeeBlogLog" forward="" />
+  <action path="/SubmitBlogLog" class="blog.action.SubmitBlogLog" forward="" />
+  <action path="/DelBlogLog" class="blog.action.DelBlogLog" forward="" />
+  <!-- 通用业务字典编辑 -->>
+  <action path="/SeeInforPubDict" class="oa.app.action.SeeInforPubDict" forward="" />
+  <action path="/DelInforPubDict" class="oa.app.action.DelInforPubDict" forward="" />  
+  <action path="/NewInforPubDict" class="oa.app.action.NewInforPubDict" forward="" />   
+  <!--  ================名片======================================   -->                          
+  <action path="/NewCard" class="oa.app.action.NewCard" forward="" />
+  <action path="/EditCard" class="oa.app.action.EditCard" forward="" />
+  <action path="/SubmitCard" class="oa.app.action.SubmitCard" forward="" />
+  <action path="/SeeCard" class="oa.app.action.SeeCard" forward="" />
+  <!--  ================收文管理======================================   -->                           
+    <action path="/EditReceiveFileDict" class="oa.app.action.EditReceiveFileDict" forward="" />
+    <action path="/SeeReceiveFile" class="oa.app.action.SeeReceiveFile" forward="" />
+    <action path="/SeeReceiveFileDict" class="oa.app.action.SeeReceiveFileDict" forward="" />
+  <!--  ================发文管理======================================   -->                           
+  <action path="/SeeSendFile" class="oa.app.action.SeeSendFile" forward="" />  
+  <action path="/EditSendFileDict" class="oa.app.action.EditSendFileDict" forward="" />
+  <action path="/SeeSendFileDict" class="oa.app.action.SeeSendFileDict" forward="" />    
+  <action path="/NewSendFileDict" class="oa.app.action.NewSendFileDict" forward="" />
+  <!--  ================资源======================================   -->                               
+  <action path="/SubmitFlight" class="oa.app.action.SubmitFlight" forward="" />
+  <action path="/SubmitTrain" class="oa.app.action.SubmitTrain" forward="" />
+  <action path="/SubmitMaterials" class="oa.app.action.SubmitMaterials" forward="" />
+  <action path="/SubmitMyBorrow" class="oa.app.action.SubmitMyBorrow" forward="" />
+  <action path="/BorrowIn" class="oa.app.action.BorrowIn" forward="" />
+  <action path="/BorrowOut" class="oa.app.action.BorrowOut" forward="" />
+
+  <action path="/SubmitZipCode" class="oa.app.action.SubmitZipCode" forward="" />
+  <action path="/SubmitResource" class="oa.app.action.SubmitResource" forward="" /> 
+  <action path="/SubmitOfficeThing" class="oa.app.action.SubmitOfficeThing" forward="" /> 
+  <action path="/SubmitOfficeThingBuy" class="oa.app.action.SubmitOfficeThingBuy" forward="" /> 
+  <!--  ================会议管理======================================   -->                               
+  <action path="/NewMeetNotify" class="com.sid.meet.action.NewMeetNotify" forward="" />
+  <action path="/EditMeetNotify" class="com.sid.meet.action.EditMeetNotify" forward="" />
+  <action path="/SubmitMeetNotify" class="com.sid.meet.action.SubmitMeetNotify" forward="" />
+  <action path="/SeeMeetNotify" class="com.sid.meet.action.EditMeetNotify" forward="/meet/SeeMeetNotify.jsp" />
+  <action path="/NewMeetRoom" class="com.sid.meet.action.NewMeetRoom" forward="" />
+  <action path="/EditMeetRoom" class="com.sid.meet.action.EditMeetRoom" forward="" />
+  <action path="/SubmitMeetRoom" class="com.sid.meet.action.SubmitMeetRoom" forward="" />
+  <action path="/SeeMeetRoom" class="com.sid.meet.action.EditMeetRoom" forward="/meet/SeeMeetRoom.jsp" />
+  <action path="/SubmitUseMeetRoom" class="com.sid.meet.action.SubmitUseMeetRoom" forward="" /> 
+  <action path="/EnableMeetRoom" class="com.sid.meet.action.EnableMeetRoom" forward="" /> 
+  <action path="/DisableMeetRoom" class="com.sid.meet.action.DisableMeetRoom" forward="" /> 
+ 
+  <!--  ================计划管理======================================   -->                           
+   <action path="/NewPlanManager" class="oa.app.action.NewPlanManager" forward="" />
+   <action path="/EditPlanManager" class="oa.app.action.EditPlanManager" forward="" />
+   <action path="/SubmitPlanManager" class="oa.app.action.SubmitPlanManager"  forward="" />
+  <!--  ================办公用品======================================   -->                           
+  <action path="/EditOfficeThingBuy" class="oa.app.action.EditOfficeThingBuy" forward="" />
+  <action path="/SubmitOfficeThingBuy" class="oa.app.action.SubmitOfficeThingBuy" forward="content/dlgsucess.jsp" />
+  <action path="/EditOfficeThing" class="oa.app.action.EditOfficeThing" forward="" />
+  <action path="/SubmitOfficeThing" class="oa.app.action.SubmitOfficeThing" forward="" />
+  <action path="/DelOfficeThingBuy" class="oa.app.action.DelOfficeThingBuy" forward="/content/dlgsucess.jsp" /> 
+  <action path="/NewOfficeThing" class="oa.app.action.NewOfficeThing" forward="" /> 
+  <action path="/NewOfficeThingBuy" class="oa.app.action.NewOfficeThingBuy" forward="" />
+  <action path="/SeeOfficeThingBuy" class="oa.app.action.SeeOfficeThingBuy" forward="" />
+  <action path="/NewOfficeThingUse" class="oa.app.action.NewOfficeThingUse" forward="" />
+  <action path="/EditOfficeThingUse" class="oa.app.action.EditOfficeThingUse" forward="" />
+  <action path="/SubmitOfficeThingUse" class="oa.app.action.SubmitOfficeThingUse" forward="/content/dlgsucess.jsp" />
+  <action path="/SeeOfficeThingUse" class="oa.app.action.SeeOfficeThingUse" forward="" /> 
+  <action path="/NewOfficeThingUseItem" class="oa.app.action.NewOfficeThingUseItem" forward="" />
+  <action path="/EditOfficeThingUseItem" class="oa.app.action.EditOfficeThingUseItem" forward="" />
+  <action path="/SubmitOfficeThingUseItem" class="oa.app.action.SubmitOfficeThingUseItem" forward="" />
+  <action path="/SeeOfficeThingUseItem" class="oa.app.action.SeeOfficeThingUseItem" forward="" />
+  <action path="/EditOTBuyStatus1" class="oa.app.action.EditOTBuyStatus1" forward="" />
+  <action path="/EditOTBuyStatus2" class="oa.app.action.EditOTBuyStatus2" forward="" />
+  <action path="/EditOTUseStatus" class="oa.app.action.EditOTUseStatus" forward="" />
+<!--  ================车辆管理======================================   -->                           
+  <action path="/NewCarInfo" class="oa.app.action.NewCarInfo" forward="" />
+  <action path="/EditCarInfo" class="oa.app.action.EditCarInfo" forward="" />
+  <action path="/SubmitCarInfo" class="oa.app.action.SubmitCarInfo" forward="" />
+  <action path="/SeeCarInfo" class="oa.app.action.SeeCarInfo" forward="" />
+  <action path="/NewCarDriver" class="oa.app.action.NewCarDriver" forward="" />
+  <action path="/EditCarDriver" class="oa.app.action.EditCarDriver" forward="" />
+  <action path="/SubmitCarDriver" class="oa.app.action.SubmitCarDriver" forward="" />
+  <action path="/SeeCarDriver" class="oa.app.action.SeeCarDriver" forward="" />
+  <action path="/EditCarManagerStatus1" class="oa.app.action.EditCarManagerStatus1" forward="" />
+  <action path="/EditCarManagerStatus2" class="oa.app.action.EditCarManagerStatus2" forward="" />   
+  <action path="/NewCarMaintain" class="oa.app.action.NewCarMaintain" forward="" />
+  <action path="/EditCarMaintain" class="oa.app.action.EditCarMaintain" forward="" />
+  <action path="/SubmitCarMaintain" class="oa.app.action.SubmitCarMaintain" forward="" />
+  <action path="/SeeCarMaintain" class="oa.app.action.SeeCarMaintain" forward="" />
+  <action path="/NewCarUse" class="oa.app.action.NewCarUse" forward="" />
+  <action path="/EditCarUse" class="oa.app.action.EditCarUse" forward="" />
+  <action path="/SubmitCarUse" class="oa.app.action.SubmitCarUse" forward="" />
+  <action path="/SeeCarUse" class="oa.app.action.SeeCarUse" forward="" />
+  
+  <!--  ================档案管理======================================   -->                           
+  <action path="/ReadArchiveFile" class="com.sid.oa.archive.action.ReadArchiveFile" forward=""  />
+  <action path="/DelArchiveFile" class="com.sid.oa.archive.action.DelArchiveFile" forward=""  />
+  <action path="/SeeArchiveFile" class="com.sid.oa.archive.action.SeeArchiveFile" forward=""  />
+  <action path="/NewArchiveFile" class="com.sid.oa.archive.action.NewArchiveFile" forward=""  />
+  <action path="/DelArchiveDict" class="oa.app.action.DelArchiveDict" forward=""  />
+  <action path="/NewArchiveDict" class="oa.app.action.NewArchiveDict" forward=""  />
+  <action path="/EditArchiveFile" class="com.sid.oa.archive.action.EditArchiveFile" forward=""  />
+  <action path="/NewArchiveFiles" class="com.sid.oa.archive.action.NewArchiveFiles" forward=""  />
+  <action path="/DelArchiveFiles" class="com.sid.oa.archive.action.DelArchiveFiles" forward="" />  
+  <action path="/SeeArchiveFiles" class="com.sid.oa.archive.action.SeeArchiveFiles" forward="" />           
+  <action path="/EditArchiveFiles" class="com.sid.oa.archive.action.EditArchiveFiles" forward=""  /> 
+  <action path="/SubmitArchiveFile" class="com.sid.oa.archive.action.SubmitArchiveFile" forward="" /> 
+  <action path="/SubmitArchiveFiles" class="com.sid.oa.archive.action.SubmitArchiveFiles" forward="" /> 
+  <!--  ================TPTSPS======================================   -->                           
+  <action path="/EditSpsreport" class="com.nantian.app.tptsps.action.EditSpsreport" forward="" />
+  <action path="/SeeSpsreport" class="com.nantian.app.tptsps.action.SeeSpsreport" forward="" />
+  <action path="/DelSpsreport" class="com.nantian.app.tptsps.action.DelSpsreport" forward="" /> 
+  <action path="/NewSpsreport" class="com.nantian.app.tptsps.action.NewSpsreport" forward="" />  
+  <!--  ================资源======================================   -->                           
+  <action path="/NewResource" class="oa.app.action.NewResource" forward="" />
+  <action path="/EditResource" class="oa.app.action.EditResource" forward="" />
+  <action path="/SubmitResource" class="oa.app.action.SubmitResource" forward="" />
+  <action path="/SeeResource" class="oa.app.action.EditResource" forward="/resource/SeeResource.jsp" />
+  <action path="/EnableResource" class="oa.app.action.EnableResource" forward="" />
+  <action path="/DisableResource" class="oa.app.action.DisableResource" forward="" />  
+  <action path="/SubmitBorrowResource" class="oa.app.action.SubmitBorrowResource" forward="" />  
+  <action path="/NewAskForLeave" class="sid.hr.action.NewAskForLeave" forward="" />
+  <action path="/EditBankCard" class="oa.app.action.EditBankCard" forward="" />
+  <action path="/NewBankCard" class="oa.app.action.NewBankCard" forward="" />  
+  <action path="/NewCarManager" class="oa.app.action.NewCarManager" forward="" />
+  <action path="/SeeUseCarRequest" class="oa.app.action.SeeUseCarRequest" forward="" />
+  <action path="/EditLettersVisit" class="oa.app.action.EditLettersVisit" forward="" />       
+  <action path="/NewReimburse" class="oa.app.action.NewReimburse" forward="" /> 
+  <action path="/SeeBankCard" class="oa.app.action.SeeBankCard" forward="" />
+  <action path="/SeeBookAPP" class="oa.app.action.SeeBookAPP" forward="" />
+  <action path="/NewMeetTaskExcuteWorkitem" class="oa.app.action.NewMeetTaskExcuteWorkitem" forward="" />
+  <action path="/EditMaterials" class="oa.app.action.EditMaterials" forward="" />
+  <action path="/SeeMaterials" class="oa.app.action.EditMaterials" forward="/resource/SeeMaterials.jsp" />
+  <action path="/SubmitMaterials" class="oa.app.action.SubmitMaterials" forward="" />
+  <action path="/DelReimburse" class="oa.app.action.DelReimburse" forward="" />  
+  <action path="/EditAskForLeave" class="sid.hr.action.EditAskForLeave" forward="" />  
+  <action path="/SeePlanManager" class="oa.app.action.EditPlanManager" forward="/planmanager/SeePlanManager.jsp" />  
+  <action path="/EditMeetTaskExcuteWorkitem" class="oa.app.action.EditMeetTaskExcuteWorkitem" forward="" />
+  <action path="/NewLettersVisit" class="oa.app.action.NewLettersVisit" forward="" />
+  <action path="/SeeLettersVisit" class="oa.app.action.SeeLettersVisit" forward="" />
+  <action path="/SeeReimburse" class="oa.app.action.SeeReimburse" forward="" />
+  <action path="/EditFlight" class="oa.app.action.EditFlight" forward="" />
+  <action path="/SubmitFlight" class="oa.app.action.SubmitFlight" forward="" /> 
+  <action path="/Newclient" class="oa.app.action.Newclient" forward="" />
+  <action path="/DelBookAPP" class="oa.app.action.DelBookAPP" forward="" />
+  <action path="/SeeWaterWorkitem" class="oa.app.action.SeeWaterWorkitem" forward="" />
+  <action path="/DelCRMPerson" class="oa.app.action.DelCRMPerson" forward="" />  
+  <action path="/NewZipCode" class="oa.app.action.NewZipCode" forward="" />
+  <action path="/DelContract" class="oa.app.action.DelContract" forward="" />  
+  <action path="/DelSendFileDict" class="oa.app.action.DelSendFileDict" forward="" />    
+  <action path="/NewFlight" class="oa.app.action.NewFlight" forward="" />
+  <action path="/EditZipCode" class="oa.app.action.EditZipCode" forward="" />
+  <action path="/EditBookAPP" class="oa.app.action.EditBookAPP" forward="" />        
+  <action path="/EditWaterWorkitem" class="oa.app.action.EditWaterWorkitem" forward="" />    
+  <action path="/EditCarManager" class="oa.app.action.EditCarManager" forward="" />
+  <action path="/SubmitCarManager" class="oa.app.action.SubmitCarManager" forward="" />
+  <action path="/NewBookAPP" class="oa.app.action.NewBookAPP" forward="" />  
+  <action path="/EditCar" class="oa.resource.EditCar" forward="" />    
+  <action path="/NewDeviceSys" class="com.nantian.netsys.action.NewDeviceSys" forward="" />
+  <action path="/EditDeviceSys" class="com.nantian.netsys.action.EditDeviceSys" forward="" />
+  <action path="/SubmitDeviceSys" class="com.nantian.netsys.action.SubmitDeviceSys" forward="" />
+  <action path="/SeeDeviceSys" class="com.nantian.netsys.action.SeeDeviceSys" forward="" />
+  <action path="/LogUserChart" class="com.sid.app.http.action.LogUserChart" forward="" />
+  <action path="/LogActionChart" class="com.sid.app.http.action.LogActionChart" forward="" />
+  <action path="/NewCompany" class="sample.action.NewCompany" forward="" />
+  <action path="/EditCompany" class="sample.action.EditCompany" forward="" />
+  <action path="/SubmitCompany" class="sample.action.SubmitCompany" forward="" />
+  <action path="/SeeCompany" class="sample.action.SeeCompany" forward="" />
+  <action path="/NewHotel" class="org.hlg.action.NewHotel" forward="" />
+  <action path="/EditHotel" class="org.hlg.action.EditHotel" forward="" />
+  <action path="/SubmitHotel" class="org.hlg.action.SubmitHotel" forward="" />
+  <action path="/SeeHotel" class="org.hlg.action.SeeHotel" forward="" />
+  <action path="/ViewExcelAction" class="com.sid.view.action.ViewExcelAction" forward="" />
+  <action path="/TuBiao" class="netsys.TuBiao" forward="" />
+  <action path="/TuBiao1" class="netsys.TuBiao1" forward="" />
+  <action path="/TuBiao2" class="netsys.TuBiao2" forward="" />
+  <!-- blog  --> 
+  <action path="/NewBlogPhoto" class="blog.action.NewBlogPhoto" forward="" />
+  <action path="/EditBlogPhoto" class="blog.action.EditBlogPhoto" forward="" />
+  <action path="/SubmitBlogPhoto" class="blog.action.SubmitBlogPhoto" forward="" />
+  <action path="/SeeBlogPhoto" class="blog.action.SeeBlogPhoto" forward="" />
+  <action path="/NewBlogList" class="blog.action.NewBlogList" forward="" />
+  <action path="/EditBlogList" class="blog.action.EditBlogList" forward="" />
+  <action path="/SubmitBlogList" class="blog.action.SubmitBlogList" forward="" />
+  <action path="/SeeBlogList" class="blog.action.SeeBlogList" forward="" />
+  <action path="/NewBlogGuestBook" class="blog.action.NewBlogGuestBook" forward="" />
+  <action path="/EditBlogGuestBook" class="blog.action.EditBlogGuestBook" forward="" />
+  <action path="/SubmitBlogGuestBook" class="blog.action.SubmitBlogGuestBook" forward="" />
+  <action path="/SeeBlogGuestBook" class="blog.action.SeeBlogGuestBook" forward="" />
+  <action path="/List" class="com.sid.view.action.List" forward="/include/list.jsp" />
+  <action path="/list" class="com.sid.view.action.List" forward="/include/list.jsp" />
+  <action path="/selctlist" class="com.sid.view.action.List" forward="/Hello/selectlist.jsp" />
+  <!-- 网站 -->
+ <action path="/ListBbs" class="com.sid.circle.bbs.impl.ListBbs" forward="/bbs/bbslistresponse.jsp" needLogin="false" />
+ <action path="/LoadBbsPage" class="com.sid.circle.bbs.action.LoadBbsPage" forward="/bbs/BbsPage.jsp" needLogin="false"/>  
+ <action path="/ListHiBbs" class="com.sid.view.action.List" forward="/bbs/ListBbs.jsp" needLogin="false" />
+  <action path="/DeleteImage" class="blog.action.DeleteImage" forward="" />  
+  <action path="/NewMember1" class="com.yuan.action.NewMember1" forward="" />
+  <action path="/EditMember1" class="com.yuan.action.EditMember1" forward="" />
+  <action path="/SubmitMember1" class="com.yuan.action.SubmitMember1" forward="" />
+  <action path="/SeeMember1" class="com.yuan.action.SeeMember1" forward="" /> 
+  <action path="/NewMember2" class="com.yuan.action.NewMember2" forward="" />
+  <action path="/EditMember2" class="com.yuan.action.EditMember2" forward="" />
+  <action path="/SubmitMember2" class="com.yuan.action.SubmitMember2" forward="" />
+  <action path="/SeeMember2" class="com.yuan.action.SeeMember2" forward="" />
+  <action path="/listmember" class="com.sid.view.action.List" forward="/yuan/ListMember.jsp" />
+  <action path="/ListMember" class="com.sid.view.action.List" forward="/yuan/ListMember.jsp" />
+  
+
+  <action path="/EditYuanMember1" class="com.yuan.action.EditMember1" forward="" />
+  <action path="/EditYuanMemberColor" class="com.yuan.action.EditMember2" forward="" />
+  <action path="/EditYuanMemberPass" class="com.sid.app.user.action.ChangePasswordServlet" forward="/yuan/EditMemberPass.jsp" />
+  <action path="/SubmitYuanChangePasswordServlet" class="com.sid.app.user.action.SubmitChangePasswordServlet"  forward="EditYuanMemberPass.do" appType=""/> 
+  <action path="/EditSearch" class="com.yuan.action.EditSearch" forward="/yuan/Search.jsp" needLogin="false" />
+  <action path="/SubmitYuanMember1" class="com.yuan.action.SubmitMember1" forward="EditYuanMember1.do" />
+  <action path="/SubmitYuanMemberColor" class="com.yuan.action.SubmitMember2" forward="EditYuanMemberColor.do" />
+  <action path="/SubmitNewActivateUser" class="com.sid.app.user.action.SubmitNewActivateUser" 
+    forward="clubindex.jsp" needLogin="false"/>   
+  <action path="/UploadPhoto" class="com.yuan.action.UploadPhoto"  forward="/yuan/UploadPhoto.jsp" needLogin="false"/>   
+  <action path="/OpenPhoto" class="com.yuan.action.OpenPhoto"  forward="/yuan/UploadPhoto.jsp" needLogin="false"/> 
+  <action path="/EditPhoto" class="com.yuan.action.EditPhoto"  forward=""/>  
+  <action path="/SubmitPhoto" class="com.yuan.action.SubmitPhoto"  forward=""/>  
+  <action path="/DeletePhoto" class="com.yuan.action.DeletePhoto"  forward=""/>  
+  <action path="/SeePhoto" class="com.yuan.action.SeePhoto"  forward=""/>  
+  <action path="/ListWork" class="com.sid.workflow.view.action.WorkList"  forward="/yuan/ListWork.jsp"/>
+  <action path="/ListInfo" class="com.sid.view.action.List" forward="/yuan/ListInfo.jsp" />  
+  <action path="/NewMemberStatus" class="com.yuan.action.NewMemberStatus" forward="" />
+  <action path="/EditMemberStatus" class="com.yuan.action.EditMemberStatus" forward="" />
+  <action path="/SubmitMemberStatus" class="com.yuan.action.SubmitMemberStatus" forward="EditMemberStatus.do" />
+  <action path="/SeeMemberStatus" class="com.yuan.action.SeeMemberStatus" forward="" />
+  <action path="/NewMemberNeed" class="com.yuan.action.NewMemberNeed" forward="" />
+  <action path="/EditMemberNeed" class="com.yuan.action.EditMemberNeed" forward="" />
+  <action path="/SubmitMemberNeed" class="com.yuan.action.SubmitMemberNeed" forward="EditMemberNeed.do" />
+  <action path="/SeeMemberNeed" class="com.yuan.action.SeeMemberNeed" forward="" />      
+  <action path="/NewCircle" class="web2.quan.action.NewCircle" forward="" />
+  <action path="/EditCircle" class="web2.quan.action.EditCircle" forward="/web2/EditCircle.jsp" />
+  <action path="/SubmitCircle" class="web2.quan.action.SubmitCircle" forward="" />
+  <action path="/SeeCircle" class="web2.quan.action.SeeCircle" forward="/web2/SeeCircle.jsp" />  
+  <action path="/NewStudentFirst" class="superweb.student.action.NewStudentFirst" forward="/superweb/NewStudentFirst.jsp" />
+  <action path="/EditStudentFirst" class="superweb.student.action.EditStudentFirst" forward="/superweb/EditStudentFirst.jsp" />
+  
+  <action path="/SubmitStudentFirst" class="superweb.student.action.SubmitStudentFirst" forward="" />
+  <action path="/SeeStudentFirst" class="superweb.student.action.EditStudentFirst" forward="/superweb/EditStudentFirst.jsp" />
+ <action path="/NewHello" class="test.action.NewHello" forward="" needLogin="false" />
+  <action path="/EditHello" class="test.action.EditHello" forward="" needLogin="false" />
+  <action path="/SubmitHello" class="test.action.SubmitHello" forward="" needLogin="false" />
+  <action path="/SeeHello" class="test.action.SeeHello" forward="" />
+  <action path="/NewListTest" class="com.a.action.NewListTest" forward="" />
+  <action path="/EditListTest" class="com.a.action.EditListTest" forward="" />
+  <action path="/SubmitListTest" class="com.a.action.SubmitListTest" forward="" />
+  <action path="/SeeListTest" class="com.a.action.SeeListTest" forward="" />
+  <action path="/findInfoDict" class="com.sid.select.FindInfoDict" forward="" />
+ 
+</pageflow>

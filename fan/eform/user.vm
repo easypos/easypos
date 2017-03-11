@@ -1,0 +1,63 @@
+<input type="hidden" value="loadUser.do"  name="action"> 
+  <script type="text/javascript">   
+   $(function() {  
+   $("#btn-save").click(function() {      
+     if (!validForm()){return("");}
+   $("#f1j-form").submit();
+	});
+	$("#btn-copy").click(function() {      
+     if (!validForm()){return("");}
+	$("#id").val(""); 
+   $("#f1j-form").submit();
+	});
+	$("#btn-modify").click(function() {
+	  location.href="loadPass.f1j?id="+$("#id").val();
+	});	
+	});
+  </script>
+<div class="panel" title="基本">
+<table class="f1-ui-table-1" border="0" cellspacing="2" cellpadding="0" width="100%">	
+	<tr>
+		<th style="width:100px"><label>项目</label></th>
+		<th class="detail">属性</th>
+	</tr>	
+	<tr>
+		<td ><label>用户名称</label></td>
+		<td class="detail">${workItem.user_name} </td>
+	</tr>
+   <tr>
+		<td ><label>用户名称</label></td>
+		<td class="detail">${workItem.realname} </td>
+	</tr>	
+	<tr>
+		<td ><label>密码</label></td>
+		<td class="detail">${workItem.PASSWORD} </td>
+	</tr>
+	<tr>
+		<td ><label>用户状态</label></td>
+		<td class="detail">${workItem.USER_STATE} </td>
+	</tr>
+	<tr>
+		<td ><label>删除标志</label></td>
+		<td class="detail">${workItem.DELETE_SYMBOL} </td>
+	</tr>
+	<tr>
+		<td ><label>用户类型</label></td>
+		<td class="detail">${workItem.type} </td>
+	</tr>
+	<tr>
+		<td ><label>企业代码</label></td>
+		<td class="detail">${workItem.pid} </td>
+	</tr>
+</table>
+</div>
+  </div>   
+  <div class="toolbar">##
+  <center>
+  <input type="button" id="btn-save" value="保存" style="width:60px;height:40px">   ## 
+  <input type="button" id="btn-copy" value="复制" style="width:60px;height:40px">   ## 
+  <input type="button" id="btn-modify" value="修改" style="width:60px;height:40px">   ## 
+  </center>
+  
+
+

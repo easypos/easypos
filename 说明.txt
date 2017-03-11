@@ -1,0 +1,5 @@
+（1）easyrestaurant+数据库（sqlserver2008）
+（2）fan.rar webapp部署
+（3）shares.rar webapp部署资源文件（js|css|images）
+ 请到http://ysk.yijiys.com/shares/shares.rar下载
+（4）easypos.apk最新android pos app

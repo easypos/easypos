@@ -1,0 +1,36 @@
+<div class="type-menu">
+<dl class="choose">
+  <dt>类别</dt>
+   <dd class="type_dd">${type_}</dd>
+   <dd>
+   <a href="#" id="opener" class="type_more">更多>></a>
+   </dd>
+</dl>
+</div>
+<!-- 
+<ul id="jsddm1" class="type">
+<li><a href="#">更多</a>
+</li>
+</ul>
+-->
+<div id="dialog" title="更多" class="dialog_impl">
+<div> ${type_}</div>	
+</div>
+<script>
+	// increase the default animation speed to exaggerate the effect
+//	$.fx.speeds._default = 1000;
+	$(function() {
+		$( "#dialog" ).dialog({
+			autoOpen: false,
+			show: "blind",
+			height: 100,
+			width: 600,
+			hide: "explode"
+		});
+
+		$( "#opener" ).click(function() {
+			$( "#dialog" ).dialog( "open" );
+			return false;
+		});
+	});
+	</script>

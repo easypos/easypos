@@ -1,0 +1,65 @@
+  <input type="hidden" value="loadMember.do"  name="action"> 
+  <script type="text/javascript">
+   $(function() {  
+   $("#btn-save").click(function() {      
+     if (!validForm()){return("");}
+   $("#f1j-form").submit();
+	});
+	});
+  </script>
+  <div class="toolbar">##
+  
+  </div>   
+<div class="panel" title="基本">
+<table class="f1-ui-table-1" border="0" cellspacing="2" cellpadding="0" width="100%">
+	<tr>
+		<td ><label>姓名</label></td>
+		<td class="detail">${workItem.nameValue} </td>
+		<td ><label>生日</label></td>
+		<td class="detail">${workItem.birthdayValue} </td>
+	</tr>			
+	<tr>
+		<td ><label>性别</label></td>
+		<td class="detail">${workItem.sexForValue} </td>
+		<td ><label>教育</label></td>
+		<td class="detail">${workItem.educationForValue} </td>
+	</tr>	
+	<tr>
+		<td ><label>婚姻</label></td>
+		<td class="detail">${workItem.marriageForValue} </td>	
+		<td ><label>爱好</label></td>
+		<td class="detail">${workItem.hobbyValue} </td>
+	</tr>	
+	<tr>
+		<td ><label>会员类别</label></td>
+		<td class="detail">${workItem.typeForValue}</td>	
+		<td ><label>电话</label></td>
+		<td class="detail">${workItem.telValue} </td>
+	</tr>	
+	<tr>
+		<td ><label>传真</label></td>
+		<td class="detail">${workItem.faxValue} </td>
+		<td ><label>邮件</label></td>
+		<td class="detail">${workItem.mailValue} </td>
+	</tr>	
+	<tr>
+		<td ><label>QQ</label></td>
+		<td class="detail">${workItem.qqValue} </td>	
+		<td ><label>MSN</label></td>
+		<td class="detail">${workItem.msnValue} </td>
+	</tr>	
+	<tr>
+		<td ><label>地址(送餐)</label></td>
+		<td class="detail">${workItem.addressValue} </td>	
+		<td ><label>工作描述</label></td>
+		<td class="detail">${workItem.companyValue} </td>
+	</tr>	
+		<tr>
+		<td ><label>兴趣</label></td>
+		<td class="detail" colspan="3">$req.getAttribute('interestForValue') </td>
+	</tr>	
+</table>
+</div>
+<div class="panel" title="消费记录">
+</div>
+

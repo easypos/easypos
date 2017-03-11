@@ -1,0 +1,111 @@
+<input type="hidden" value="loadFanCompany.do"  name="action"> 
+  <script type="text/javascript">   
+   $(function() {  
+   $(".btn-save").click(function() {      
+     if (!validForm()){return("");}
+   $("#f1j-form").submit();
+	});
+	$(".btn-copy").click(function() {      
+     if (!validForm()){return("");}
+	$("#id").val(""); 
+   $("#f1j-form").submit();
+	});
+	$("#btn-export").click(function() {      
+     if (!validForm()){return("");}
+	$("#id").val(""); 
+	$("#f1j-form").attr("action","exportCompany.do");
+    $("#f1j-form").submit();
+	});	
+	});
+  </script>
+<div class="panel" title="基本">
+<div class="toolbar">##
+  <center>
+  <input type="button" class="btn-save" value="保存" style="width:60px;height:40px">   ## 
+  <input type="button" class="btn-copy" value="复制" style="width:60px;height:40px">   ## 
+  </center>
+  </div>
+<table class="f1-ui-table-1" border="0" cellspacing="2" cellpadding="0" width="100%">	
+	<tr>
+		<th style="width:100px"><label>项目</label></th>
+		<th class="detail">属性</th>
+	</tr>	
+	<tr>
+		<td ><label>类别</label></td>
+		<td class="detail">${workItem.restauranttype} </td>
+	</tr>		
+	<tr>
+		<td ><label>代码</label></td>
+		<td class="detail">${workItem.code} </td>
+	</tr>		
+	<tr>
+		<td ><label>名称</label></td>
+		<td class="detail">${workItem.name} </td>
+	</tr>
+	<tr>
+		<td ><label>城市</label></td>
+		<td class="detail">${workItem.city} </td>
+	</tr>
+	<tr>
+		<td ><label>地址</label></td>
+		<td class="detail">${workItem.address} </td>
+	</tr>
+	
+	<tr>
+		<td ><label>所属商圈</label></td>
+		<td class="detail">${workItem.district} </td>
+	</tr>
+	<tr>
+		<td ><label>电话</label></td>
+		<td class="detail">${workItem.tel} </td>
+	</tr>
+	<tr>
+		<td ><label>餐厅描述</label></td>
+		<td class="detail">${workItem.content} </td>
+	</tr>
+	<tr>
+		<td ><label>人均消费</label></td>
+		<td class="detail">${workItem.price} </td>
+	</tr>	
+	<tr>
+		<td ><label>连锁</label></td>
+		<td class="detail">${workItem.pid} </td>
+	</tr>	
+	<tr>
+		<td ><label>首页推荐</label></td>
+		<td class="detail">${workItem.marketstatus} </td>
+	</tr>
+	<tr>
+		<td ><label>是否启用</label></td>
+		<td class="detail">${workItem.status} </td>
+	</tr>
+</table>
+</div>
+  </div>   
+<div class="panel" title="特色">
+  ${fancompanyfeatures}
+  </div>  
+  <div class="panel" title="定位">
+  <table>
+  <tr>
+		<td ><label>longitude</label></td>
+		<td class="detail">${workItem.longitude} </td>
+	</tr>
+	<tr>
+		<td ><label>latitude</label></td>
+		<td class="detail">${workItem.latitude} </td>
+	</tr>
+</table>
+  </div>  
+  <div class="toolbar">##
+  <center>
+  <input type="button" class="btn-save" value="保存" style="width:60px;height:40px">   ## 
+  <input type="button" class="btn-copy" value="复制" style="width:60px;height:40px">   ## 
+  </center>
+  </div>
+  <div class="panel" title="批量输入">
+  <textarea name="txt" id="txt"></textarea>  
+  <div><input type="button" id="btn-export" value="批量输入"> </div>
+  </div>  
+
+

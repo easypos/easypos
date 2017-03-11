@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="gb2312"?>
+<process name="aa" item="aa" dataFile="aa" role="aaa-59" author="aa" date="aa" ver="aa">
+  <start id="1276078399921" name="开始" left="202" top="8" width="32" height="32">
+    <forward id="1276078399937" name="提出请购申请" user="1" role="" roleOwner="" group="" decissionResult="" x="268" y="24" />
+  </start>
+  <task id="1276078399937" name="提出请购申请" class="commonWfBOService" handleClass="commonWfBOService" handleClassParam="T_DeviceSupplies" jsp="itbuy.vm" dt="0" dttype="d" left="302" top="8" width="32" height="32">
+    <forward id="1276078400203" name="部门第一负责人审核" user="1" role="1" roleOwner="1" group="" decissionResult="" x="317" y="45" />
+  </task>
+  <task id="1276078399953" name="IT类审核" class="commonWfBOService" handleClass="commonWfBOService" handleClassParam="T_DeviceSupplies" jsp="itbuy.vm" dt="0" dttype="d" left="356" top="120" width="32" height="32">
+    <forward id="1276078400218" name="能否调拨替代" user="1" role="" roleOwner="" group="" decissionResult="" x="272" y="136" />
+  </task>
+  <task id="1276078399968" name="固定资产类审核" class="commonWfBOService" handleClass="commonWfBOService" handleClassParam="T_DeviceSupplies" jsp="itbuy.vm" dt="0" dttype="d" left="51" top="115" width="32" height="32">
+    <forward id="1276078400218" name="能否调拨替代" user="1" role="" roleOwner="" group="" decissionResult="" x="272" y="131" />
+  </task>
+  <task id="1276078399984" name="计量工具类审核" class="commonWfBOService" handleClass="commonWfBOService" handleClassParam="T_DeviceSupplies" jsp="itbuy.vm" dt="0" dttype="d" left="692" top="124" width="32" height="32">
+    <forward id="1276078400218" name="能否调拨替代" user="1" role="" roleOwner="" group="" decissionResult="" x="272" y="140" />
+  </task>
+  <task id="1276078400000" name="其它类审核" class="commonWfBOService" handleClass="commonWfBOService" handleClassParam="T_DeviceSupplies" jsp="itbuy.vm" dt="0" dttype="d" left="150" top="117" width="32" height="32">
+    <forward id="1276078400218" name="能否调拨替代" user="1" role="" roleOwner="" group="" decissionResult="" x="272" y="133" />
+  </task>
+  <task id="1276078400015" name="单据反转物资调配" class="commonWfBOService" handleClass="" handleClassParam="" jsp="/erke/EditDeviceSupplies.jsp" dt="0" dttype="d" left="695" top="377" width="32" height="32">
+    <forward id="1276078400171" name="归档" user="1" role="1" roleOwner="1" group="" decissionResult="" x="709" y="440" />
+  </task>
+  <task id="1276078400031" name="单位第一负责人审核" class="commonWfBOService" handleClass="" handleClassParam="" jsp="/erke/EditDeviceSupplies.jsp" dt="0" dttype="d" left="320" top="284" width="32" height="32">
+    <forward id="1276078400109" name="转交仓库" user="1" role="1" roleOwner="1" group="" decissionResult="" x="211" y="338" />
+  </task>
+  <task id="1276078400046" name="分管总经理助理审核" class="commonWfBOService" handleClass="" handleClassParam="" jsp="/erke/EditDeviceSupplies.jsp" dt="0" dttype="d" left="163" top="289" width="32" height="32">
+    <forward id="1276078400109" name="转交仓库" user="1" role="1" roleOwner="1" group="" decissionResult="" x="133" y="340" />
+  </task>
+  <task id="1276078400062" name="总经理审核" class="commonWfBOService" handleClass="" handleClassParam="" jsp="/erke/EditDeviceSupplies.jsp" dt="0" dttype="d" left="57" top="295" width="32" height="32">
+    <forward id="1276078400109" name="转交仓库" user="1" role="1" roleOwner="1" group="" decissionResult="" x="80" y="343" />
+  </task>
+  <task id="1276078400093" name="总经理以上审核" class="commonWfBOService" handleClass="" handleClassParam="" jsp="/erke/EditDeviceSupplies.jsp" dt="0" dttype="d" left="549" top="289" width="32" height="32">
+    <forward id="1276078400109" name="转交仓库" user="1" role="1" roleOwner="1" group="" decissionResult="" x="326" y="340" />
+  </task>
+  <task id="1276078400109" name="转交仓库" class="commonWfBOService" handleClass="" handleClassParam="" jsp="/erke/EditDeviceSupplies.jsp" dt="0" dttype="d" left="71" top="360" width="32" height="32">
+    <forward id="1276078400125" name="检查物料" user="1" role="1" roleOwner="1" group="" decissionResult="" x="85" y="416" />
+  </task>
+  <task id="1276078400125" name="检查物料" class="commonWfBOService" handleClass="" handleClassParam="" jsp="/erke/EditDeviceSupplies.jsp" dt="0" dttype="d" left="68" top="440" width="32" height="32">
+    <forward id="1276078400140" name="知悉存量单据反转" user="1" role="1" roleOwner="1" group="" decissionResult="" x="84" y="481" />
+    <forward id="1276078400156" name="采购" user="1" role="1" roleOwner="1" group="" decissionResult="" x="192" y="434" />
+  </task>
+  <task id="1276078400140" name="知悉存量单据反转" class="commonWfBOService" handleClass="" handleClassParam="" jsp="/erke/EditDeviceSupplies.jsp" dt="0" dttype="d" left="69" top="491" width="32" height="32">
+    <forward id="1276078400171" name="归档" user="1" role="1" roleOwner="1" group="" decissionResult="" x="396" y="497" />
+  </task>
+  <task id="1276078400156" name="采购" class="commonWfBOService" handleClass="" handleClassParam="" jsp="/erke/EditDeviceSupplies.jsp" dt="0" dttype="d" left="284" top="396" width="32" height="32">
+    <forward id="1276078400171" name="归档" user="1" role="1" roleOwner="1" group="" decissionResult="" x="504" y="450" />
+  </task>
+  <task id="1276078400171" name="归档" class="commonWfBOService" handleClass="" handleClassParam="" jsp="/erke/EditDeviceSupplies.jsp" dt="0" dttype="d" left="692" top="472" width="32" height="32">
+    <forward id="1276078400171" name="归档" user="1" role="" roleOwner="" group="" decissionResult="" x="708" y="488" />
+    <forward id="1276078400234" name="结束" user="1" role="" roleOwner="" group="" decissionResult="" x="708" y="520" />
+  </task>
+  <decide id="1276078400187" name="能否调拨替代decide" decissionType="1" decissionClass="" decissionOperator="&gt;" decissionValue="" left="242" top="255" width="40" height="40">
+    <forward id="1276078400015" name="单据反转物资调配" user="1" role="1" roleOwner="1" group="" decissionResult="" x="715" y="275" />
+    <forward id="1276078400031" name="单位第一负责人审核" user="1" role="1" roleOwner="1" group="" decissionResult="" x="340" y="275" />
+    <forward id="1276078400046" name="分管总经理助理审核" user="1" role="1" roleOwner="1" group="" decissionResult="" x="183" y="275" />
+    <forward id="1276078400062" name="总经理审核" user="1" role="1" roleOwner="1" group="" decissionResult="" x="77" y="275" />
+    <forward id="1276078400093" name="总经理以上审核" user="1" role="1" roleOwner="1" group="" decissionResult="" x="569" y="275" />
+  </decide>
+  <fork id="1276078400203" name="部门第一负责人审核"  class="commonWfBOService" handleClass="commonWfBOService" handleClassParam="T_DeviceSupplies" jsp="itbuy.vm" left="301" top="50" width="32" height="32">
+    <forward id="1276078399953" name="IT类审核" user="1" role="1" roleOwner="1" group="" decissionResult="" x="372" y="66" />
+    <forward id="1276078399968" name="固定资产类审核" user="1" role="1" roleOwner="1" group="" decissionResult="" x="67" y="66" />
+    <forward id="1276078399984" name="计量工具类审核" user="1" role="1" roleOwner="1" group="" decissionResult="" x="708" y="66" />
+    <forward id="1276078400000" name="其它类审核" user="1" role="1" roleOwner="1" group="" decissionResult="" x="133" y="66" />
+  </fork>
+  <join id="1276078400218" name="能否调拨替代" left="256" top="220" width="32" height="32">
+    <forward id="1276078400187" name="能否调拨替代decide" user="1" role="" roleOwner="" group="" decissionResult="" x="267" y="255" />
+  </join>
+  <end id="1276078400234" name="结束" left="693" top="537" width="32" height="32" />
+</process>
+

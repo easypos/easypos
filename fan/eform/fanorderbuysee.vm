@@ -1,0 +1,45 @@
+ <script type="text/javascript">
+   $(function() {  
+   $("#btn-save").click(function() {      
+    alert($(window.frames["iframe-order"].document).find("#msg").html());
+	 //$a=$($(("#iframe-order").document).find("#msg"));
+     //alert($a.text());
+     if (!validForm()){return("");}
+	 $("#f1j-form").attr("action","SaveFanOrderBuy.do");	 
+     $("#f1j-form").submit();
+	});
+	
+	  $("#btn-print").click(function() {
+    window.print();  
+	});	
+	});
+  </script>
+  <div style="display:none">
+
+</div>
+<input type="hidden" value="${id}"  name="pid">   
+ <iframe id="iframe-order" frameborder="no" border="0" marginwidth="0"
+ name="iframe-order" src="seeFanOrder.do?id=${id}" style="width:100%;height:360px;margin:auto ;"></iframe>
+<div style="border:10px solid #ff7400; background:#f1f1f1" >
+<table border="0" cellspacing="2" cellpadding="0" width="100%">
+	<tr>
+		<td ><label>收</label></td>
+		<td class="detail">${details0.moneyValue}</td>	
+		<td ><label>找</label></td>
+		<td class="detail">${details0.changeValue}</td>
+	</tr>	
+	<tr>
+		<td ><label>时间</label></td>
+		<td class="detail">${details0.createdateValue}</td>	
+		<td ><label>工号</label></td>
+		<td class="detail">${details0.operatorValue}</td>		
+	</tr>	
+</table>
+<center>
+<input style="height:40px;width:100px;font:12px;" type="button" id="btn-print" width="200px" value="打印">
+</center>
+</div>
+
+
+
+

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<pageflow>
+  <!--  系统管理  -->  
+  <action path="/LoadAdminConsole" class="com.sid.content.action.LoadAdminConsole" forward=""/>
+  <!--  用户管理操作  -->
+    
+  <action path="/NewUserServlet" class="com.sid.app.user.action.NewUserServlet" 
+   forward="/oauser/new_user.jsp" 
+   />
+  <action path="/SubmitNewUserServlet" class="com.sid.app.user.action.SubmitNewUserServlet" forward=""  needLogin="false"/>  
+  <action path="/SubmitEditUserServlet" class="com.sid.app.user.action.SubmitEditUserServlet" forward="" />  
+  <action path="/EditUserRolesServlet" class="com.sid.app.user.action.EditUserRolesServlet"  forward="" />
+  <action path="/DeleteUserServlet" class="com.sid.app.user.action.DeleteUserServlet1"  forward="" />
+  <action path="/ActivateUserServlet" class="com.sid.app.user.action.ActivateUserServlet"  forward="" />
+  <action path="/PassivateUserServlet" class="com.sid.app.user.action.PassivateUserServlet"  forward="" /> 
+  <action path="/SubmitEditUserRolesServlet" class="com.sid.app.user.action.SubmitEditUserRolesServlet"  forward="" />   
+  <action path="/SubmitDeleteUserServlet" class="com.sid.app.user.action.SubmitDeleteUserServlet"  forward="" />
+  <action path="/SubmitActivateUserServlet" class="com.sid.app.user.action.SubmitActivateUserServlet"  forward="" />
+  <action path="/SubmitPassivateUserServlet" class="com.sid.app.user.action.SubmitPassivateUserServlet"  forward="" />  
+  <action path="/SubmitChangePasswordServlet" class="com.sid.app.user.action.SubmitChangePasswordServlet"  forward="" /> 
+  <action path="/ChangePasswordServlet" class="com.sid.app.user.action.ChangePasswordServlet"  forward="" /> 
+  <action path="/EditUserServlet" class="com.sid.app.user.action.EditUserServlet" forward="" />
+  <action path="/ShowUserServlet" class="com.sid.app.user.action.ShowUserServlet" forward="" />
+  <!--  操作定义  -->
+  <action path="/NewActionConfig" class="com.sid.app.user.action.NewActionConfig" forward=""/>
+  <action path="/EditActionConfig" class="com.sid.app.user.action.EditActionConfig" forward="" />
+  <action path="/SubmitActionConfig" class="com.sid.app.user.action.SubmitActionConfig" forward="" />
+  <action path="/SeeActionConfig" class="com.sid.app.user.action.SeeActionConfig" forward="" />
+  <action path="/SelectUserAction" class="com.sid.app.user.action.SelectUserAction" forward="" />
+  <action path="/SubmitSelectUserAction" class="com.sid.app.user.action.SubmitSelectUserAction" forward="" />  
+
+  <!--  角色管理操作  -->
+  <action path="/EditRole" class="com.sid.app.user.action.EditRole" forward="" />
+  <action path="/SubmitRole" class="com.sid.app.user.action.SubmitRole" forward="" />
+  <action path="/ShowRoleUsersServlet" class="com.sid.app.user.action.ShowRoleUsersServlet" forward="" />
+  <action path="/EditRoleUsersServlet" class="com.sid.app.user.action.EditRoleUsersServlet" forward="" />
+  <action path="/DelRole" class="com.sid.app.user.action.DelRole" forward="" />
+  <action path="/SubmitEditRoleUsersServlet" class="com.sid.app.user.action.SubmitEditRoleUsersServlet"  forward="" />  
+  <action path="/ShowRoleUseCasesServlet" class="com.sid.app.user.action.ShowRoleUseCasesServlet" forward="" />
+  <action path="/EditRoleUseCasesServlet" class="com.sid.app.user.action.EditRoleUseCasesServlet" forward="" />  
+  <!--  组织机构管理操作  -->
+  <action path="/SubmitGroup" class="com.sid.app.user.action.SubmitGroup" forward="" />
+  <action path="/LoadGroupTree" class="com.sid.app.user.action.LoadGroupTree" forward="" />
+  <action path="/NewGroup" class="com.sid.app.user.action.NewGroup" forward="" />
+  <action path="/SubmitGroup" class="com.sid.app.user.action.SubmitGroup" forward="" />
+  <action path="/EditGroup" class="com.sid.app.user.action.EditGroup" forward="" /> 
+  <action path="/LoadTreeGroup" class="com.sid.app.user.action.LoadTreeGroup"  forward="" />    
+  <action path="/SelectGroup" class="com.sid.app.user.action.SelectGroup"  forward="" />    
+
+  <!--  界面管理  -->
+
+
+  <action path="/menu" class="com.sid.content.action.LoadQQMenu"  forward="" />
+  <action path="/LoadTreeMenu" class="com.sid.content.action.LoadTreeMenu"  forward="" />    
+  <action path="/EditMenuTree" class="com.sid.content.action.EditMenuTree"  forward="" /> 
+  <action path="/pindao" class="com.sid.content.action.LoadPindDao"  forward="/oasystem/pindao.jsp" />  
+  <action path="/NewMenu" class="com.sid.content.action.NewMenu" forward="" />
+  <action path="/EditMenu" class="com.sid.content.action.EditMenu" forward="" />
+  <action path="/SubmitMenu" class="com.sid.content.action.SubmitMenu" forward="" />
+  <action path="/SubmitView" class="com.sid.content.action.SubmitView" forward="" />
+  <action path="/SubmitPinDao" class="com.sid.content.action.SubmitPinDao" forward="" />
+  <action path="/SubmitFormItem" class="com.sid.content.action.SubmitFormItem" forward="" />
+  <action path="/SubmitFormItemDict" class="com.sid.content.action.SubmitFormItemDict" forward="" />
+  <action path="/UpdateFormItemDict" class="com.sid.content.action.UpdateFormItemDict" forward="" />
+  <action path="/DelFormItemDict" class="com.sid.content.action.DelFormItemDict" forward="" />
+  <action path="/NewPinDao" class="com.sid.content.action.NewPinDao" forward="" />
+  <action path="/EditPinDao" class="com.sid.content.action.EditPinDao" forward="" />
+  <action path="/EditFormItem" class="com.sid.content.action.EditFormItem" forward="" />
+  <action path="/NewFormItem" class="com.sid.content.action.NewFormItem" forward="" />
+  <action path="/EditView" class="com.sid.content.action.EditView" forward="" />
+  <action path="/EditFormItem" class="com.sid.content.action.EditFormItem" forward="" />  
+  <action path="/NewView" class="com.sid.content.action.NewView" forward="" />
+  <action path="/NewViewMenu" class="com.f1jee.admin.action.NewViewMenu" forward="" />
+  <action path="/EditViewMenu" class="com.f1jee.admin.action.EditViewMenu" forward="" />
+  <action path="/SubmitViewMenu" class="com.f1jee.admin.action.SubmitViewMenu" forward="" />
+  <action path="/SeeViewMenu" class="com.f1jee.admin.action.SeeViewMenu" forward="" />
+  <action path="/NewViewPage" class="com.f1jee.admin.action.NewViewPage" forward="" />
+  <action path="/EditViewPage" class="com.f1jee.admin.action.EditViewPage" forward="" />
+  <action path="/SubmitViewPage" class="com.f1jee.admin.action.SubmitViewPage" forward="" />
+  <action path="/SeeViewPage" class="com.f1jee.admin.action.SeeViewPage" forward="" />
+
+  <!--  视图或列表操作 、包含分页操作等 -->
+  <action path="/viewengine" class="com.sid.view.action.List"  forward="/include/list.jsp"/>  
+
+  <action path="/UserList" class="com.sid.app.user.view.action.UserList"  forward="/include/list.jsp"/>
+  <action path="/RoleList" class="com.sid.app.user.view.action.RoleList"  forward="/include/list.jsp"/>
+  <action path="/GroupList" class="com.sid.app.user.view.action.GroupList"  forward="/include/list.jsp"/>  
+  <action path="/GroupView" class="com.sid.app.user.action.ViewGroupAction"  forward=""/>  
+  <action path="/DelAction" class="com.sid.content.action.DelAction"  forward=""/>  
+  <action path="/CreateNewFolder" class="com.sid.content.action.CreateNewFolder"  forward=""/>   
+  <action path="/NewFolder" class="com.sid.content.action.NewFolder"  forward=""/>   
+  <action path="/SubmitMySoftFace" class="com.sid.content.action.SubmitMySoftFace"  forward=""/>   
+  <action path="/ModifySoftColor" class="com.sid.content.action.SubmitMySoftFace"  forward=""/>    
+  <action path="/ViewSearchAction" class="com.sid.view.action.ViewFindActionJsp" forward="/include/list.jsp" />
+  <action path="/QuikSearch" class="com.sid.view.action.ViewSearchAction" forward="" />
+  <action path="/ViewSearchAdAction" class="com.sid.view.action.ViewSearchAdAction" forward="/include/list.jsp" />
+  <action path="/SearchAd" class="com.sid.content.action.SearchAd" forward="" />   
+  <action path="/Export" class="com.sid.view.action.ViewExcelAction" forward="" />   
+ 
+ 
+</pageflow>

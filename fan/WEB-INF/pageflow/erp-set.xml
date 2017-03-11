@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="gb2312"?>
+<pageflow>     
+  <action>
+    <forward id="/loadDishMaterial" path="fandishmaterial" type="" />
+    <class name="com.f1jframework.eform.action.LoadForCommbo" needLogin="false" />
+    <param list=""  param1="fandishmaterial.vm" />
+  </action>
+  <action>
+    <forward id="/seeDish" path="dish" type="" />
+    <class name="com.f1jframework.eform.action.ReadForCommbo" needLogin="false" />
+    <param list=""  param1="dishsee.vm" />
+  </action>    
+  <action>
+    <forward id="/copyDishMaterial" path="" type="" />
+    <class name="com.fanerp.action.CopyDishMaterial" needLogin="false" />
+    <param list=""  param1="dishsee.vm" />
+  </action>     
+   <action>
+   <forward id="/readPageFlow" path="" type="" />
+    <class name="com.f1jeeframework.base.action.ReadPageFlow" needLogin="true" />
+    <param list=""  param1="" />
+   </action>  
+</pageflow>
+

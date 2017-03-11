@@ -1,0 +1,3 @@
+<div class="pagebar-container ui-widget-content ui-corner-all">${pager}</div>
+${viewBody}
+<div class="pagebar-container ui-widget-content ui-corner-all">${pager}</div>

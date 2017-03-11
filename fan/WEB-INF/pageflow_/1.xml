@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="gb2312"?>
+<pageflow>  
+  <action path="/FirstAction" class="com.f1jee.hibernate.test.FirstAction" forward=""  needLogin="false"/>
+</pageflow>
+

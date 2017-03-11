@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="gb2312"?>
+<pageflow>   
+  <action>
+  <forward id="/loadRole" path="role" type="" />
+    <class name="com.f1jframework.eform.action.LoadForCommbo" needLogin="false" />
+    <param list=""  param1="role.vm" />
+  </action>   
+  <action>
+    <forward id="/loadPass" path="user" type="" />
+    <class name="com.f1jframework.eform.action.LoadForCommbo" needLogin="false" />
+    <param list=""  param1="modifypass.html" />
+  </action>  
+</pageflow>

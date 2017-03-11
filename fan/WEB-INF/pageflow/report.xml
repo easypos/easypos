@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="gb2312"?>
+<pageflow>   
+ <action>
+    <forward id="/li-order1" path="list.vm" type="" />
+    <class name="com.f1jframework.eform.action.List1" needLogin="true" />
+    <param list="fanOrder1"  param1="true" param2="img_view" param3="list-order-type.html"/>
+	<params>
+	  <param name="crt"  />
+	</params>	 
+  </action>
+  <action>
+    <forward id="/li-order2" path="list.vm" type="" />
+    <class name="com.f1jframework.eform.action.List1" needLogin="true" />
+    <param list="fanOrder2"  param1="true" param2="img_view" param3="list-order-type.html"/>
+	<params>
+	  <param name="crt"  />
+	</params>	 
+  </action>
+   <action>
+    <forward id="/li-buy" path="list.vm" type="" />
+    <class name="com.f1jframework.eform.action.List1" needLogin="true" />
+    <param list="FanOrderBuy"  param1="true" param2="img_view" param3="list-buy-type.html"/>
+	<params>
+	  <param name="crt"/>
+	</params>	 
+  </action>
+  <action>
+    <forward id="/li-handover" path="list.vm" type="" />
+    <class name="com.f1jframework.eform.action.List1" needLogin="true" />
+    <param list="fanhandoverAll"  param1="true" param2="img_view" param3="list-handover-type.html"/>
+	<params>
+	  <param name="crt"/>
+	</params>	 
+  </action>
+<action>
+    <forward id="/report" path="" type="" />
+    <class name="com.ysk.report.action.Report" needLogin="false" />
+    <param list=""  param1="" />
+  </action>
+  <action>
+    <forward id="/reportForOrdertype" path="" type="" />
+    <class name="com.ysk.report.action.ReportForOrdertype" needLogin="false" />
+    <param list=""  param1="" />
+  </action>
+  <action>
+    <forward id="/reportForDay" path="" type="" />
+    <class name="com.ysk.report.action.ReportForDay" needLogin="false" />
+    <param list=""  param1="" />
+  </action>
+  <action>
+    <forward id="/ReportForDay" path="" type="" />
+    <class name="com.ysk.report.action.ReportForDay" needLogin="false" />
+    <param list=""  param1="" />
+  </action>
+  <action>
+    <forward id="/ReportForOrder" path="/report/report.jsp" type="" />
+    <class name="com.f1jeeframework.view.action.List" needLogin="true" />
+    <param list="" />
+  </action>  
+  <action>
+    <forward id="/reportForBuyType" path="/report/reportForBuyType.jsp" type="" />
+    <class name="com.ysk.report.action.ReportForBuyType" needLogin="false" />
+    <param list=""  param1="" />
+  </action>
+  <action>
+    <forward id="/reportByOperator" path="/report/reportByOperator.jsp" type="" />
+    <class name="com.ysk.report.action.ReportByOperator" needLogin="false" />
+    <param list=""  param1="" />
+  </action>    
+  <action>
+    <forward id="/exportOrderBuyExcel" path="-" type="" />
+    <class name="com.ysk.report.action.ExportOrderBuyExcel" needLogin="true" />
+    <param list=""  param1="" />
+  </action>    
+  <action>
+    <forward id="/exportOrderDetail" path="-" type="" />
+    <class name="com.ysk.report.action.ExportOrderDetail" needLogin="true" />
+    <param list=""  param1="" />
+  </action>      
+ </pageflow>   
+  

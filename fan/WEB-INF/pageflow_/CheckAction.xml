@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="gb2312"?>
+<pageflow>
+ <action path="/NewCheckDict" class="com.anhui.action.NewCheckDict" forward="" />
+  <action path="/EditCheckDict" class="com.anhui.action.EditCheckDict" forward="" />
+  <action path="/SubmitCheckDict" class="com.anhui.action.SubmitCheckDict" forward="" />
+  <action path="/SeeCheckDict" class="com.anhui.action.SeeCheckDict" forward="" />   
+ <action path="/NewCheckCores" class="com.anhui.action.NewCheckCores" forward="" />
+  <action path="/EditCheckCores" class="com.anhui.action.EditCheckCores" forward="" />
+  <action path="/SubmitCheckCores" class="com.anhui.action.SubmitCheckCores" forward="" />
+  <action path="/SeeCheckCores" class="com.anhui.action.SeeCheckCores" forward="" />
+  <action path="/NewCheck" class="com.anhui.action.NewCheck" forward="" />
+  <action path="/EditCheck" class="com.anhui.action.EditCheck" forward="" />
+  <action path="/SubmitCheck" class="com.anhui.action.SubmitCheck" forward="" />
+  <action path="/SeeCheck" class="com.anhui.action.SeeCheck" forward="" />
+  <action path="/LoadTreeDict" class="com.anhui.action.LoadTreeDict" forward="" />
+  <action path="/DelCheckDict" class="com.anhui.action.DelCheckDict" forward="" />
+  <action path="/FindCheckDictDetail" class="com.anhui.action.FindCheckDictDetail" forward="" />
+  <action path="/FindCheckDictDetailCores" class="com.anhui.action.FindCheckDictDetailCores" forward="" />
+  <action path="/NewCheckType" class="com.anhui.action.NewCheckType" forward="" />
+  <action path="/EditCheckType" class="com.anhui.action.EditCheckType" forward="" />
+  <action path="/SubmitCheckType" class="com.anhui.action.SubmitCheckType" forward="" />
+  <action path="/SeeCheckType" class="com.anhui.action.SeeCheckType" forward="" />
+  <action path="/LoadCheckGroup" class="com.anhui.action.LoadCheckGroup" forward="" />
+  <action path="/NewCheckTask" class="com.anhui.action.NewCheckTask" forward="" />
+  <action path="/SubmitCheckTask" class="com.anhui.action.SubmitCheckTask" forward="" />  
+  <action path="/EditCheckTask" class="com.anhui.action.EditCheckTask" forward="" />  
+  
+</pageflow>
+

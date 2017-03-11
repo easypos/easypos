@@ -1,0 +1,91 @@
+<input type="hidden" value="loadDishSuitType.do"  name="action"> 
+  <script type="text/javascript">   
+   $(function() {  
+   //移到右边
+	$('#add').click(function() {
+	//获取选中的选项，删除并追加给对方
+		$('#dishs_ option:selected').appendTo('#dishs');
+	});
+	//移到左边
+	$('#remove').click(function() {
+		$('#dishs option:selected').appendTo('#dishs_');
+	});
+	//全部移到右边
+	$('#add_all').click(function() {
+		//获取全部的选项,删除并追加给对方
+             $o=$('#select1 option');
+		$o.appendTo('#select2');
+                
+	});
+	//全部移到左边
+	$('#remove_all').click(function() {
+		$('#select2 option').appendTo('#select1');
+	});
+	//双击选项
+	$('#dishs_').dblclick(function(){ //绑定双击事件
+		//获取全部的选项,删除并追加给对方
+		$("option:selected",this).appendTo('#dishs'); //追加给对方
+	});
+	//双击选项
+	$('#dishs').dblclick(function(){
+	   $("option:selected",this).appendTo('#dishs_');
+	});
+   $("#btn-save").click(function() {      
+     if (!validForm()){return("");}
+   $("#f1j-form").submit();
+	});
+	$("#btn-copy").click(function() {      
+     if (!validForm()){return("");}
+	$("#id").val(""); 
+   $("#f1j-form").submit();
+	});
+	});
+  </script>
+<div class="panel" title="基本">
+<table class="f1-ui-table-1" border="0" cellspacing="2" cellpadding="0" width="100%">	
+	<tr>
+		<th style="width:100px"><label>项目</label></th>
+		<th class="detail">属性</th>
+	</tr>	
+	<tr>
+		<td ><label>名称</label></td>
+		<td class="detail">${workItem.name} </td>
+	</tr>		
+		<tr>
+		<td ><label>数量</label></td>
+		<td class="detail">${workItem.dishcount} </td>
+	</tr>	
+</table>
+	<table>					
+					<tr>					
+					<td nowrap align="center" >
+					<select id="dishs_"  size="10">
+#foreach( $name in $dish )	
+	<option value="$name.universalid">$name.name</option>
+#end
+</select>
+					</td >
+					
+					<TD  nowrap align="center">					
+					<ul>
+					<li><a href="#"  id="add">添加</a></li>										
+					<li><a href="#"  id="remove">删除</a></li>					
+			        </ul>
+				    </TD>
+				
+				<td nowrap  align="center">
+                 ${dishsForValue}						
+				</td>
+				</tr>
+			</table>
+
+</div>
+  </div>   
+  <div class="toolbar">##
+  <center>
+  <input type="button" id="btn-save" value="保存" style="width:60px;height:40px">   ## 
+  <input type="button" id="btn-copy" value="复制" style="width:60px;height:40px">   ## 
+  </center>
+  
+
+

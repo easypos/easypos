@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="gb2312"?>
+<pageflow>   
+  <action>
+    <forward id="/modifyForCommbo" path="" type="" />
+    <class name="com.f1jframework.eform.action.ModifyForCommbo" needLogin="false" />
+    <param list="" />
+  </action>
+  <action>
+    <forward id="/loadForCommbo" path="" type="" />
+    <class name="com.f1jframework.eform.action.LoadForCommbo" needLogin="false" />
+    <param list="" />
+  </action>    
+  <action>
+    <forward id="/loadForCommboForAndroid" path="" type="" />
+    <class name="com.f1jframework.eform.action.LoadForCommboForAndroid" needLogin="false" />
+    <param list="" />
+  </action>    
+  <action>
+    <forward id="/modifyForCommboForAndroid" path="" type="" />
+    <class name="com.f1jframework.eform.action.ModifyForCommboForAndroid" needLogin="false" />
+    <param list="" />
+  </action>    
+   <action>
+    <forward id="/loadFormSet" path="" type="" />
+    <class name="com.f1jframework.eform.action.LoadFormSet" needLogin="false" />
+    <param list="" />
+  </action>    
+  <action>
+    <forward id="/loadFanCompany" path="fancompany" type="" />
+    <class name="com.f1jframework.eform.action.LoadForCommbo" needLogin="false" />
+    <param list=""  param1="fancompany.vm"  param2="form-no-attachfile.html" />	
+  </action> 
+  <action>
+    <forward id="/loadCompanyAttachfile" path="fancompany" type="" />
+    <class name="com.f1jframework.eform.action.LoadForCommbo" needLogin="false" />
+    <param list=""  param1="dishattachfile.html"    param2="form-for-attachfile.html"/>
+  </action>
+  <action>
+    <forward id="/loadDistrict" path="district" type="" />
+    <class name="com.f1jframework.eform.action.LoadForCommbo" needLogin="false" />
+    <param list=""  param1="district.vm" />
+  </action>
+  <action>
+    <forward id="/loadFanPartner" path="fanpartner" type="" />
+    <class name="com.f1jframework.eform.action.LoadForCommbo" needLogin="false" />
+    <param list=""  param1="fanpartner.vm" />
+  </action>
+  <action>
+    <forward id="/loadFanConfig" path="fanconfig" type="" />
+    <class name="com.f1jframework.eform.action.LoadForCommbo" needLogin="false" />
+    <param list=""  param1="fanconfig.vm" />
+  </action>
+  <action>
+    <forward id="/loadFanConfigPrint" path="fanconfigprint" type="" />
+    <class name="com.f1jframework.eform.action.LoadForCommbo" needLogin="false" />
+    <param list=""  param1="fanconfigprint.vm" />
+  </action>
+  <action>
+    <forward id="/loadFanDishType" path="fandishtype" type="" />
+    <class name="com.f1jframework.eform.action.LoadForCommbo" needLogin="false" />
+    <param list=""  param1="fandishtype.vm" />
+  </action>
+
+  <action>
+    <forward id="/loadUser" path="user" type="" />
+    <class name="com.f1jframework.eform.action.LoadForCommbo" needLogin="false" />
+    <param list=""  param1="user.vm" />
+  </action>
+  <action>
+    <forward id="/addDish" path="dish" type="" />
+    <class name="com.f1jframework.eform.action.LoadForCommbo" needLogin="false" />
+    <param list="" param1="dish.vm" />
+  </action>
+  <action>
+    <forward id="/loadDish" path="dish" type="" />
+    <class name="com.f1jframework.eform.action.LoadForCommbo" needLogin="false" />
+    <param list=""  param1="dish.vm"    param2="form-no-attachfile.html"/>
+  </action>
+  <action>
+    <forward id="/loadDishAttachfile" path="dish" type="" />
+    <class name="com.f1jframework.eform.action.LoadForCommbo" needLogin="false" />
+    <param list=""  param1="dishattachfile.html"    param2="form-for-attachfile.html"/>
+  </action>
+  <action>
+    <forward id="/exportDish" path="" type="" />
+    <class name="com.fanerp.action.ExportDish" needLogin="false" />
+    <param list=""  param1="dish.vm" />
+  </action>  
+  <action>
+    <forward id="/exportCompany" path="" type="" />
+    <class name="com.fanerp.action.ExportCompany" needLogin="false" />
+    <param list=""  param1="fancompany.vm" />
+  </action>  
+  <action>
+    <forward id="/seeDish" path="dish" type="" />
+    <class name="com.f1jframework.eform.action.ReadForCommbo" needLogin="false" />
+    <param list=""  param1="dishsee.vm" />
+  </action>  
+  <action>
+    <forward id="/listSuitTypeDishs" path="dish" type="" />
+    <class name="com.fanerp.action.ListSuitTypeDishs" needLogin="false" />
+    <param list=""  param1="" />
+  </action>  
+  <action>
+    <forward id="/loadDishSuitType" path="fandishsuittype" type="" />
+    <class name="com.f1jframework.eform.action.LoadForCommbo" needLogin="false" />
+    <param list=""  param1="dishsuittype.vm" />
+  </action>
+  <action>
+    <forward id="/seeDishhi" path="dish" type="" />
+    <class name="com.f1jframework.eform.action.ReadForCommbo" needLogin="false" />
+    <param list=""  param1="dishseehi.html" param2="form-read-hi.vm" />
+  </action>    
+  <action>
+    <forward id="/loadFanOrder_" path="fanorder" type="" />
+    <class name="com.f1jframework.eform.action.LoadForCommbo" needLogin="true" />
+    <param list="" param1="fanorder.vm" />
+  </action>
+    <action>
+    <forward id="/seeFanOrder" path="fanOrderSee" type="" />
+    <class name="com.f1jframework.eform.action.LoadForCommbo" needLogin="false" />
+    <param list="" param1="fanordersee.html" />
+  </action>
+  <action>
+    <forward id="/seeFanOrderBuy" path="fanOrderBuy" type="" />
+    <class name="com.f1jframework.eform.action.LoadForCommbo" needLogin="false" />
+    <param list="" param1="fanorderbuysee.html" />
+  </action>
+   <action>
+    <forward id="/buyFanOrder" path="fanorder1" type="" />
+    <class name="com.f1jframework.eform.action.LoadForCommbo" needLogin="false" />
+    <param list="" param1="fanorderbuy.vm" />
+  </action> 
+  <action>
+    <forward id="/createOrderItem" path="" type="" />
+    <class name="com.fanerp.action.CreateOrderItem" needLogin="false" />
+    <param list="" param1="" />
+  </action> 
+  <action>
+    <forward id="/changeOrderItemStatus" path="" type="" />
+    <class name="com.fanerp.action.ChangeOrderItemStatus" needLogin="false" />
+    <param list="" param1="" />
+  </action>
+  <action>
+    <forward id="/initAllTable" path="" type="" />
+    <class name="com.fanerp.action.InitAllTable" needLogin="false" />
+    <param list="" param1="" />
+  </action>  
+  <action>
+    <forward id="/changeTable" path="" type="" />
+    <class name="com.fanerp.action.ChangeTable" needLogin="false" />
+    <param list="" param1="" />
+  </action>  
+   <action>
+    <forward id="/callOrderItem" path="" type="" />
+    <class name="com.fanerp.action.CallOrderItem" needLogin="false" />
+    <param list="" param1="" />
+  </action> 
+  <!--
+   <action>
+    <forward id="/seeFanOrderBuy" path="fanorderbuy" type="" />
+    <class name="com.f1jframework.eform.action.LoadForCommbo" needLogin="false" />
+    <param list="" param1="fanorderbuysee.html" />
+  </action>  
+  -->
+   <action>
+    <forward id="/SaveFanOrderBuy" path="" type="" />
+    <class name="com.fanerp.action.SaveFanOrderBuy" needLogin="false" />
+    <param list="" param1="" />
+  </action>
+   <action>
+    <forward id="/SaveFanOrderBuyInit" path="" type="" />
+    <class name="com.fanerp.action.SaveFanOrderBuyInit" needLogin="false" />
+    <param list="" param1="" />
+  </action>
+  <action>
+    <forward id="/li-order" path="/include/list-order.jsp" type="" />
+    <class name="com.f1jeeframework.view.action.List" needLogin="true" />
+    <param list="" />	
+  </action>
+  <action>
+    <forward id="/li-order-item" path="/include/list-order-item.jsp" type="" />
+    <class name="com.f1jeeframework.view.action.List" needLogin="true" />
+    <param list="" />	
+  </action>
+  <action>
+    <forward id="/loadFanDiningtable" path="fandiningtable" type="" />
+    <class name="com.f1jframework.eform.action.LoadForCommbo" needLogin="false" />
+    <param list="" param1="fandiningtable.vm" />
+  </action>
+    <action>
+    <forward id="/seeFanDiningtable" path="fandiningtable" type="" />
+    <class name="com.f1jframework.eform.action.ReadForCommbo" needLogin="false" />
+    <param list="" param1="fandiningtablesee.vm" />
+  </action>  
+  <action>
+    <forward id="/Login" path="" type="" />
+    <class name="com.ysk.login.LoginServlet" needLogin="false" />
+    <param list="" />
+  </action>
+  <action>
+    <forward id="/SubmitChangePasswordServlet" path="" type="" />
+    <class name="com.f1jeeframework.base.user.action.SubmitChangePassword" needLogin="true" />
+    <param list="" />
+  </action>
+  <action>
+    <forward id="/ChangePasswordServlet" path="" type="" />
+    <class name="com.f1jeeframework.base.user.action.ChangePassword" needLogin="true" />
+    <param list="" />
+  </action>  
+  <action>
+    <forward id="/AjaxTree" path="" type="" />
+    <class name="com.f1jeeframework.base.action.AjaxTree" needLogin="true" />
+    <param list="" />
+  </action>
+  <action>
+    <forward id="/AjaxList" path="" type="" />
+    <class name="com.f1jeeframework.view.action.AjaxList" needLogin="true" />
+    <param list="" />
+  </action>
+  <action>
+    <forward id="/ajaxListData" path="" type="" />
+    <class name="com.f1jeeframework.view.action.AjaxListData" needLogin="true" />
+    <param list="" />
+  </action>
+  <action>
+    <forward id="/UploadServlet" path="" type="" />
+    <class name="com.f1jeeframework.upload.UploadServlet" needLogin="true" />
+    <param list="" />
+  </action>
+  <action>
+    <forward id="/OpenUpload" path="" type="" />
+    <class name="com.f1jeeframework.upload.OpenUpload" needLogin="true" />
+    <param list="" />
+  </action>
+  <action>
+    <forward id="/ShowImage" path="" type="" />
+    <class name="com.f1jeeframework.upload.ShowImage" needLogin="true" />
+    <param list="" />
+  </action>   
+  <action>
+    <forward id="/li-dish" path="/include/list-dish.jsp" type="" />
+    <class name="com.f1jeeframework.view.action.List" needLogin="true" />
+    <param list="" />	
+  </action>
+ 
+  <action>
+    <forward id="/li-shop" path="/dali/shop-list.jsp" type="" />
+    <class name="com.f1jeeframework.view.action.List" needLogin="flase" />
+    <param list="" />	
+  </action>
+  <action>
+    <forward id="/li-shop-dish" path="/dali/shop-content.jsp" type="" />
+    <class name="com.f1jeeframework.view.action.List" needLogin="false" />
+    <param list="" />	
+  </action>
+  <action>
+    <forward id="/li-dish-buy" path="/order/list-dish-buy.jsp" type="" />
+    <class name="com.f1jeeframework.view.action.List" needLogin="true" />
+    <param list="" />	
+  </action>
+    <action>
+    <forward id="/li-dish-buy-online" path="/include/list-dish-buy-online.jsp" type="" />
+    <class name="com.f1jeeframework.view.action.List" needLogin="false" />
+    <param list="" />	
+  </action>
+  <action>
+    <forward id="/li-table" path="/include/list-table.jsp" type="" />
+    <class name="com.f1jeeframework.view.action.List" needLogin="true" />
+    <param list="" />	
+  </action>
+  <action>
+    <forward id="/li-table-buy" path="/include/list-table-buy.jsp" type="" />
+    <class name="com.f1jeeframework.view.action.List" needLogin="true" />
+    <param list="" />	
+  </action>  
+  <action>
+    <forward id="/li" path="/include/list.jsp" type="" />
+    <class name="com.f1jeeframework.view.action.List" needLogin="true" />
+    <param list="" param1="true" param2="img_view"/>	
+  </action>
+  <action>
+    <forward id="/liDlg" path="/include/list-dlg.jsp" type="" />
+    <class name="com.f1jeeframework.view.action.List" needLogin="true" />
+    <param list="" />	
+  </action>
+  <action>
+    <forward id="/List" path="/include/list.jsp" type="" />
+    <class name="com.f1jeeframework.view.action.List" needLogin="true" />
+    <param list="" />
+  </action>
+  <action>
+    <forward id="/listimplfortable" path="/include/list-table-buy.jsp" type="" />
+    <class name="com.fanerp.action.ListTable" needLogin="true" />
+    <param list="" />
+  </action>
+  
+  
+  <action>
+    <forward id="/list" path="/include/list.jsp" type="" />
+    <class name="com.f1jeeframework.view.action.List" needLogin="false" />
+    <param list="" param1="true" param2="img_view"/>
+  </action>    
+   <action>
+    <forward id="/listForAndroid" path="/include/list.jsp" type="" />
+    <class name="com.f1jeeframework.view.action.ListForAndroid" needLogin="false" />
+    <param list=""  param1="true"/>
+  </action>
+  <action>
+    <forward id="/listForAndroid_" path="/include/list.jsp" type="" />
+    <class name="com.f1jeeframework.view.action.ListForAndroid_" needLogin="false" />
+    <param list=""  param1="true"/>
+  </action>  
+  <action>
+    <forward id="/li1" path="list.vm" type="" />
+    <class name="com.f1jframework.eform.action.List1" needLogin="true" />
+    <param list=""  param1="true" param2="img_view"/>
+  </action>
+   <action>
+    <forward id="/li-dish-bycid" path="list.vm" type="" />
+    <class name="com.f1jframework.eform.action.List1" needLogin="true" />
+    <param list="dish_by_cid" param1="true" param2="img_view"/>		
+	<params>
+	  <param name="cid"  />	  
+	</params>		
+  </action>
+  <action>
+    <forward id="/li2" path="/eform/" type="" />
+    <class name="com.f1jframework.eform.action.ListforAjax" needLogin="true" />
+    <param list="" />
+  </action>
+    <action>
+    <forward id="/AjaxUpload" path="" type="" />
+    <class name="com.f1jeeframework.upload.AjaxUpload" needLogin="true" />
+    <param list="" />
+  </action>  
+  <action>
+    <forward id="/AjaxUploadType" path="" type="" />
+    <class name="com.f1jeeframework.upload.AjaxUploadType" needLogin="true" />
+    <param list="" />
+  </action>  
+   <action>
+    <forward id="/AjaxUploadDish" path="" type="" />
+    <class name="com.fanerp.action.AjaxUploadDish" needLogin="true" />
+    <param list="" />
+  </action>  
+  <action>
+    <forward id="/AjaxRemoveFile" path="" type="" />
+    <class name="com.f1jeeframework.upload.AjaxRemoveFile" needLogin="true" />
+    <param list="" />
+  </action>  
+  <action>
+    <forward id="/AjaxModifyFile" path="" type="" />
+    <class name="com.f1jeeframework.upload.AjaxModifyFile" needLogin="true" />
+    <param list="" />
+  </action>
+   
+    <action>
+    <forward id="/loadMember" path="fanmember" type="" />
+    <class name="com.f1jframework.eform.action.LoadForCommbo" needLogin="false" />
+    <param list=""  param1="fanmember.vm" />
+  </action>
+   <action>
+    <forward id="/seeMember" path="fanmember" type="" />
+    <class name="com.f1jframework.eform.action.ReadForCommbo" needLogin="false" />
+    <param list=""  param1="fanmembersee.vm" />
+  </action>
+   
+   <action>
+    <forward id="/call" path="aa" type="" />
+    <class name="com.fanerp.action.PlaySound" needLogin="false" />
+    <param list=""  param1="" />
+  </action>
+   <action>
+    <forward id="/loadInfo" path="dishinfo" type="" />
+    <class name="com.f1jframework.eform.action.LoadForCommbo" needLogin="false" />
+    <param list=""  param1="dishinfo.vm" />
+  </action>  
+   <action>
+    <forward id="/seeInfo" path="dishinfo" type="" />
+    <class name="com.f1jframework.eform.action.ReadForCommbo" needLogin="false" />
+    <param list=""  param1="dishinfosee.vm" />
+  </action>
+  <action>
+    <forward id="/loadInfo1" path="info1" type="" />
+    <class name="com.f1jframework.eform.action.LoadForCommbo" needLogin="false" />
+    <param list=""  param1="info1.vm" />
+  </action>  
+   <action>
+    <forward id="/seeInfo1" path="info1" type="" />
+    <class name="com.f1jframework.eform.action.ReadForCommbo" needLogin="false" />
+    <param list=""  param1="info1see.vm" />
+  </action>
+  <action>
+    <forward id="/li-info" path="/include/list-info.jsp" type="" />
+    <class name="com.f1jeeframework.view.action.List" needLogin="true" />
+    <param list="" />	
+  </action>
+  <action>
+    <forward id="/report" path="" type="" />
+    <class name="com.fanerp.action.Report" needLogin="false" />
+    <param list=""  param1="" />
+  </action>  
+  
+    <action>
+    <forward id="/saveTableStatus" path="" type="" />
+    <class name="com.fanerp.action.SaveTableStatus" needLogin="false" />
+    <param list=""  param1="" />
+  </action>
+  
+  <action>
+    <forward id="/SaveFanDianPing" path="" type="" />
+    <class name="com.fanerp.action.SaveFanDianPing" needLogin="false" />
+    <param list=""  param1="" />
+  </action>  
+ 
+  <action>
+    <forward id="/EditOrderOnline" path="/include/order-online.jsp" type="" />
+    <class name="com.fanerp.action.EditOrderOnline" needLogin="true" />
+    <param list=""  param1="" />
+  </action>    
+  <action>
+    <forward id="/CreateOrderByHi" path="" type="" />
+    <class name="com.fanerp.action.CreateOrderByHi" needLogin="true" />
+    <param list=""  param1="" />
+  </action>    
+  <action>
+    <forward id="/li-myorder-online" path="/include/list-order-online.jsp" type="" />
+    <class name="com.f1jeeframework.view.action.List" needLogin="true" />
+    <param list="" />	
+  </action>
+   <action>
+    <forward id="/seeFanOrderHi" path="fanorder" type="" />
+    <class name="com.f1jframework.eform.action.ReadForCommbo" needLogin="false" />
+    <param list="" param1="fanorderseehi.html"  param2="form-read-hi.vm"/>
+  </action>  
+  
+  <action>
+    <forward id="/loadFanHandOver" path="fanhandover" type="" />
+    <class name="com.f1jframework.eform.action.LoadForCommbo" needLogin="false" />
+    <param list="" param1="fanhandover.vm" />
+  </action>
+  <action>
+    <forward id="/SaveHandOver" path="fanhandover" type="" />
+    <class name="com.fanerp.action.SaveHandOver" needLogin="false" />
+    <param list="" param1="fanhandover.vm" />
+  </action>
+   <action>
+    <forward id="/saveMemberRecharge" path="fanmember" type="" />
+    <class name="com.fanerp.action.SaveMemberRecharge" needLogin="false" />
+    <param list="" param1="fanhandover.vm" />
+  </action>
+  <action>
+    <forward id="/loadFanorderbuytypeset" path="fanorderbuytypeset" type="" />
+    <class name="com.f1jframework.eform.action.LoadForCommbo" needLogin="false" />
+    <param list="" param1="fanorderbuytypeset.html" />
+  </action>
+  <action>
+    <forward id="/loadFanorderbuydiscountset" path="fanorderbuydiscountset" type="" />
+    <class name="com.f1jframework.eform.action.LoadForCommbo" needLogin="false" />
+    <param list="" param1="fanorderbuydiscountset.html" />
+  </action>
+</pageflow>
+

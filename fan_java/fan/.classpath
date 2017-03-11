@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/activation.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/antlr-2.7.5.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/avalon-logkit-2.1.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/common-annotations.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/commons-beanutils.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/commons-codec-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/commons-dbcp-1.2.2.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/commons-email-1.1.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/commons-fileupload-1.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/commons-httpclient-3.1.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/commons-httpclient-3.1-alpha1.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/commons-lang-2.4.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/commons-logging-1.1.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/commons-pool-1.5.2.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/dbswing.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/ezmorph-1.0.6.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/ibatis-2.3.4.726.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/ibatis-common-2.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/ibatis-dao-2.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/ibatis-sqlmap-2.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/jbcl.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/jcs-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/jdbcx.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/jdom.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/jdom-1.0.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/json-lib-2.3-jdk15.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/junit-4.8.2.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/log4j-1.2.12.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/mail.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/maven-ant-tasks-2.0.9.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/msbase.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/mssqlserver.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/msutil.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/NCSO.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/Notes.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/oro-2.0.8.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/poi-3.5-FINAL-20090928.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/poi-contrib-3.5-FINAL-20090928.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/poi-ooxml-3.5-FINAL-20090928.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/poi-scratchpad-3.5-FINAL-20090928.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/resin.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/servlet.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/servletapi-2.3.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/spring.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/substance.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/velocity-1.6.4.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/velocity-1.6.4-dep.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/werken-xpath-0.9.4.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/jfreechart-1.0.12.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/jfreechart-1.0.12-experimental.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/jfreechart-1.0.12-swt.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/jcommon-1.0.15.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/aspectjlib.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/aspectjrt.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/aspectjweaver.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/spring/aspectjlib.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/spring/aspectjrt.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/spring/aspectjweaver.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/spring/spring-aop.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/spring/spring-beans.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/spring/spring-context.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/spring/spring-context-support.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/spring/spring-core.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/spring/spring-jdbc.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/spring/spring-jms.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/spring/spring-orm.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/spring/spring-test.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/spring/spring-tx.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/spring/spring-web.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/spring/spring-webmvc.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/spring/spring-webmvc-portlet.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/lib/spring/spring-webmvc-struts.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/cglib-2.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/annotations-api.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/antlr-2.7.5H3.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/aopalliance.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/asm.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/casclient.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/catalina.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/catalina-ant.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/catalina-ha.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/catalina-tribes.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/commons-beanutils.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/commons-beanutils-1.8.0.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/commons-collections.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/commons-collections-2.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/commons-collections-3.2.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/commons-dbcp-1.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/commons-digester.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/commons-digester-2.0.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/commons-email-1.1.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/commons-fileupload.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/commons-io-1.4.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/commons-lang.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/commons-lang-2.4.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/commons-logging.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/ehcache-1.1.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/el-api.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/ezmorph-1.0.6.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/fckeditor-java-core-2.4.1.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/freemarker-2.3.15.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/hibernate3.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/hsqldb-1.8.0.10.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/ibatis-common-2.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/ibatis-dao-2.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/ibatis-sqlmap-2.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/iText-2.1.3.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/jasper.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/jasper-el.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/jasper-jdt.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/javassist-3.7.ga.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/jcl-over-slf4j-1.5.8.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/jdom.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/json-lib-2.3-jdk15.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/jsp-api.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/jstl.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/jstl-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/jta.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/junit.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/log4j.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/msbase.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/mssqlserver.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/msutil.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/mvel2-2.0.11.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/ognl-2.7.3.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/oro-2.0.8.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/peix.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/postgresql-8.1dev-403.jdbc2.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/rt.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/samle1.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/servlet.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/slf4j-api-1.5.8.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/slf4j-jdk14-1.5.8.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/spring.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/spring-aop.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/spring-beans.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/spring-beans-2.5.6.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/spring-context.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/spring-context-2.5.6.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/spring-context-support.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/spring-core.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/spring-core-2.5.6.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/spring-jdbc.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/spring-jdbc-2.5.6.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/spring-jms.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/spring-orm.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/spring-test.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/spring-tx.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/spring-tx-2.5.6.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/spring-web.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/spring-web-2.5.6.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/spring-webmvc.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/spring-webmvc-portlet.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/spring-webmvc-struts.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/standard.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/swtgraphics2d.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/test.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/tiles-api-2.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/tiles-compat-2.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/tiles-core-2.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/tiles-el-2.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/tiles-extras-2.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/tiles-freemarker-2.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/tiles-jsp-2.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/tiles-mvel-2.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/tiles-ognl-2.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/tiles-portlet-2.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/tiles-servlet-2.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/tiles-servlet-wildcard-2.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/tiles-template-2.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/tiles-test-alt-2.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/tiles-test-common-2.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/tiles-test-db-2.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/tiles-velocity-2.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/tomcat-coyote.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/tomcat-dbcp.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/tomcat-i18n-es.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/tomcat-i18n-fr.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/tomcat-i18n-ja.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/velocity-1.6.2.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/velocity-1.6.4.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/velocity-1.6.4-dep.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/velocity-tools-2.0-20090514.211946-1.jar"/>
+	<classpathentry kind="lib" path="D:/Tomcat 6.0/lib/wftrace.jar"/>
+	<classpathentry kind="lib" path="D:/webapps/o2o/WEB-INF/lib/f1jframework.jar"/>
+	<classpathentry kind="output" path="easypos-admin"/>
+</classpath>

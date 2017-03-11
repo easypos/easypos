@@ -1,0 +1,62 @@
+<input type="hidden" value="loadUser.do"  name="action"> 
+  <script type="text/javascript">   
+   $(function() {     
+	// modify pass
+	 $("#btn-modify").click(function() {         	  	    
+    if (!validForm()){return("");}   
+	$("#f1j-form").attr("action","modifyPassByAdmin.f1j");	
+	if ($("#pass1").val()!=$("#pass2").val()){
+	alert("两次输入的密码不一致!");
+	return("");
+	}   
+	//alert("");
+    $("#f1j-form").submit();
+	});
+    var options = {
+             		  //target:        '#output1',   // 用服务器返回的数据 更新 id为output1的内容.	       
+					   beforeSubmit:  showRequest,  // 提交前
+	    		        success:       showResponse,  // 提交后 				        
+				        resetForm: false     				       
+				    };				    
+     $("#f1j-form").ajaxForm(options); 	
+	 // 提交前
+	function showRequest(formData, jqForm, options) { 			  
+	              //alert("----");
+				  return true;				  
+				  }                  				
+	function showResponse(responseText, statusText)  {               		      
+			  //alert(responseText);              			  
+			  if (responseText=="ok"){
+			  alert("修改密码成功!");
+			    //location.href="/beigebulu/b2c/";
+			  }
+			  else
+			  {
+			  alert("抱歉!修改密码没有完成,请重试!");
+			  //$("#msg_").text("抱歉!修改密码成功没有完成,请重试!");
+			  }
+             } 
+	// modify pass end!	
+	});
+  </script>
+<div class="panel" title="基本">
+
+<table class="f1-ui-table-1" border="0" cellspacing="2" cellpadding="0" width="100%">		
+	<tr>
+		<td ><label>修改密码</label></td>
+		<td class="detail"><input name="pass1" type="password" id="pass1" size="0" value="" required="true"  validType="notNull"  ></td>
+	</tr>
+	<tr>
+		<td ><label>确认密码</label></td>
+		<td class="detail"><input name="pass2" type="password" id="pass2" size="0" value="" required="true"  validType="notNull"  > </td>
+	</tr>			
+</table>
+</div>
+  </div>   
+  <div class="toolbar">##
+  <center>  
+  <input type="button" id="btn-modify" value="修改" style="width:60px;height:40px">   ##   
+  </center>
+  
+
+

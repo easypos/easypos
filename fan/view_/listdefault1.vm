@@ -1,0 +1,37 @@
+﻿  <script>
+	$(function() {	
+	
+		
+	});
+	
+	</script>  
+  <div class="forum-container1" id="dialog-form" title="请输入搜索条件">
+   <form name="ViewForm" id="ViewForm" method="post" action="li2.do">
+   <input name="appName" id="appName"  type="hidden" value=${hashMap.appName}></input>
+   <input id="li-name" type="hidden" value=${hashMap.engineName}></input>
+    <table width="100%" border="0" cellspacing="1" cellpadding="0">
+	#foreach( $name in $eformItems )    
+    <tr>
+        <td><label>$name.title</label>
+        </td>		
+		<td>
+        <select name="link1${velocityCount}" >    
+         <option value=like>包含</option>
+         <option >=</option>
+         <option >></option>
+         <option ><</option>
+         </select>
+        </td>
+		
+		<td>$name.value</td>
+		<td>		
+        <input name=checkbox1 type="checkbox" value="${velocityCount}" > </input>   
+        </td>
+      </tr>    
+	#end     
+    </table>
+	</form>
+   </div>		
+   
+  
+ 

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<pageflow>
+   <!--  ================人力资源======================================   -->      
+  <action path="/NewHrBase" class="sid.hr.action.NewHrBase" forward=""  />     
+  <action path="/NewHrExam" class="sid.hr.action.NewHrExam" forward=""  />
+  <action path="/NewPartyMember" class="sid.hr.action.NewPartyMember" forward=""  />    
+  <action path="/EditHrExam" class="sid.hr.action.EditHrExam" forward=""  />
+  <action path="/EditHrBase" class="sid.hr.action.EditHrBase" forward=""  />  
+  <action path="/SeeHrBase" class="sid.hr.action.EditHrBase" forward="/hr/SeeHrBase.jsp" /> 
+  <!-- 员工系统帐户  -->
+  <action path="/NewHrBaseUser" class="sid.hr.action.NewHrBaseUser" forward="" />
+  <action path="/EditHrBaseUser" class="sid.hr.action.EditHrBaseUser" forward="" />
+  <action path="/SubmitHrBaseUser" class="sid.hr.action.SubmitHrBaseUser" forward="" />
+  <action path="/EditPartyMember" class="sid.hr.action.EditPartyMember" forward=""  />
+  <action path="/SeePartyMember" class="sid.hr.action.EditPartyMember" forward="/hr/SeePartyMember.jsp"  />
+  <action path="/SubmitHrBase" class="sid.hr.action.SubmitHrBase" forward=""  />   
+  <action path="/SubmitHrExam" class="sid.hr.action.SubmitHrExam" forward=""  />   
+  <action path="/SeeHrExam" class="sid.hr.action.SeeHrExam" forward=""  />   
+  <action path="/SubmitPartyMember" class="sid.hr.action.SubmitPartyMember" forward=""  />   
+  <action path="/SubmitHrBase" class="sid.hr.action.SubmitHrBase" forward=""  />   
+  <action path="/SubmitAskForLeave" class="sid.hr.action.SubmitAskForLeave" forward=""  />   
+    
+  <!-- *****************工资 ***************************************************************-->
+  <action path="/NewSalary" class="sid.hr.action.NewSalary" forward="" />
+  <action path="/EditSalary" class="sid.hr.action.EditSalary" forward="" />
+  <action path="/SubmitSalary" class="sid.hr.action.SubmitSalary" forward="" />
+  <action path="/SeeSalary" class="sid.hr.action.EditSalary" forward="/hr/SeeSalary.jsp" />
+  <action path="/CreateSalaryList" class="sid.hr.action.CreateSalaryList" forward="" />
+  <action path="/CreateSalaryBase" class="sid.hr.action.CreateSalaryBase" forward="" />
+ <action path="/EditHrSalaryBase" class="sid.hr.action.EditSalaryBase" forward="" />
+  <action path="/CreateSalaryListDlg" class="sid.hr.action.CreateSalaryListDlg" forward="" />
+  <action path="/NewHrSalaryInit" class="sid.hr.action.NewHrSalaryInit" forward="" />
+  <action path="/EditHrSalaryInit" class="sid.hr.action.EditHrSalaryInit" forward="" />
+  <action path="/SubmitHrSalaryInit" class="sid.hr.action.SubmitHrSalaryInit" forward="" />
+  <action path="/SeeHrSalaryInit" class="sid.hr.action.EditHrSalaryInit" forward="" />
+  <action path="/NewWelfare" class="sid.hr.action.NewWelfare" forward="" />
+  <action path="/EditWelfare" class="sid.hr.action.EditWelfare" forward="" />
+  <action path="/SubmitWelfare" class="sid.hr.action.SubmitWelfare" forward="" />
+  <action path="/SeeWelfare" class="sid.hr.action.SeeWelfare" forward="" />
+  <!-- *****************考勤 ***************************************************************-->
+  <action path="/NewHrSignIn" class="sid.hr.action.NewHrSignIn" forward="" />
+  <action path="/EditHrSignIn" class="sid.hr.action.EditHrSignIn" forward="" />
+  <action path="/SubmitHrSignIn" class="sid.hr.action.SubmitHrSignIn" forward="" />
+  <action path="/SeeHrSignIn" class="sid.hr.action.SeeHrSignIn" forward="" />
+  <action path="/NewHrSignOut" class="sid.hr.action.NewHrSignOut" forward="" />
+  <action path="/EditHrSignOut" class="sid.hr.action.EditHrSignOut" forward="" />
+  <action path="/SubmitHrSignOut" class="sid.hr.action.SubmitHrSignOut" forward="" />
+  <action path="/SeeHrSignOut" class="sid.hr.action.SeeHrSignOut" forward="" /> 
+  <action path="/CreateMonthAttendanceListDlg" class="sid.hr.action.CreateSalaryListDlg" forward="/hr/CreateMonthAttendanceListDlg.jsp" />
+<action path="/FindHrSignInDlg" class="sid.hr.action.FindHrSignInDlg" forward="/hr/FindHrSignInDlg.jsp" />
+  <action path="/CreateMonthAttendanceList" class="sid.hr.action.CreateMonthAttendanceList" forward="" />  
+  <action path="/NewHrMonthAttendance" class="sid.hr.action.NewHrMonthAttendance" forward="" />
+  <action path="/EditHrMonthAttendance" class="sid.hr.action.EditHrMonthAttendance" forward="" />
+  <action path="/SubmitHrMonthAttendance" class="sid.hr.action.SubmitHrMonthAttendance" forward="" />
+  <action path="/SeeHrMonthAttendance" class="sid.hr.action.SeeHrMonthAttendance" forward="" />
+  <action path="/HrSignList" class="com.sid.view.action.List" forward="/hr/list/HrSignList.jsp" />
+  <action path="/ListMonthAttendance" class="sid.hr.action.ListMonthAttendance" forward="/hr/list/ListMonthAttendance.jsp" />
+  <action path="/ListMonthAttDlg" class="sid.hr.action.ListMonthAttDlg" forward="/hr/ListMonthAttDlg.jsp" />
+   <action path="/NewHrAttendanceInit" class="sid.hr.action.NewHrAttendanceInit" forward="" />
+  <action path="/EditHrAttendanceInit" class="sid.hr.action.EditHrAttendanceInit" forward="" />
+  <action path="/SubmitHrAttendanceInit" class="sid.hr.action.SubmitHrAttendanceInit" forward="" />
+  <action path="/SeeHrAttendanceInit" class="sid.hr.action.SeeHrAttendanceInit" forward="" />
+  <action path="/NewFestivalInit" class="sid.hr.action.NewFestivalInit" forward="" />
+  <action path="/EditFestivalInit" class="sid.hr.action.EditFestivalInit" forward="" />
+  <action path="/SubmitFestivalInit" class="sid.hr.action.SubmitFestivalInit" forward="" />
+  <action path="/SeeFestivalInit" class="sid.hr.action.SeeFestivalInit" forward="" />
+  
+  
+  
+
+</pageflow>

@@ -1,0 +1,181 @@
+<!--
+ <div data-role="header" data-theme="c" style_="position: absolute;left: 0;top:0px;z-index:999;width:100%;opacity: 0.5;"> 
+  <a href="#"  data-rel="back" data-icon="list-arrow-l" class="ui-nodisc-icon">店铺列表</a>	
+  <h1 id="name" name="${workItem.breedValue}" price="${workItem.priceValue}">店铺详情</h1>
+  <a href="#"  data-rel="back" data-icon="list-share" class="ui-nodisc-icon">分享</a>	   
+ </div> 
+ -->
+<div class="swiper-container">
+  <div class="swiper-wrapper"> #foreach( $file in $files )      
+    #if ($file.filetype=="2")
+    <div class="swiper-slide blue-slide"> <img width="100%"  height="200px" src='/ysk/attachfiles/fancompany/$file.dataid/$file.universalid'></img> </div>
+    #end 
+    #end </div>
+  <div class="pagination"></div>
+</div>
+#foreach( $file in $files )      
+        #if ($file.filetype=="0")
+<div class="shop-logo"> <img src='/ysk/attachfiles/fancompany/$file.dataid/$file.universalid'></img> </div>
+#end 
+  #end
+ <div class="divided-10"></div>      
+ <div class="type1-title">${workItem.nameValue}</div>
+  <ul class="shop-service">
+      <li>
+	  <div class="shop-service-1 ellipsis_txt">                 
+		 <img src="/shares/ysk/m/images/check.png">认证餐厅		 
+      </div>
+	  </li>
+	  <li>
+	  <div class="shop-service-2 ellipsis_txt">                 
+		 <img src="/shares/ysk/m/images/check.png">优选食材		 
+      </div>
+	  </li>
+	  <li>
+	  <div class="shop-service-3 ellipsis_txt">                 
+		<img src="/shares/ysk/m/images/check.png">会员优惠		 
+      </div>
+	  </li>
+	  <li>
+	  <div class="shop-service-4 ellipsis_txt">                 
+		<img src="/shares/ysk/m/images/check.png">安心放心		 
+      </div>
+	  </li>
+   </ul>      
+<div class="type1-title">菜品推荐</div>
+<ul class="prd-list">
+  ${tujieProduct}
+</ul>  
+<div class="divided-10"></div>      
+<div class="type1-title">客服</div>
+<ul data-role="listview" class="ui-alt-icon ui-nodisc-icon" data-icon="list-arrow-r" style="background:#fff;margin:10px" data-theme="c">
+  <li style="border-bottom: 1px solid #ccc;	"><a style="background:#fff;" href="#" target="_self">
+    <!-- <h2>微信</h2> -->
+    <p class="shop-wechat"><img src="/shares/easyrestaurant+/m/images/wx_icon1.png">-</p>
+    </a> </li>
+  <li style="border-bottom: 1px solid #ccc;	"><a style="background:#fff;" href="#" target="_self">
+    <!-- <h2>位置</h2> -->
+    <p class="shop-wechat"><img src="/shares/easyrestaurant+/m/images/shop-lbs.png">${workItem.addressValue}</p>
+    </a> </li>
+</ul>
+<!--
+      <div class="ui-grid-a" style="background:#fff">
+      <div class="ui-block-a" style="border-right:0px solid #ccc;border-bottom:0px solid #ccc;">        
+         <a href="li-shop-product-online-m.do?id=${id}" target="_self" class="ui-shadow ui-btn ui-btn-d ui-corner-all" >全部商品</a>
+      </div>
+      <div class="ui-block-b" style="border-bottom:0px solid #ccc;">       
+        <a href="li-product-online-m.f1j?v=T_Product_android_0&typ2=49" target="_self" class="ui-shadow ui-btn ui-btn-d ui-corner-all" > 客服</a>        
+      </div> 
+	  </div>
+ -->
+<!-- <div class="type1-title">店铺认证</div>  -->
+<div class="divided-10"></div>      
+<div class="type1-title">餐厅详情</div>
+<p style="color:#000;padding:10px;background:#fff;padding:3px;border:1px solid #ccc;margin:10px">${workItem.contentValue}</p>
+#foreach( $file in $files )      
+         #if ($file.filetype=="1")
+<!-- <div class="img-line">$velocityCount</div> -->
+<div class="content_block"> <img width="100%"  src='/ysk/attachfiles/fancompany/$file.dataid/$file.universalid'></img> </div>
+#end 
+  #end
+<div class="divided-10"></div>        
+<div class="type1-title">EASYSHOP+<span class="right-flag">手机注册立送100元</span></div>
+  <ul class="listview">
+      <li ><a  href="http://note.youdao.com/noteshare?id=202b4564370e7bd439c679e8269278f2" target="_self">      
+        <p>EASYPOS+（店铺版）,连锁餐厅私有云POS平台运营流程</p>
+        </a>
+	  </li>	  
+      <li ><a  href="http://x.eqxiu.com/s/qFva04Fy" target="_self">      
+        <p>云尚客，让天下没有难开的餐厅</p>
+        </a>
+	  </li>	  
+      <li ><a  href="http://e.eqxiu.com/s/0ajdCU9L" target="_self">        
+        <p>云尚客智慧餐厅运营配置系统简介</p>
+        </a>
+	  </li>
+  </ul>
+<div style="height:60px;" class="cls"></div>
+<!--
+ <div data-role="footer" data-position="fixed"  class="nav-glyphish-example" data-theme="c">    
+	<div data-role="navbar"  class="nav-index_" data-grid="c" >
+    <ul>
+        <li class="home"><a href="/uecun/shop/detail/${id}.html"  data-icon="index-home-a" class="ui-alt-icon ui-nodisc-icon" target="_self" data-theme="d">首页</a></li>
+        <li class="catalog"><a href="/o2o/li-shop-product-online-m.do?id=${id}" data-icon="index-list" class="ui-alt-icon ui-nodisc-icon "  data-icon="custom" target="_self">所有商品</a></li>
+        <li class="shopcart"><a href="/o2o/m/order_m.jsp"  data-icon="index-shoppingcart" class="ui-alt-icon ui-nodisc-icon" target="_self">购物车</a></li>
+        <li class="me"><a href="/o2o/m/list-my-center.html"  data-icon="index-personcenter" class="ui-alt-icon ui-nodisc-icon" target="_self">我</a></li>
+    </ul>
+    </div>
+	-->
+<!--	
+<div data-role="footer" data-position="fixed"  style="border:0px;">    
+	<div class="ui-grid-c">      
+        <div class="ui-block-a tab-bj-a">
+		  <a href="/o2o" target="_self"><img src="/o2o/m/images/index/18/home_a.png"><div>首页</div></a>
+		</div>
+		<div class="ui-block-b tab-bj">
+		  <a href="/o2o/li-shop-product-online-m.do?id=${id}" target="_self"><img src="/o2o/m/images/index/18/type_d.png"><div>所有商品</div></a>
+		</div>
+		<div class="ui-block-c tab-bj">
+		  <a href="/o2o/m/order_m.jsp" target="_self"><img src="/o2o/m/images/index/18/order_d.png"><div>购物车</div></a>
+		</div>
+		<div class="ui-block-d tab-bj">
+		  <a href="/o2o/login/list-my-center.jsp" target="_self"><img src="/o2o/m/images/index/18/me_d.png"><div>我</div></a>
+		</div>		
+	</div>	
+</div>
+-->
+<div class="divided-10"></div>
+<div data-role="footer" data-position="fixed"  style="border:0px;" class="menu">
+    <ul class="menu_">
+      <li class="ui-block-a tab-new-bj">
+        <div class="tab-new-content"> <a href="/o2o/m" target="_self" class="tab_home_a">
+          <div class="tab_cls"></div>
+          <div>首页</div>
+          </a> </div>
+      </li>
+      <li class="ui-block-b tab-new-bj">
+        <div class="tab-new-content"> <a href="/easyrestaurant-h5/list-dish.f1j?id=${id}" target="_self" class="tab_type_d">
+          <div class="tab_cls"></div>
+          <div>所有菜品</div>
+          </a> </div>
+      </li>
+      <li class="ui-block-c tab-new-bj">
+        <div class="tab-new-content" > <a href="/easyrestaurant-h5/m/order_m.jsp?id=${id}" target="_self" class="tab_order_d">
+          <div class="tab_cls"></div>
+          <div>点菜单</div>
+          </a> </div>
+      </li>
+      <li class="ui-block-d tab-new-bj">
+        <div class="tab-new-content"> <a href="/easyrestaurant-h5/login/list-my-center.jsp?id=${id}" target="_self" class="tab_user_d">
+          <div class="tab_cls"></div>
+          <div>我</div>
+          </a> </div>
+      </li>
+    </ul>
+  </div>
+<script src="/shares/jquery-mobile/Swiper-master/Swiper-master/dist/idangerous.swiper.min.js"></script>
+<script src="/shares/js/jquery.cookie.js" type="text/javascript"></script>
+<script>
+ $(function(){  
+  width_=$(".prd-img").width();
+   //alert(width_);
+   //$(".prd-img").css("width",width_);
+   $(".prd-img").css("height",width_);
+  var mySwiper = new Swiper('.swiper-container',{
+    pagination: '.pagination',
+    paginationClickable: true,
+	autoplayDisableOnInteraction:false,
+	autoplay:2000,
+	loop:true,
+	freeMode:false,
+	freeModeFluid:false,
+	paginationClickable:true
+	
+  })
+  mySwiper.startAutoplay();
+  $(document).attr("title","EASYPOS+，${workItem.nameValue}")
+  localStorage.setItem('shop-id',$("#id").val());
+  //$('#test').css({height: $("#footer-navbar").height()})
+  })  
+  //$("#footer-navbar").show();
+  </script>

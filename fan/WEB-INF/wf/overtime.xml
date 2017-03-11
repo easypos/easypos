@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="gb2312"?>
+<process name="over-time" item="1" dataFile="1" role="不限-0" author="1" date="1" ver="1">
+  <boservice id="1276144647187" name="填写加班申请表"   handleClassParam="overtime"  jsp="overtime.vm" dt="0" dttype="d" left="234" top="19" width="32" height="32">
+    <forward id="1276144647203" name="部门审批" user="1" role="1" roleOwner="1" group="" decissionResult="" x="253" y="71" />
+  </boservice>
+  <boservice id="1276144647203" name="部门审批"   handleClassParam="overtime" jsp="overtime.vm" dt="0" dttype="d" left="240" top="91" width="32" height="32">
+     <readOnlyVars name="tel" />
+    <readOnlyVars name="notes" />
+    <readOnlyVars name="test" />
+	<readOnlyVars name="type" />
+    <hideVars name="122" />
+    <hideVars name="222" />
+    <hideVars name="333" />
+   <forward id="1276144647218" name="总裁办审批" user="1" role="1" roleOwner="1" group="" decissionResult="" x="257" y="138" />
+  </boservice>
+  <boservice id="1276144647218" name="总裁办审批"   handleClassParam="" decissionType="1" decissionClass="" decissionOperator="&gt;" decissionValue="" jsp="/erke/EditOverTimeWorkTaskCall.jsp" dt="0" dttype="d" left="243" top="153" width="32" height="32">
+    <forward id="1276144647234" name="人力资源部审批" user="1" role="1" roleOwner="1" group="" decissionResult="" x="259" y="199" />
+  </boservice>
+  <boservice id="1276144647234" name="人力资源部审批"   handleClassParam="" decissionType="1" decissionClass="" decissionOperator="&gt;" decissionValue="" jsp="/erke/EditOverTimeWorkTaskCall.jsp" dt="0" dttype="d" left="243" top="214" width="32" height="32">
+    <forward id="1276144647250" name="结束" user="1" role="1" roleOwner="1" group="" decissionResult="" x="261" y="263" />
+  </boservice>
+  <task id="1276144647250" name="结束"   handleClassParam="" decissionType=" " decissionClass="" decissionOperator="" decissionValue="" jsp="" dt="0" dttype="d" left="247" top="280" width="32" height="32" />
+</process>
+

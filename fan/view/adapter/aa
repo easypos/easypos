@@ -1,0 +1,15 @@
+<li >
+<div class="content_block" style="clear:both;">
+#foreach( $name in $rowData )  
+#if ($velocityCount==2)
+<a href="#">$name</a>
+#end
+#if ($velocityCount==3)
+<h2>$name</h2>
+#end
+#end
+<br>
+<p>qqq电子视图适配代码...用户编写简短的脚本代码即可以改变列表显示的内容。例如...
+</p>
+</div>
+</li>

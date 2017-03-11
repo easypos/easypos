@@ -1,0 +1,98 @@
+<input type="hidden" value="loadDish.do"  name="action"> 
+  <script type="text/javascript">   
+   $(function() {  
+   $("#btn-save").click(function() {      
+     if (!validForm()){return("");}
+   $("#f1j-form").submit();
+	});
+	$("#btn-copy").click(function() {      
+     if (!validForm()){return("");}
+	$("#id").val(""); 
+   $("#f1j-form").submit();
+	});
+	});
+  </script>
+
+<div class="panel" title="基本">
+<table class="f1-ui-table-1" border="0" cellspacing="2" cellpadding="0" width="100%">	
+	<tr>
+		<th style="width:100px"><label>项目</label></th>
+		<th class="detail">属性</th>
+	</tr>	
+	<tr>
+		<td ><label>类别</label></td>
+		<td class="detail">${workItem.type} </td>
+	</tr>	
+	<tr>
+		<td ><label>固定类别</label></td>
+		<td class="detail">${workItem.statictype} </td>
+	</tr>	
+	<tr>
+		<td ><label>名称</label></td>
+		<td class="detail">${workItem.name} </td>
+	</tr>	
+	<tr>
+		<td ><label>单位</label></td>
+		<td class="detail">${workItem.unit} </td>
+	</tr>		
+	<tr>
+		<td ><label>拼音码</label></td>
+		<td class="detail">${workItem.piny} </td>
+	</tr>	
+	<tr>
+		<td ><label>编号</label></td>
+		<td class="detail">${workItem.dishNu} </td>
+	</tr>	
+	<tr>
+		<td ><label>部门</label></td>
+		<td class="detail">${workItem.groupName} </td>
+	</tr>	
+	
+	<tr>
+		<td ><label>单价</label></td>
+		<td class="detail">${workItem.price}</td>
+	</tr>	
+	<tr>
+		<td ><label>允许打折</label></td>
+		<td class="detail">${workItem.discountOK} </td>
+	</tr>	
+	<tr>
+		<td ><label>包房价</label></td>
+		<td class="detail">${workItem.compartmentPrice} </td>
+	</tr>		
+	<tr>
+		<td ><label>图片</label></td>
+		<td class="detail">${workItem.img}</td>
+	</tr>	    
+    <tr>
+		<td ><label>做法</label></td>
+		<td class="detail">${workItem.howCooking}</td>
+	</tr>	        	
+ 	   <tr>
+		<td ><label>材料</label></td>
+		<td class="detail">${workItem.materials}</td>
+	</tr>	        	
+	<tr>
+		<td ><label>内容</label></td>
+		<td class="detail">${workItem.content}</td>
+	</tr>	        	
+	<tr>
+		<td ><label>启用</label></td>
+		<td class="detail">${workItem.status} </td>
+	</tr>	
+	<tr>
+		<td ><label>公司代码</label></td>
+		<td class="detail">${workItem.companycode} </td>
+	</tr>	
+</table>
+</div>
+  </div>   
+
+  <div class="toolbar">##
+  <center>
+  <input type="button" id="btn-save" value="保存" style="width:60px;height:40px">   ## 
+  <input type="button" id="btn-copy" value="复制" style="width:60px;height:40px">   ## 
+  </center>
+  
+
+

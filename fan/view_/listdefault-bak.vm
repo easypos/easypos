@@ -1,0 +1,26 @@
+  <div class="panel">
+  <div class="forum-container" >
+    <table width="100%" border="1" cellspacing="1" cellpadding="0">
+	#foreach( $name in $eformItems )
+    #if ($velocityCount<$eformItems.size())
+    <tr>
+        <td><label>${eformItems.get($velocityCount)}</label>
+        </td>
+		
+		<td>
+        <select name="link${velocityCount}" >    
+         <option value=like>°üº¬</option>
+         <option >=</option>
+         <option >></option>
+         <option ><</option>
+         </select>
+        </td>
+		<td> ${eformValues.get($velocityCount)}</td>
+      </tr>
+    #end
+	#end     
+    </table>
+   </div>		
+</div>	
+  
+ 

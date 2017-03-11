@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="gb2312"?>
+<pageflow> 
+  <action>
+    <forward id="/list-dish" path="list.vm" type="" />
+    <class name="com.f1jframework.eform.action.List1" needLogin="false" />
+    <param list="dish_by_cid" param2="img_view" param3="list-dish-type.html" typeCache="false"/>
+    <params>
+	  <param name="id"  />
+	  <param name="pr"  />
+	</params>	
+  </action>
+ <action>
+    <forward id="/exportIndexPages_m" path="content/dlgsucess.jsp" type="" />
+    <class name="com.ysk.admin.staticpage.action.ExportIndexPages_m" needLogin="true" />
+  <param list="" param1="-" param2="-" />
+ </action>  
+  <action>
+    <forward id="/li_shop" path="list.vm" type="" />
+    <class name="com.f1jframework.eform.action.List1" needLogin="true" />
+    <param list=""  param1="true" param2="img_view" param3="sell_shop_typeimpl.html" rowAdapter_="product_row.html"/>	
+  </action>
+  <action>
+    <forward id="/pubShopBySelect_m" path="content/dlgsucess.jsp" type="" />
+    <class name="com.fanerp.shop.action.PubShopBySelect" needLogin="true" />  
+  <param list=""  param1="fancompany_m.html" param2="form-m.vm" />
+ </action> 
+ <action>
+    <forward id="/setProductStatusBySelect" path="content/dlgsucess.jsp" type="" />
+    <class name="com.fanerp.shop.action.SetProductStatusBySelect" needLogin="true" />  
+  <param list="" />
+  </action>
+  <action>
+    <forward id="/setProductMarketStatusBySelect" path="content/dlgsucess.jsp" type="" />
+    <class name="com.fanerp.shop.action.SetProductMarketStatusBySelect" needLogin="true" />  
+  <param list="" />
+ </action> 
+</pageflow> 
